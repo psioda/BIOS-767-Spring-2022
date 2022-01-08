@@ -1,0 +1,59 @@
+File Manifest for ICPSR 9112
+
+Elliott, Delbert S. . National Youth Survey [United States]: Wave V, 1980.
+ICPSR09112-v2. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2008-09-10.
+http://doi.org/10.3886/ICPSR09112.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09112-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    09112-related_literature.txt        -       -         -       daily       -
+
+    09112-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]: Wave V, 1980
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09112-0001-Codebook.pdf             -       -         -       2008-09-10  cb6e80e7b58c8b60a39ff889f415c8e9
+
+    09112-0001-Data.dta                 -       1,725     692     2008-09-10  2a18441b7c3e22fcd2b52b9c0ac4e55f
+
+    09112-0001-Data.sav                 -       1,725     692     2008-09-10  481d472281efff86f638cd44a96a4394
+
+    09112-0001-Data.stc                 -       1,725     692     2008-09-10  f44d3bfddb9a439d45d76d3f085f8034
+
+    09112-0001-Data.tsv                 -       1,725     692     2008-09-10  670170b696a2ec8c26a867fbe27cff1d
+
+    09112-0001-Data.txt                 1431    1,725     692     2008-09-10  8be3ae260c70cc98452e918863767d6d
+
+    09112-0001-Setup.dct                -       -         -       2008-09-10  c4f4bae43b66c26e9a5d46c769f0b11c
+
+    09112-0001-Setup.do                 -       -         -       2008-09-10  af66534477004f844f4584ad2779f867
+
+    09112-0001-Setup.sas                -       -         -       2008-09-10  104429f6e2ee0e7ebd0f01cba4fbc3fe
+
+    09112-0001-Setup.sps                -       -         -       2008-09-10  0d7ed046d3162d94eb92ebb2ca4765de
+
+    09112-0001-Supplemental_syntax.do   -       -         -       2008-09-10  e989edd63a45ed87dfb2f1e00ec134c6
+
+    09112-0001-Supplemental_syntax.sas  -       -         -       2008-09-10  b69b0ea12ca0609ae2df434ec8b0129a
+
+
+Version History
+
+2008-09-10 New files were added. These files included one or more of the
+following: Stata setup, SAS transport (CPORT), SPSS system, Stata system,
+SAS supplemental syntax, and Stata supplemental syntax files, and a tab-
+delimited ASCII data file.  Some other minor edits were made to improve the
+data and documentation.

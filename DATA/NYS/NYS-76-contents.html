@@ -1,0 +1,5325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div class="c proctitle">The CONTENTS Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Contents: Variables">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="l b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="l b header" scope="col">Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">CASEID</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">CASE IDENTIFICATION NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">V5</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P1: ETHINICITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">V6</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P2: SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">V7</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P3: MARITAL STATUS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">V8</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P4: RESPONDENT REL. TO YOUTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">V9</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P5: AGE OF RESPONDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">V10</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P6: AGE OF SPOUSE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">V11</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P7: RESPONDENT EDUCATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">V12</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P8: SPOUSE EDUCATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">V13</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P9: PRINCIPAL WAGE EARNER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">V14</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P10: JOB STATUS OF P.W.E.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">V15</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P11: P.W.E. OCCUPATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">V16</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">HOLLINGSHEAD COMPOSITE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">V17</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P14: JOB STATUS OF RESPONDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">V18</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P15: RESPONDENTS OCCUPATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">V19</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P18: FAMILY INCOME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">V20</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P19: PUBLIC ASSISTANCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">V21</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P20: YOUTH IN HOUSE UNDER 18</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">V22</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P21: # YOUTH OLDER THEN RESPO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">V23</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: MOTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">V24</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: STEPMOTHER/FOSTER MOTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">V25</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: FATHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">V26</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: STEPFATHER/FOSTER FATHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">V27</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: OTHER RELATIVES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">V28</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P22: OTHER ADULTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">V29</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: DIVORCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">V30</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: SEPARATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">V31</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: REMARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">V32</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: SERIOUS ILLNESS/DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">V33</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: SERIOUS ACCIDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">V34</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: SUSP/EXP/DROPO./CHILDREN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">V35</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: CHILDREN IN TROUBLE WITH THE LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">V36</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: FATHER UNEMPLOYED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">V37</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: # WEEKS UNEMPLOYED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">V38</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: MOTHER UNEMPLOYED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">V39</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: # WEEKS UNEMPLOYED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">V40</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: CHILDREN CHANGED SCHOOLS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">V41</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: FAMILY MOVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">V42</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: MOTHER MOVE IN OR OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">V43</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: FATHER MOVE IN OR OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">V44</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: OTHER REL. MOVE IN / OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">V45</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P23: OTHER ADULTS MOVE IN/OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">V46</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P24: DESCRIPTION OF HOUSNG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">V47</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P25: LENGTH OF TIME IN NEIGH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">V48</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: VANDALISM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">V49</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: WINOS AND JUNKIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">V50</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: TRAFFIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">V51</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: ABANDONED HOUSES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">V52</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: BURGLARIES AND THEFTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">V53</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: RUN DOWN &amp; POOR BUILDING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">V54</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P26: ASSAULTS AND MUGGINGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">V55</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P27: CHILDREN AFRAID WALK SCH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">V56</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P28: SUCCEED WITHOUT CHEATING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">V57</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P29: BREAK RULES WITH FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">V58</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P30: LIE TO TEACHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">V59</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P31: GOOD IMPRESSION MORE IMP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">V60</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P32: COMPROMISE OK FOR PEACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">V61</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P33: I AM HONEST WITH CHILDREN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">V62</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P34: CHEATING ON TAXES OK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">V63</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P35: LIE TO CHILD FOR RESPECT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">V64</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P36: BREAK PRO TO KEEP OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">V65</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">HOUSEHOLD I.D. #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">V66</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">YOUTH RESPONDENT I.D. #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">V67</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P37: HAVE FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">V68</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P38: HAVE A GOOD JOB AFTER SC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">V69</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P39: BE ON SCHOOL ATHLETIC TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">V70</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P40: SPEND TIME WITH FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">V71</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P41: GO TO COLLEGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">V72</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P42: HAVE SOCIAL ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">V73</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P43: ACTIVITIES AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">V74</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P44: GET MARRIED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">V75</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P45: ACTIVITIES IN COMMUNITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">V76</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P46: HAVE A JOB IN COMMUNITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">V77</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P47: HAVE THEIR OWN FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">V78</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P48: WELL-LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">V79</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P49: NEEDS HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">V80</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P50: BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">V81</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P51: GOOD CITIZEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">V82</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P52: OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">V83</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P53: GETS INTO TROUBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">V84</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P54: GETS ALONG WELL PEOPLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">V85</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P55: BREAKS RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">V86</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P56: HAS PERSONALS PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">V87</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P57: LIKELY TO SUCCEED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">V88</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P58: MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">V89</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P59: DOES THINGS AGAINST LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">V90</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P60: GROUP OF FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">V91</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P61: DO YOU KNOW WHO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">V92</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P62: HAVE INVITED WITH FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">V93</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P63: PARENTS KNOWN PERSONALLY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">V94</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P64: BAD INFLUENCE ON CHILD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">V95</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P65: ARE GOOD STUDENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">V96</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P66: HAVE BROKE THE LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">V97</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P67: GOOD INFLUENCE ON CHILD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">V98</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P68: NICE, CLEAN-CUT KIDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">V99</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P69: TROUBLE WITH AUTHORITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">V100</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P70: ENCOURAGE TIME SPENT KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">V101</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P71: CHEAT ON INCOME TAX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">V102</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P72: STEAL SOMETHING $50 UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">V103</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P73: USE MARIJUANA/HASHISH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">V104</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P74: BE DRUNK IN PUBLIC PLACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">V105</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P75: DAMAGE/DESTROY PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">V106</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P76: STEAL SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">V107</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P77: HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">V108</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P78: BREAK INTO TO STEAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">V109</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P79: SEX OTHER THEN SPOUSE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">V110</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P80: USE HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">V111</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P81: USE MARIJUANA/HASHISH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">V112</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P82: DAMAGE/DESTROY PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">V113</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P83: HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">V114</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P84: USE ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">V115</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P85: STEAL SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">V116</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P86: BREAK INTO TO STEAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">V117</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P87: USE HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">V118</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P88: STEAL SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">V119</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P89: CHEAT ON SCHOOL TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">V120</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P90: SEX OTHER THEN SPOUSE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">V121</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P91: AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">V122</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P92: WITH POLICE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">V123</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P93: IN NEIGHBORHOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">V124</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P94: WITH RUMORS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">V125</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P95: FRIENDLY WITH OTHER RACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">V126</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P96: CHEATED ON SCHOOL TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">V127</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P97: STOLE SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">V128</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P98: RETURNED MONEY/EXTRA CHA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">V129</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P99: USED MARIJUANA/HASHISH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">V130</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P100: STOLE SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="l data">V131</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P101: GAVE TO NEEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="l data">V132</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P102: USED ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="l data">V133</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P103: DAMAGED/DESTROY PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="l data">V134</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P104: BROKE INTO TO STEAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="l data">V135</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P105-P108: RESPONDENT SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="l data">V136</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P105-P108: SPOUSE SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<td class="l data">V137</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P109-P112: RESPONDENT SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<td class="l data">V138</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P109-P112: SPOUSE SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<td class="l data">V139</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P113-P116: RESPONDENT SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<td class="l data">V140</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P113-P116: SPOUSE SCORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<td class="l data">V141</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">OVERALL RES. DISCIPLINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<td class="l data">V142</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">OVERALL SPUOSE DISCIPLIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<td class="l data">V143</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P117: FURTHER EXPLANATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<td class="l data">V144</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P118: INCOME QUESTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<td class="l data">V145</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P118: SEXUAL QUESTIONS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<td class="l data">V146</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P118: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<td class="l data">V147</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P118: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<td class="l data">V148</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P118: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<td class="l data">V149</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. TIME SPENT WITH KIDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<td class="l data">V150</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. ABOUT DISCIPLINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<td class="l data">V151</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. ABOUT EXPRESSION LOVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<td class="l data">V152</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. TALKING/COMMUNICATING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<td class="l data">V153</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. ABOUT RELIGION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<td class="l data">V154</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P119: Q. OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<td class="l data">V155</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P120: UNDERSTANDING P/K RELT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<td class="l data">V156</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO1: RESP. ANXIETY BEFORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<td class="l data">V157</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO2: WAS RESP. HOSTILE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<td class="l data">V158</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO3: RESP. INTEREST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<td class="l data">V159</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: DIFFICULTY WITH LANGUAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<td class="l data">V160</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: DIFFICULTY WITH QUESTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<td class="l data">V161</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: INTERRUPTIONS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<td class="l data">V162</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: TEMPORARY BREAKOFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<td class="l data">V163</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: BREAKOFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<td class="l data">V164</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO4: OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<td class="l data">V165</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO5: RESP. ANXIETY AFTER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<td class="l data">V166</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">P-IO6: ADDITIONAL COMMENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<td class="l data">V167</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-1: SEX MALE/FEMALE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<td class="l data">V168</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-2: ETHNICITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<td class="l data">V169</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-3: AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<td class="l data">V170</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-4: GRADE IN SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<td class="l data">V171</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-5: GRADE POINT AVERAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<td class="l data">V172</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-6: PARTICULAR GROUP FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<td class="l data">V173</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-7: IMPORTANT TO HAVE FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<td class="l data">V174</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-9: AFTERNOONS SPENT FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<td class="l data">V175</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-10: EVENINGS SPENT FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<td class="l data">V176</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-11: TIME WITH FRIENDS WEEKEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<td class="l data">V177</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-12: FRIENDS INFLUENCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<td class="l data">V178</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-13: HOW IMPORTANT FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<td class="l data">V179</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-14: EVENINGS SPENT SOCIAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<td class="l data">V180</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-15: HOW IMPORTANT SOCIAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<td class="l data">V181</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-16: ATTENDED REG. SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<td class="l data">V182</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-17: AFTERNOONS SPENT STUDING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<td class="l data">V183</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-18: EVENINGS SPENT STUDYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<td class="l data">V184</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-19: STUDYING ON WEEKENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<td class="l data">V185</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-20: HOW IMPORTANT SCHOOLWORK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<td class="l data">V186</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-21: MEMBER ATHLETIC TEAMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<td class="l data">V187</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-22: HOW IMPORTANT ATHLETIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<td class="l data">V188</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-23: AFTERNOONS SPENT ATHLETI</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<td class="l data">V189</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-24: EVENINGS SPENT ATHLETIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<td class="l data">V190</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-25: WEEKENDS TIME ATHLETICS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<td class="l data">V191</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-26: HOW IMPORTANT ATHLETICS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<td class="l data">V192</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-27: SCHOOL ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<td class="l data">V193</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-28: HOW IMPORTANT ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<td class="l data">V194</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-29: AFTERNOONS ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<td class="l data">V195</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-30: EVENINGS ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<td class="l data">V196</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-31: WEEKENDS ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<td class="l data">V197</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-32: HOW CLASSMATES SEE YOU</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<td class="l data">V198</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-33: COMMUNITY ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<td class="l data">V199</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-34: HOW IMPORTANT COMM. ACTI</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<td class="l data">V200</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-35: AFTERNOONS COMM ACTIVITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<td class="l data">V201</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-36: EVENINGS COMM ACTIVITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<td class="l data">V202</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-37: WEEKENDS COMM ACTIVITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<td class="l data">V203</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-38: HOW IMPORTANT COMM ACT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<td class="l data">V204</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-39: ANY JOBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">202</th>
+<td class="l data">V205</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-40: HOW IMPORTANT JOBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">203</th>
+<td class="l data">V206</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-41: JOB DESCRIBTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">204</th>
+<td class="l data">V207</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-43: WERE YOU MARRIED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">205</th>
+<td class="l data">V208</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-44: AFTERNOON SPENT FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">206</th>
+<td class="l data">V209</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-45: EVENINGS SPENT FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">207</th>
+<td class="l data">V210</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-46: WEEKENDS SPENT FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">208</th>
+<td class="l data">V211</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-47: IMPORTANCE FAMILY ACTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">209</th>
+<td class="l data">V212</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-48: PARENTS INFLUENCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">210</th>
+<td class="l data">V213</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-49: PARENTS INVOLVE SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">211</th>
+<td class="l data">V214</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-50: PARENTS INVOLVE COMM.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">212</th>
+<td class="l data">V215</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-51: PARENTS INVOLVE FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">213</th>
+<td class="l data">V216</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PSU NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">214</th>
+<td class="l data">V217</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-52: HOW IMPORTANT - FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">215</th>
+<td class="l data">V218</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-52: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">216</th>
+<td class="l data">V219</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-53: HOW IMPORTANT - STUDENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">217</th>
+<td class="l data">V220</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-53: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">218</th>
+<td class="l data">V221</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-54: HOW IMPORTANT - DATES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">219</th>
+<td class="l data">V222</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-54: HOW ARE  YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">220</th>
+<td class="l data">V223</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-55: HOW IMPORTANT - PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">221</th>
+<td class="l data">V224</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-55: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">222</th>
+<td class="l data">V225</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-56: HOW IMPORTANT - SUBJECTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">223</th>
+<td class="l data">V226</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-56: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">224</th>
+<td class="l data">V227</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-57: HOW IMPORTANT - PARTIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">225</th>
+<td class="l data">V228</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-57: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">226</th>
+<td class="l data">V229</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-58: HOW IMPORTANT - COMFORT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">227</th>
+<td class="l data">V230</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-58: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">228</th>
+<td class="l data">V231</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-59: HOW IMPORTANT - SCHOOLWORK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">229</th>
+<td class="l data">V232</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-59: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">230</th>
+<td class="l data">V233</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-60: HOW IMPORTANT - BF / GF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">231</th>
+<td class="l data">V234</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-60: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">232</th>
+<td class="l data">V235</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-61: HOW IMPORTANT - PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">233</th>
+<td class="l data">V236</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-61: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">234</th>
+<td class="l data">V237</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-62: HOW IMPORTANT - TEACHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">235</th>
+<td class="l data">V238</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-62: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">236</th>
+<td class="l data">V239</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-63: HOW IMPORTANT - FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">237</th>
+<td class="l data">V240</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-63: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">238</th>
+<td class="l data">V241</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-64: HOW IMPORTANT - GPA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">239</th>
+<td class="l data">V242</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-64: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">240</th>
+<td class="l data">V243</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-65: HOW IMPORTANT - GET ALONG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">241</th>
+<td class="l data">V244</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-65: HOW ARE YOU DOING?</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">242</th>
+<td class="l data">V245</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-66: GOOD JOB OR CAREER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">243</th>
+<td class="l data">V246</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-67: GOING TO COLLEGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">244</th>
+<td class="l data">V247</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-68: GETTING MARRIED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">245</th>
+<td class="l data">V248</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-69: HAVING CHILDREN OF OWN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">246</th>
+<td class="l data">V249</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-70: GETTING JOB YOU D LIKE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">247</th>
+<td class="l data">V250</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-71: COMPLETING COLLEGE DEG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">248</th>
+<td class="l data">V251</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-72: NOT INCLUDED S ACTIVITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">249</th>
+<td class="l data">V252</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-73: DONT FIT IN WITH FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">250</th>
+<td class="l data">V253</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-74: TEACHERS DONT CALL ON ME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">251</th>
+<td class="l data">V254</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-75: OUTSIDER WITH FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">252</th>
+<td class="l data">V255</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-76: NOBODY AT SCHOOL CARES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">253</th>
+<td class="l data">V256</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-77: FRIENDS DONT TAKE INTER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">254</th>
+<td class="l data">V257</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-78: FAMILY LISTENS TO PROBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">255</th>
+<td class="l data">V258</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-79: FEEL CLOSE TO FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">256</th>
+<td class="l data">V259</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-80: FEEL LONELY WITH FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">257</th>
+<td class="l data">V260</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-81: DONT BELONG AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">258</th>
+<td class="l data">V261</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-82: FRIENDS LISTEN TO PROBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">259</th>
+<td class="l data">V262</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-83: FEEL LONELY AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">260</th>
+<td class="l data">V263</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-84: NO PROJECT WORK FROM TEC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">261</th>
+<td class="l data">V264</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-85: FEEL CLOSE TO FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">262</th>
+<td class="l data">V265</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-86: FEEL LONELY WITH FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">263</th>
+<td class="l data">V266</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-87: FAMILY NOT INTERESTED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">264</th>
+<td class="l data">V267</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-88: IMPORTANT TO BE HONEST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">265</th>
+<td class="l data">V268</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-89: LIE TO AVOID TROUBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">266</th>
+<td class="l data">V269</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-90: BREAK RULES WITH  FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">267</th>
+<td class="l data">V270</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-91: GOOD IMPRESSION/ FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">268</th>
+<td class="l data">V271</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-92: PLAY DIRTY TO WIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">269</th>
+<td class="l data">V272</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-93: LYING OK TO HELP FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">270</th>
+<td class="l data">V273</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-94: GOOD IMPRESSION/ PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">271</th>
+<td class="l data">V274</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-95: BEAT KIDS UP FOR GOOD IM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">272</th>
+<td class="l data">V275</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-96: CAN SUCCEED SCHOOL NO CH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">273</th>
+<td class="l data">V276</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-97: BREAK RULES TO BE POPULA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">274</th>
+<td class="l data">V277</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-98: LIE TO KEEP TRUST PARENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">275</th>
+<td class="l data">V278</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-99: DOING OWN WORK IMPORTANT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">276</th>
+<td class="l data">V279</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-100: BREAK PARENTS RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">277</th>
+<td class="l data">V280</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-101: GOOD IMPRESSION/TEACHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">278</th>
+<td class="l data">V281</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-102: PARENTS - WELL-LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">279</th>
+<td class="l data">V282</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-103: PARENTS - NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">280</th>
+<td class="l data">V283</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-104: PARENTS - BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">281</th>
+<td class="l data">V284</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-105: PARENTS - OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">282</th>
+<td class="l data">V285</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-106: PARENTS - GOOD CITIZEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">283</th>
+<td class="l data">V286</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-107: PARENTS - GET ALONG WELL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">284</th>
+<td class="l data">V287</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-108: PARENTS - MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">285</th>
+<td class="l data">V288</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-109: PARENTS - BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">286</th>
+<td class="l data">V289</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-110: PARENTS - PERSONAL PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">287</th>
+<td class="l data">V290</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-111: PARENTS - GET INTO TROUBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">288</th>
+<td class="l data">V291</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-113: PARENTS - BREAK THE LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">289</th>
+<td class="l data">V292</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-114: FRIENDS - WELL-LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">290</th>
+<td class="l data">V293</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-115: FRIENDS - NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">291</th>
+<td class="l data">V294</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-116: FRIENDS - BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">292</th>
+<td class="l data">V295</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-117: FRIENDS - OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">293</th>
+<td class="l data">V296</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-118: FRIENDS - GET ALONG WELL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">294</th>
+<td class="l data">V297</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-119: FRIENDS - MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">295</th>
+<td class="l data">V298</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-120: FRIENDS - BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">296</th>
+<td class="l data">V299</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-121: FRIENDS - PERSONAL PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">297</th>
+<td class="l data">V300</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-122: FRIENDS - GET INTO TROUBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">298</th>
+<td class="l data">V301</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-123: FRIENDS - LIKELY TO SUCCEED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">299</th>
+<td class="l data">V302</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-124: FRIENDS - BREAK THE LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">300</th>
+<td class="l data">V303</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-125: TEACHERS - WELL LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">301</th>
+<td class="l data">V304</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-126: TEACHERS - NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">302</th>
+<td class="l data">V305</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-127: TEACHERS - BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">303</th>
+<td class="l data">V306</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-128: TEACHERS - OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">304</th>
+<td class="l data">V307</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-129: TEACHERS - GOOD CITIZEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">305</th>
+<td class="l data">V308</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-130: TEACHERS - GET ALONG WELL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">306</th>
+<td class="l data">V309</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-131: TEACHERS - MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">307</th>
+<td class="l data">V310</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-132: TEACHERS - BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">308</th>
+<td class="l data">V311</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-133: TEACHERS - PERSONAL PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">309</th>
+<td class="l data">V312</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-134: TEACHERS - GET INTO TROUBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">310</th>
+<td class="l data">V313</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-135: TEACHERS - LIKELY TO SUCCEED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">311</th>
+<td class="l data">V314</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-136: TEACHERS - DO THINGS AGAINST LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">312</th>
+<td class="l data">V315</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-137: PARENTS - KEPT PROMISES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">313</th>
+<td class="l data">V316</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-138: PARENTS - CHEATED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">314</th>
+<td class="l data">V317</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-139: PARENTS - STOLE SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">315</th>
+<td class="l data">V318</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-140: PARENTS - FRIENDLY WITH DIFF RACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">316</th>
+<td class="l data">V319</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-141: PARENTS - SOLD HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">317</th>
+<td class="l data">V320</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-142: PARENTS - RETURNED MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">318</th>
+<td class="l data">V321</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-143: PARENTS - USED MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">319</th>
+<td class="l data">V322</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-144: PARENTS - STOLE SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">320</th>
+<td class="l data">V323</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-145: PARENTS - HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">321</th>
+<td class="l data">V324</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-146: PARENTS - GAVE TO THE NEEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">322</th>
+<td class="l data">V325</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-147: PARENTS - USED ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">323</th>
+<td class="l data">V326</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-148: PARENTS - DID A FAVOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">324</th>
+<td class="l data">V327</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-149: PARENTS - DESTROYED PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">325</th>
+<td class="l data">V328</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-150: PARENTS - BROKE INTO A VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">326</th>
+<td class="l data">V329</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-151: FRIENDS - KEPT PROMISES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">327</th>
+<td class="l data">V330</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-152: FRIENDS - CHEATED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">328</th>
+<td class="l data">V331</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-153: FRIENDS - STOLE SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">329</th>
+<td class="l data">V332</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-154: FRIENDS - FRIENDLY WITH DIFF RACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">330</th>
+<td class="l data">V333</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-155: FRIENDS - SOLD HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">331</th>
+<td class="l data">V334</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-156: FRIENDS - RETURNED MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">332</th>
+<td class="l data">V335</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-157: FRIENDS - USED MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">333</th>
+<td class="l data">V336</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-158: FRIENDS - STOLE SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">334</th>
+<td class="l data">V337</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-159: FRIENDS - HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">335</th>
+<td class="l data">V338</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-160: FRIENDS - GAVE TO NEEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">336</th>
+<td class="l data">V339</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-161: FRIENDS - USED ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">337</th>
+<td class="l data">V340</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-162: FRIENDS - DID A FAVOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">338</th>
+<td class="l data">V341</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-163: FRIENDS - DESTROYED PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">339</th>
+<td class="l data">V342</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-164: FRIENDS - BROKE INTO VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">340</th>
+<td class="l data">V343</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-165: MOTHER - SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">341</th>
+<td class="l data">V344</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-165: FATHER - SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">342</th>
+<td class="l data">V345</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-165: FRIENDS - SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">343</th>
+<td class="l data">V346</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-166: MOTHER - POLICE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">344</th>
+<td class="l data">V347</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-166: FATHER - POLICE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">345</th>
+<td class="l data">V348</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-166: FRIENDS - POLICE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">346</th>
+<td class="l data">V349</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-167: MOTHER - NEIGHBORHOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">347</th>
+<td class="l data">V350</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-167: FATHER - NEIGHBORHOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">348</th>
+<td class="l data">V351</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-167: FRIENDS - NEIGHBORHOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">349</th>
+<td class="l data">V352</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-168: MOTHER - RUMORS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">350</th>
+<td class="l data">V353</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-168: FATHER - RUMORS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">351</th>
+<td class="l data">V354</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-168: FRIENDS - RUMORS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">352</th>
+<td class="l data">V355</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-169: WHICH PARENT DISCIPLINES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">353</th>
+<td class="l data">V356</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-170: CHEAT ON SCHOOL TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">354</th>
+<td class="l data">V357</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-171: DESTROY PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">355</th>
+<td class="l data">V358</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-172: USE MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">356</th>
+<td class="l data">V359</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-173: STEAL SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">357</th>
+<td class="l data">V360</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-174: HIT SONEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">358</th>
+<td class="l data">V361</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-175: USE ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">359</th>
+<td class="l data">V362</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-176: BREAK INTO VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">360</th>
+<td class="l data">V363</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-177: SELL HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">361</th>
+<td class="l data">V364</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-178: STEAL SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">362</th>
+<td class="l data">V365</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-179: CHEATED ON SCHOOL TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">363</th>
+<td class="l data">V366</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-180: DESTROYED PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">364</th>
+<td class="l data">V367</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-181: USED MARJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">365</th>
+<td class="l data">V368</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-182: STOLE SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">366</th>
+<td class="l data">V369</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-183: HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">367</th>
+<td class="l data">V370</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-184: USED ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">368</th>
+<td class="l data">V371</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-185: BROKE INTO VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">369</th>
+<td class="l data">V372</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-186: SOLD HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">370</th>
+<td class="l data">V373</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-187: STOLEN SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">371</th>
+<td class="l data">V374</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-188: SUGG. YOU BREAK THE LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">372</th>
+<td class="l data">V375</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-189: STILL RUN AROUND THEM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">373</th>
+<td class="l data">V376</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-190: TRY TO STOP THEM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">374</th>
+<td class="l data">V377</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-191: WILLING TO LIE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">375</th>
+<td class="l data">V378</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-192: FREQUENCY DAMAGE FAMILY PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">376</th>
+<td class="l data">V379</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-192: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">377</th>
+<td class="l data">V380</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-193: FREQUENCY DAMAGE SCHOOL PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">378</th>
+<td class="l data">V381</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-193: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">379</th>
+<td class="l data">V382</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-194: FREQUENCY DAMAGE OTHER PROPERTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">380</th>
+<td class="l data">V383</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-194: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">381</th>
+<td class="l data">V384</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-195: FREQUENCY STEAL VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">382</th>
+<td class="l data">V385</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-195: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">383</th>
+<td class="l data">V386</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-196: FREQUENCY STEAL SOMETHING $50 MORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">384</th>
+<td class="l data">V387</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-196: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">385</th>
+<td class="l data">V388</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-197: FREQUENCY BUY / SOLD STOLEN GOODS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">386</th>
+<td class="l data">V389</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-197: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">387</th>
+<td class="l data">V390</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-198: FREQUENCY FOUND AND RETURNED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">388</th>
+<td class="l data">V391</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-198: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">389</th>
+<td class="l data">V392</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-199: FREQUENCY THROWN OBJECTS AT CARS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">390</th>
+<td class="l data">V393</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-199: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">391</th>
+<td class="l data">V394</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-200: FREQUENCY RUN AWAY HOME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">392</th>
+<td class="l data">V395</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-200: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">393</th>
+<td class="l data">V396</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-201: FREQUENCY LIED ABOUT AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">394</th>
+<td class="l data">V397</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-201: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">395</th>
+<td class="l data">V398</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-202: FREQUENCY CARRIED WEAPON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">396</th>
+<td class="l data">V399</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-202: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">397</th>
+<td class="l data">V400</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-203: FREQUENCY STEAL SOMETHING $5 LESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">398</th>
+<td class="l data">V401</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-203: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">399</th>
+<td class="l data">V402</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-204: FREQUENCY ATTACKED SOMEONE TO HURT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">400</th>
+<td class="l data">V403</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-204: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">401</th>
+<td class="l data">V404</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-205: FREQUENCY PAID FOR SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">402</th>
+<td class="l data">V405</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-205: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">403</th>
+<td class="l data">V406</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-206: FREQUENCY SEX OUTSIDE OF MARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">404</th>
+<td class="l data">V407</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-206: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">405</th>
+<td class="l data">V408</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-207: FREQUENCY GANG FIGHTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">406</th>
+<td class="l data">V409</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-207: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">407</th>
+<td class="l data">V410</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-208: FREQUENCY SOLD MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">408</th>
+<td class="l data">V411</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-208: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">409</th>
+<td class="l data">V412</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-209: FREQUENCY CHEATED ON SCHOOL TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">410</th>
+<td class="l data">V413</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-209: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">411</th>
+<td class="l data">V414</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-210: FREQUENCY HITCHHIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">412</th>
+<td class="l data">V415</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-210: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">413</th>
+<td class="l data">V416</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-210: FREQUENCY HELPED SICK / HURT PERSON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">414</th>
+<td class="l data">V417</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-211: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">415</th>
+<td class="l data">V418</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-211: FREQUENCY STOLEN FROM FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">416</th>
+<td class="l data">V419</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-212: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">417</th>
+<td class="l data">V420</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-212: FREQUENCY HIT A TEACHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">418</th>
+<td class="l data">V421</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-213: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">419</th>
+<td class="l data">V422</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-214: FREQUENCY HIT A PARENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">420</th>
+<td class="l data">V423</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-214: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">421</th>
+<td class="l data">V424</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-215: FREQUENCY HIT A STUDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">422</th>
+<td class="l data">V425</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-215: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">423</th>
+<td class="l data">V426</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-216: FREQUENCY DISORDERLY CONDUCT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">424</th>
+<td class="l data">V427</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-216: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">425</th>
+<td class="l data">V428</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-217: FREQUENCY SOLD HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">426</th>
+<td class="l data">V429</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-217: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">427</th>
+<td class="l data">V430</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-218: FREQUENCY JOY RIDE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">428</th>
+<td class="l data">V431</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-218: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">429</th>
+<td class="l data">V432</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-219: FREQUENCY BUY LIQOUR FOR MINOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">430</th>
+<td class="l data">V433</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-219: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">431</th>
+<td class="l data">V434</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-220: FREQUENCY GAVE TO THE NEEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">432</th>
+<td class="l data">V435</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-220: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">433</th>
+<td class="l data">V436</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-221: FREQUENCY FORCE SEXUAL RELATIONS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">434</th>
+<td class="l data">V437</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-221: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">435</th>
+<td class="l data">V438</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-222: FREQUENCY STRONG-ARM STUDENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">436</th>
+<td class="l data">V439</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-222: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">437</th>
+<td class="l data">V440</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-223: FREQUENCY STRONG-ARM TEACHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">438</th>
+<td class="l data">V441</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-223: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">439</th>
+<td class="l data">V442</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-224: FREQUENCY REFUSED TO CHEAT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">440</th>
+<td class="l data">V443</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-224: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">441</th>
+<td class="l data">V444</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-225: FREQUENCY STRONG-ARM OTHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">442</th>
+<td class="l data">V445</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-225: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">443</th>
+<td class="l data">V446</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-226: FREQUENCY AVOIDED PAYING FOR STUFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">444</th>
+<td class="l data">V447</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-226: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">445</th>
+<td class="l data">V448</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-227: FREQUENCY DRUNK IN PUBLIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">446</th>
+<td class="l data">V449</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-227: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">447</th>
+<td class="l data">V450</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-228: FREQUENCY STOLE BETWEEN $5 AND $50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">448</th>
+<td class="l data">V451</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-228: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">449</th>
+<td class="l data">V452</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-229: FREQUENCY STOLE AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">450</th>
+<td class="l data">V453</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-229: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">451</th>
+<td class="l data">V454</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-230: FREQUENCY BROKEN INTO BUILDING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">452</th>
+<td class="l data">V455</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-230: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">453</th>
+<td class="l data">V456</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-231: FREQUENCY BEGGED FOR MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">454</th>
+<td class="l data">V457</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-231: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">455</th>
+<td class="l data">V458</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-232: FREQUENCY SKIPPED CLASSES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">456</th>
+<td class="l data">V459</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-232: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">457</th>
+<td class="l data">V460</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-233: FREQUENCY FAIL RETURN EXTRA CHANGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">458</th>
+<td class="l data">V461</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-233: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">459</th>
+<td class="l data">V462</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-234: FREQUENCY TELL FRIENDS NO BREAK LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">460</th>
+<td class="l data">V463</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-234: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">461</th>
+<td class="l data">V464</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-235: FREQUENCY SUSPENDED FROM SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">462</th>
+<td class="l data">V465</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-235: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">463</th>
+<td class="l data">V466</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-236: FREQUENCY MADE OBSCENE PHONECALLS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">464</th>
+<td class="l data">V467</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-236: RATE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">465</th>
+<td class="l data">V468</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-237: THINGS TAKEN FROM YOU</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">466</th>
+<td class="l data">V469</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-238: BEATEN UP BY PARENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">467</th>
+<td class="l data">V470</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-239: MOTOR VEHICLE/BIKE STOLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">468</th>
+<td class="l data">V471</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-240: THINGS TAKEN FROM CAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">469</th>
+<td class="l data">V472</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-241: THINGS DAMAGED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">470</th>
+<td class="l data">V473</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-242: THINGS STOLE PUBLIC PLAC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">471</th>
+<td class="l data">V474</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-243: SEXUALLY ATTACKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">472</th>
+<td class="l data">V475</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-244: ATTACKED WITH WEAPON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">473</th>
+<td class="l data">V476</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-245: BEATEN UP BY OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">474</th>
+<td class="l data">V477</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-246: HOW OFTEN USED ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">475</th>
+<td class="l data">V478</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-246: INITIAL USE ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">476</th>
+<td class="l data">V479</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-247: HOW OFTEN USED MARJ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">477</th>
+<td class="l data">V480</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-247: INITIAL USE MARJ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">478</th>
+<td class="l data">V481</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-248: HOW OFTEN USED HALL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">479</th>
+<td class="l data">V482</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-248: INITIAL USE HALL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">480</th>
+<td class="l data">V483</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-249: HOW OFTEN USED AMPH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">481</th>
+<td class="l data">V484</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-249: INITIAL USE AMPH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">482</th>
+<td class="l data">V485</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-249: MEDICAL PRESCRIPTION AMPH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">483</th>
+<td class="l data">V486</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-250: HOW OFTEN USED BARBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">484</th>
+<td class="l data">V487</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-250: INITIAL USE BARBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">485</th>
+<td class="l data">V488</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-250: MEDICAL PRESCRIPTION BARBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">486</th>
+<td class="l data">V489</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-251: HOW OFTEN USED HEROIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">487</th>
+<td class="l data">V490</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-251: INITIAL USE HEROIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">488</th>
+<td class="l data">V491</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-251: MODE OF ADMIN HEROIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">489</th>
+<td class="l data">V492</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-252: HOW OFTEN USED COKE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">490</th>
+<td class="l data">V493</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-252: INITIAL USE COKE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">491</th>
+<td class="l data">V494</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-252: MODE OF ADMIN COKE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">492</th>
+<td class="l data">V495</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-253: FURTHER EXPLANATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">493</th>
+<td class="l data">V496</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-254: DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">494</th>
+<td class="l data">V497</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data" nowrap>Y1-254: SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">495</th>
+<td class="l data">V498</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-254: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">496</th>
+<td class="l data">V499</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-254: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">497</th>
+<td class="l data">V500</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-254: SPECIFIC ITEM NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">498</th>
+<td class="l data">V501</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">499</th>
+<td class="l data">V502</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. DRUGS/ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">500</th>
+<td class="l data">V503</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">501</th>
+<td class="l data">V504</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">502</th>
+<td class="l data">V505</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">503</th>
+<td class="l data">V506</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-255: Q. OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">504</th>
+<td class="l data">V507</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-256: UNDERSTANDING OF YOU</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">505</th>
+<td class="l data">V508</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO1: RESPONDENTS ANXIETY BEFO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">506</th>
+<td class="l data">V509</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO2: WAS RESPONDENT HOSTILE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">507</th>
+<td class="l data">V510</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO3: RESPONDENTS INTEREST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">508</th>
+<td class="l data">V511</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: DIFFICULTY WITH LANGUAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">509</th>
+<td class="l data">V512</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: DIFFICULTY WITH QUESTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">510</th>
+<td class="l data">V513</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: INTERRUPTIONS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">511</th>
+<td class="l data">V514</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: TEMPORARY BREAKOFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">512</th>
+<td class="l data">V515</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: BREAKOFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">513</th>
+<td class="l data">V516</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO4: OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">514</th>
+<td class="l data">V517</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO5: RESPONDENTS ANXIETY AFTE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">515</th>
+<td class="l data">V518</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">Y1-IO6: ADDITIONAL COMMENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">516</th>
+<td class="l data">V519</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">SMSA CODE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">517</th>
+<td class="l data">V520</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PLACE CODE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">518</th>
+<td class="l data">V521</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PLACE SIZE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">519</th>
+<td class="l data">V522</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">NYS URBAN/SUB/RURAL CODE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

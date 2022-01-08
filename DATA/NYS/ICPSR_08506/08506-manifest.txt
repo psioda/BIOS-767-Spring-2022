@@ -1,0 +1,59 @@
+File Manifest for ICPSR 8506
+
+Elliott, Delbert S. National Youth Survey [United States]:  Wave III, 1978.
+ICPSR08506-v2. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2008-09-10.
+http://doi.org/10.3886/ICPSR08506.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08506-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    08506-related_literature.txt        -       -         -       daily       -
+
+    08506-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]:  Wave III, 1978
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08506-0001-Codebook.pdf             -       -         -       2008-09-10  cfeb13e31db3e21580dd822889a87fd6
+
+    08506-0001-Data.dta                 -       1,725     793     2008-09-10  97295931e154342365f6b4bd27bdea3d
+
+    08506-0001-Data.sav                 -       1,725     793     2008-09-10  b11c66618e2b6fe5bbf46a60f0ee7cc7
+
+    08506-0001-Data.stc                 -       1,725     793     2008-09-10  3709b66c2d20b34e295716570a186c77
+
+    08506-0001-Data.tsv                 -       1,725     793     2008-09-10  6649f5f4244c82496adab6085175ffab
+
+    08506-0001-Data.txt                 1636    1,725     793     2008-09-10  8081d3eaaf7d8e26b44990fe8df3f433
+
+    08506-0001-Setup.dct                -       -         -       2008-09-10  2534386444f3a7aa6a1df78df5def609
+
+    08506-0001-Setup.do                 -       -         -       2008-09-10  dbfe719780173a088533e4cd24ece7e9
+
+    08506-0001-Setup.sas                -       -         -       2008-09-10  a3c01bc2457c4da99561f73f96eeb78f
+
+    08506-0001-Setup.sps                -       -         -       2008-09-10  c99c2b9b18fc08845c27f285e6c9ecc3
+
+    08506-0001-Supplemental_syntax.do   -       -         -       2008-09-10  ea5695054730bdcea5c610d0a47412e5
+
+    08506-0001-Supplemental_syntax.sas  -       -         -       2008-09-10  5bdcb7fea69e5da791787144dcd84533
+
+
+Version History
+
+2008-09-10 New files were added. These files included one or more of the
+following: Stata setup, SAS transport (CPORT), SPSS system, Stata system,
+SAS supplemental syntax, and Stata supplemental syntax files, and a tab-
+delimited ASCII data file.  Some other minor edits were made to improve the
+data and documentation.

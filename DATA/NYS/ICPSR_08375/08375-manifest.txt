@@ -1,0 +1,62 @@
+File Manifest for ICPSR 8375
+
+Elliott, Delbert S. National Youth Survey [United States]:  Wave I, 1976.
+ICPSR08375-v2. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2008-08-01.
+http://doi.org/10.3886/ICPSR08375.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08375-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    08375-related_literature.txt        -       -         -       daily       -
+
+    08375-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]:  Wave I, 1976
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08375-0001-Codebook.pdf             -       -         -       2008-08-01  3be563608e3cb871401952cf55dcc6ce
+
+    08375-0001-Data.dta                 -       1,725     519     2008-08-01  ab4a29957abf117db3fd6ce0ad60e752
+
+    08375-0001-Data.sav                 -       1,725     519     2008-08-01  db96342fde98a84a426bd37f40ce760f
+
+    08375-0001-Data.stc                 -       1,725     519     2008-08-01  08bf60691b0ded0d7adbe67207ca0aa0
+
+    08375-0001-Data.tsv                 -       1,725     519     2008-08-01  91746aeffe21d41250cafd126ba35d7c
+
+    08375-0001-Data.txt                 655     1,725     519     2008-08-01  f754fbf2d58c02baafc9d48f8ed25279
+
+    08375-0001-Setup.dct                -       -         -       2008-08-01  9f0181d8e543d48ea2ed5ec75370fca5
+
+    08375-0001-Setup.do                 -       -         -       2008-08-01  e5172458b1a13fa0fe16f2f32233ad79
+
+    08375-0001-Setup.sas                -       -         -       2008-08-01  d4ec2e9e4ef7a3f0b89ed1ab657c4c55
+
+    08375-0001-Setup.sps                -       -         -       2008-08-01  dda32cd87c2c65998bbd4993217e5277
+
+    08375-0001-Supplemental_syntax.do   -       -         -       2008-08-01  2f0992074b161d263d45159af915c085
+
+    08375-0001-Supplemental_syntax.sas  -       -         -       2008-08-01  6734c59b47d7cd20c174f74ae56b9fab
+
+
+Version History
+
+2008-08-01 New files were added. These files included one or more of the
+following: Stata setup, SAS transport (CPORT), SPSS system, Stata system,
+SAS supplemental syntax, and Stata supplemental syntax files, and a tab-
+delimited ASCII data file.  2005-11-04  On 2005-03-14 new files were added
+to one or  more datasets.  These files included additional setup files as
+well as one or more of the following: SAS  program, SAS transport, SPSS
+portable, and Stata system files. The  metadata record was revised  2005-
+11-04 to reflect these additions.

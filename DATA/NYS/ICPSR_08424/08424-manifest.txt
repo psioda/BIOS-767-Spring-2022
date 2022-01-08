@@ -1,0 +1,59 @@
+File Manifest for ICPSR 8424
+
+Elliott, Delbert S. National Youth Survey [United States]:  Wave II, 1977.
+ICPSR08424-v2. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2008-08-26.
+http://doi.org/10.3886/ICPSR08424.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08424-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    08424-related_literature.txt        -       -         -       daily       -
+
+    08424-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]:  Wave II, 1977
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08424-0001-Codebook.pdf             -       -         -       2008-08-26  b33f8632dcd124f40fa1e960156dfe6d
+
+    08424-0001-Data.dta                 -       1,725     863     2008-08-26  ac60f5060609f8cce92dd633483f5d96
+
+    08424-0001-Data.sav                 -       1,725     863     2008-08-26  dad7e6b793add1b0c8d0d6955f961ef2
+
+    08424-0001-Data.stc                 -       1,725     863     2008-08-26  d9e8e9ddeb8c54f11174d366ccb4016c
+
+    08424-0001-Data.tsv                 -       1,725     863     2008-08-26  094d35e7051bf4c5b820a2f905b71f5c
+
+    08424-0001-Data.txt                 1758    1,725     863     2008-08-26  df9592fb9097a5c44cdc466b42335bf6
+
+    08424-0001-Setup.dct                -       -         -       2008-08-26  b99f10a2b000361787ab953448693d76
+
+    08424-0001-Setup.do                 -       -         -       2008-08-26  8a4a9d3ebcb8e2aba63bf55d1f50e146
+
+    08424-0001-Setup.sas                -       -         -       2008-08-26  f1240c8bb9ba4cb15d19367f44eff6bf
+
+    08424-0001-Setup.sps                -       -         -       2008-08-26  35b29e52a91948b6c172280dc313e458
+
+    08424-0001-Supplemental_syntax.do   -       -         -       2008-08-26  01365e69db93955f28b809d293e747c6
+
+    08424-0001-Supplemental_syntax.sas  -       -         -       2008-08-26  0fc906df30f7d7d76c35d3ffdf1c3691
+
+
+Version History
+
+2008-08-26 New files were added. These files included one or more of the
+following: Stata setup, SAS transport (CPORT), SPSS system, Stata system,
+SAS supplemental syntax, and Stata supplemental syntax files, and a tab-
+delimited ASCII data file.  Some other minor edits were made to improve the
+data and documentation.

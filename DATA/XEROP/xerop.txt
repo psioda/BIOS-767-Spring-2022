@@ -1,0 +1,21 @@
+THE FOLLOWING DESCRIBES THE COLUMNS of  xerop.dat:
+
+	ID                                                          
+	respiratory infection                                       
+	intercept                                                   
+	age in months                                               
+	xerophthalmia                                               
+	cos(time)                                                   
+	sin(time)                                                   
+	sex                                                         
+	height for age                                               
+	stunted?                                                    
+	time                                                        
+	baseline age
+	season                                                
+	time*time
+
+REFERENCE:  Zeger and Karim, JASA (1991)
+
+
+

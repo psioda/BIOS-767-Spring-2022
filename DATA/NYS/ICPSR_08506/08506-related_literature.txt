@@ -1,0 +1,1157 @@
+Bibliography
+National Youth Survey [United States]:  Wave III, 1978
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 8506. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. 
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+icpsr-biblio-notify@umich.edu 
+
+
+1. Abeling-Judge, David, "Temporal consideration of the marriage effect."
+Journal of Developmental and Life-Course Criminology. Jun 2018, 4, (2), 188
+- 208. DOI: 10.1007/s40865-018-0081-1
+
+2. Adams, Mike S., "Labeling and differential association: Toward a general
+social learning theory of crime and deviance." American Journal of Criminal
+Justice. Spr 1996, 20, (2), 147 - 164. DOI: 10.1007/BF02886923
+
+3. Ageton, Suzanne S., "A Research Report for Adults Who Work with
+Teenagers: Facts about Sexual Assault." Rockville, MD: National Institute
+of Mental Health, National Center for the Control and Prevention of Rape,
+1985.
+
+4. Ageton, Suzanne S., "A Research Report for Teenagers: Facts about Sexual
+Assault." Rockville, MD: National Institute of Mental Health, National
+Center for the Control and Prevention of Rape, 1985.
+
+5. Ageton, Suzanne S., Sexual Assault among Adolescents. Lexington, MA:
+Lexington Books/D. C. Heath and Company, 1983.
+
+6. Ageton, Suzanne S., "The Dynamics of Female Delinquency, 1976-1980."
+Criminology. Nov 1983, 21, (4), 555 - 584. DOI: 10.1111/j.1745-
+9125.1983.tb00280.x NCJ 092522 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+7. Agnew, Robert, "Determinism, indeterminism, and crime: An empirical
+exploration." Criminology. Feb 1995, 33, (1), 83 - 109. DOI:
+10.1111/j.1745-9125.1995.tb01172.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+8. Agnew, Robert, "The Techniques of Neutralization and Violence."
+Criminology. Nov 1994, 32, (4), 555 - 580. DOI: 10.1111/j.1745-
+9125.1994.tb01165.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+9. Armstrong, Todd A.; Lee, Daniel R.; Armstrong, Gaylene S., "An
+assessment of scales measuring constructs in tests of criminological theory
+based on National Youth Survey data." Journal of Research in Crime and
+Delinquency. Feb 2009, 46, (1), 73 - 105. DOI: 10.1177/0022427808326588
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+10. Auerbach, Karen J., "Alcohol and Marijuana Use Across the Transition to
+Marriage: Group Differences and Psychosocial Factors." Dissertation,
+Pennsylvania State University, 2008.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+11. Bartolucci, Francesco, "Likelihood inference for a class of latent
+Markov models under linear hypotheses on the transition probabilities."
+Journal of the Royal Statistical Society Series B-Statistical Methodology.
+Apr 2006, 68, (2), 155 -. DOI: 10.1111/j.1467-9868.2006.00538.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=92522
+
+12. Bartusch, Dawn Jeglum; Matsueda, Ross L., "Gender, reflected
+appraisals, and labeling: A cross-group test of an interactionist theory of
+delinquency." Social Forces. 1996, 75, (1), 145 - 176.
+Full text: http://www.jstor.org/stable/2580760
+
+13. Bensyl, Diana Miller, "Differences in pregnancy outcome for substance
+users and non-users." Dissertation, University of Texas Graduate School of
+Biomedical Science at Galveston, 1999.
+Full text: http://www.jstor.org/stable/2580760
+
+14. Bergsma, Wicher; Croon, Marcel A.; Hagenaars, Jacques A., Marginal
+Models for Dependent, Clustered, and Longitudinal Categorical Data.
+Statistics for Social and Behavioral Sciences Series. New York, NY:
+Springer Science+Business Media, LLC, 2009. DOI: 10.1007/978-0-387-09610-0
+Full text: http://www.jstor.org/stable/2580760
+
+15. Bergsma, Wicher; van der Ark, Andries, "Categorical marginal models:
+Quite extensive package for the estimation of marginal models for
+categorical data." Comprehensive R Archive Network, marginal models.
+London: London School of Economics and Political Science, LSE Research
+Online, 2015..
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+16. Boardman, Jason D.; Menard, Scott; Roettger, Michael E.; Knight, Kelly
+E.; Boutwell, Brian B.; Smolen, Andrew, "Genes in the dopaminergic system
+and delinquent behaviors across the life course: The role of social
+controls and risks." Criminal Justice and Behavior. Jun 2014, 41, (6), 713
+- 731. DOI: 10.1177/0093854813514227
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+17. Boele, Savannah; Denissen, Jaap; Moopen, Neha; Keijsers, Loes, "Over-
+time fluctuations in parenting and adolescent adaptation within families: A
+systematic review." Adolescent Research Review. 2019, 12, (1), 42 - 66.
+DOI: 10.1007/s40894-019-00127-9
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+18. Bosick, Stacey J., "Operationalizing crime over the life course." Crime
+and Delinquency. Feb 2008,. DOI: 10.1177/0011128707307223 82-IJ-CX-0011;
+82-IJ-CX-0063
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+19. Brauer, Jonathan R., "Testing social learning theory using
+reinforcement's residue: A multilevel analysis of self-reported theft and
+marijuana use in the National Youth Survey." Criminology. Aug 2009, 47,
+(3), 929 - 970. DOI: 10.1111/j.1745-9125.2009.00164.x 1982-IJ-CX-0011;
+1983-IJ-CX-0063;
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+20. Brauer, Jonathan R.; De Coster, Stacy, "Social relationships and
+delinquency: Revisiting parent and peer influence during adolescence."
+Youth and Society. May 2015, 47, (3), 374 - 394. DOI:
+10.1177/0044118X12467655
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+21. Brezina, Timothy; Agnew, Robert; Cullen, Francis T.; Wright, John Paul,
+"The code of the street: A quantitative assessment of Elijah Anderson’s
+subculture of violence thesis and its contribution to youth violence
+research." Youth Violence and Juvenile Justice. Oct 2004, 2, (4), 303 -
+328. DOI: 10.1177/1541204004267780
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+22. Bushway, Shawn David, "The Impact of a Criminal History Record on
+Access to Legitimate Employment." Dissertation, Carnegie-Mellon University,
+1996.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+23. Cagnone, Silvia; Viroli, Cinzia, "Multivariate latent variable
+transition models of longitudinal mixed data: An analysis on alcohol use
+disorder." Journal of the Royal Statistical Society, Series C: Applied
+Statistics. 2018,. DOI: 10.1111/rssc.12285
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+24. Canter, Rachelle J., "Sex Differences in Self-Report Delinquency." The
+Dynamics of Delinquent Behavior: A National Survey. 10, Boulder, CO:
+Behavioral Research Institute, 1980.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+25. Chesney-Lind, Meda, "Girls in jail." Crime and Delinquency. Apr 1988,
+34, (2), 150 - 168. DOI: 10.1177/0011128788034002003
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+26. Cooper, Danielle Jamilla, "Gendered Social Bonds and Gender Ideologies:
+Understanding the Gender Gap in Delinquency." Thesis, North Carolina State
+University, 2004.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+27. Coster, Stacy D.; Lutz, Jennifer, "Reconsidering labels and primary
+deviance: False appraisals, reflected appraisals, and delinquency onset."
+Journal of Research in Crime and Delinquency. In press 2018,. DOI:
+10.1177/0022427818771437
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+28. Couture, Heather L., "Criminal Onset in Emerging Adulthood."
+Dissertation, University of Maryland, College Park, 2009.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+29. Craven, Diane, "Criminal Careers: The Role of the Adolescent Peer
+Group." Dissertation, University of Colorado-Boulder, 1987.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+30. DeLisi, Matt; Regoli, Bob, "Race, conventional crime, and criminal
+justice: The declining importance of skin color." Journal of Criminal
+Justice. 1999, 27, (6), 549 - 557. DOI: 10.1016/S0047-2352(99)00025-2
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+31. Demuth, Stephen, "Understanding the delinquency and social
+relationships of loners." Youth and Society. Mar 2004, 35, (3), 366 - 392.
+DOI: 10.1177/0044118X03255027 NCJ 204279
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+32. Derzon, James H., "A Meta-Analysis of the Efficacy of Various
+Antecedent Behaviors, Characteristics, and Experiences for Predicting Later
+Violent Behavior." Dissertation, Claremont Graduate University, 1996.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+33. Desmond, Scott A., "Religiosity, peers, and delinquency: Does
+religiosity reduce the effect of peers on delinquency?." Sociological
+Spectrum. Nov/Dec 2011, 31, (6), 665 - 694. DOI:
+10.1080/02732173.2011.606725
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+34. Desmond, Scott A.; Kraus, Rachel, "The effects of importance of
+religion and church attendance on adolescents' moral beliefs." Sociological
+Focus. 2014, 47, (1), 11 - 31. DOI: 10.1080/00380237.2014.853282
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+35. Desmond, Scott A.; Soper, Sarah E.; Purpura, David J.; Smith,
+Elizabeth, "Religiosity, moral beliefs, and delinquency: Does the effect of
+religiosity on delinquency depend on moral beliefs?." Sociological
+Spectrum. 2009, 29, (1), 51 - 71. DOI: 10.1080/02732170802480527
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+36. Dobrin, Adam; Wiersma, Brian; Loftin, Colin; McDowall, David,
+Statistical Handbook on Violence in America. Phoenix: Oryx Press, 1996.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+37. Dryfoos, Joy G., Adolescents at Risk: Prevalence and Prevention. New
+York, NY: Oxford University Press, 1990.
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+38. Duncan, Susan C.; Duncan, Terry E.; Strycker, Lisa A., "Qualitative and
+quantitative shifts in adolescent problem behavior development: A cohort-
+sequential multivariate latent growth modeling approach." Journal of
+Psychopathology and Behavioral Assessment. Mar 2001, 23, (1), 43 - 50. DOI:
+10.1023/A:1011091523808
+Full text: http://eprints.lse.ac.uk/61309/
+Full text PDF: http://eprints.lse.ac.uk/61309/1/Bergsma_cmm.pdf
+
+39. Dunford, Franklyn W.; Elliott, Delbert S., "Identifying career
+offenders using self-reported data." Journal of Research in Crime and
+Delinquency. Feb 1984, 21, (1), 57 - 86. DOI: 10.1177/0022427884021001004
+NCJ 093362 82-IJ-CX-0011; 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=93362
+
+40. Eassey, John M.; Gibson, Chris L.; Krohn, Marvin D., "Using a group-
+based trajectory approach to assess risk and protective factors of
+marijuana use." Journal of Drug Issues. 2014,. DOI:
+10.1177/0022042614542508
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=93362
+
+41. Elliot, Delbert S.; Huizinga, David; Menard, Scott, "Developmental
+patterns." In Multiple Problem Youth: Delinquency, Substance Use, and
+Mental Health Problems. Research in Criminology. 118 - 136, New York, NY:
+Springer,1989. DOI: 10.1007/978-1-4613-9637-6_5
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119540
+
+42. Elliott, D.S.; Ageton, S.S.; Huizinga, D., "1978 Self-Reported
+Delinquency Estimates by Sex, Race, Class and Age." Project Report No. 9,
+The National Youth Survey. NCJ 75502, Boulder, CO: Behavioral Research
+Institute, Sep 1979. 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=75502
+Full text PDF: https://www.ncjrs.gov/pdffiles1/Digitization/75502NCJRS.pdf
+
+43. Elliott, Delbert S., "Serious violent offenders: Onset, developmental
+course, and termination--The American Society of Criminology 1993
+Presidential Address." Criminology. Feb 1994, 32, (1), 1 - 21. DOI:
+10.1111/j.1745-9125.1994.tb01144.x NCJ 147913 82-IJ-CX-0011; 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=147913
+
+44. Elliott, Delbert S.; Ageton, Suzanne S.; Huizinga, David; Knowles, B.;
+Canton, R., "The Prevalence and Incidence of Delinquent Behavior." 26,
+Boulder, CO: Behavioral Research Institute, 1983.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=147913
+
+45. Elliott, Delbert S.; Ageton, Suzanne S.; Huizinga, David; Knowles,
+Brian A.; Canter, Rachelle J. , "Prevalence and Incidence of Delinquent
+Behavior: 1976-1980. National Estimates of Delinquent Behavior by Sex,
+Race, Social Class and Other Selected Variables." National Youth Survey
+Report No. 26. NCJ 128841, Boulder, CO: Behavioral Research Institute, Mar
+1983. 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=128841
+Full text PDF: https://www.ncjrs.gov/pdffiles1/Digitization/128841NCJRS.pdf
+
+46. Elliott, Delbert S.; Dunford, Franklyn W.; Huizinga, David, "The
+identification and prediction of career offenders utilizing self-reported
+and official data." In Burchard, John D.; Burchard, Sara, Prevention of
+Criminal Behavior. 90 - 121, Newbury Park, CA: Sage,1987. NCJ 112844 82-IJ-
+CX-0011; 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=112844
+
+47. Elliott, Delbert S.; Huizinga, David, "Social Class and Delinquent
+Behavior in a National Youth Panel: 1976-1980." Criminology. May 1983, 21,
+(2), 149 - 177. DOI: 10.1111/j.1745-9125.1983.tb00256.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=112844
+
+48. Elliott, Delbert S.; Huizinga, David, "The Relationship Between
+Delinquent Behavior and ADM Problems." Boulder, CO: Behavioral Research
+Institute, 1984.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=112844
+
+49. Elliott, Delbert S.; Huizinga, David; Ageton, Suzanne S., Explaining
+Delinquency and Drug Use. Beverly Hills: Sage, 1985.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=112844
+
+50. Elliott, Delbert S.; Huizinga, David; Menard, Scott, Multiple Problem
+Youth: Delinquency, Substance Use, and Mental Health Problems. Research in
+Criminology. New York: Springer Verlag, 1989. 78-JN-AX-0003; 83-IJ-CX-0063
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119536
+
+51. Elliott, Delbert S.; Huizinga, David; Menard, Scott, "Prediction of
+delinquent and ADM behavior from other delinquent and ADM behavior." In
+Multiple Problem Youth: Delinquency, Substance Use, and Mental Health
+Problems. Research in Criminology. 169 - 190, New York, NY: Springer,1989.
+DOI: 10.1007/978-1-4613-9637-6_7
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+52. Elliott, Delbert S.; Knowles, Brian A.; Canter, Rachelle J., "The
+Epidemiology of Delinquent Behavior and Drug Use Among American
+Adolescents, 1976-1978. A Report of the National Youth Survey." NCJ 84931,
+Boulder, CO: Behavioral Research Institute,.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+53. Elliott, Delbert S.; Morse, Barbara J., "Delinquency and drug use as
+risk factors in teenage sexual activity." Youth and Society. 1989, 21, (1),
+32 - 60. DOI: 10.1177/0044118X89021001002
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+54. Esbensen, Finn-Aage; Elliott, Delbert S., "Continuity and Discontinuity
+in Illicit Drug-Use: Patterns and Antecedents." Journal of Drug Issues. Win
+1994, 24, (1-2), 75 - 97.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+55. Esther, Joseph L., "Predictions of Juvenile Recidivism Using Self-
+Reported Data." Thesis, California State University, Fullerton, 1996.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+56. Evenson, Ranae Jo, "Reflected Self-esteem, Identity, and Mental Health
+in Adolescence." Dissertation, Vanderbilt University, 2006.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+57. Farrington, David P.; Welsh, Brandon C., Saving Children From a Life of
+Crime: Early Risk Factors and Effective Interventions. New York, NY: Oxford
+University Press, 2007.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+58. Fitch, Chivon H., "Shaming, Criminal Offending, and Conformity: The
+Role of Gender Processes." Dissertation, Kent State University, 2014.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+59. Ford, Jason A., "Substance use, the social bond, and delinquency."
+Sociological Inquiry. Feb 2005, 75, (1), 109 - 128. DOI: 10.1111/j.1475-
+682X.2005.00114.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+60. Ford, Jason A., "The connection between heavy drinking and juvenile
+delinquency during adolescence." Sociological Spectrum. Nov-Dec 2005, 25,
+(6), 629 - 650. DOI: 10.1080/02732170500256609
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+61. Ford, Jason A.; Schroeder, Ryan D., "Higher education and criminal
+offending over the life course." Sociological Spectrum. Jan/Feb 2011, 31,
+(1), 32 - 58. DOI: 10.1080/02732173.2011.525695
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+62. Fraser, Mark; Norman, Michael, "Chronic juvenile delinquency and the
+'suppression effect': An exploratory study." Journal of Offender
+Counseling, Services and Rehabilitation. 1988, 13, (1), 55 - 73. DOI:
+10.1300/J264v13n01_06
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+63. Gorman-Smith, Deborah; Loeber, Rolf , "Are developmental pathways in
+disruptive behaviors the same for girls and boys?." Journal of Child and
+Family Studies. Mar 2005,  14, (1), 15 -. DOI: 10.1007/s10826-005-1109-9
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+64. Gunnison, E.; Mazerolle, P., "Desistance from serious and not so
+serious crime: A comparison of psychosocial risk factors." Criminal Justice
+Studies. 2007, 20, (3), 231 - 253. DOI: 10.1080/14786010701617649
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+65. Gunnison, Elaine, "Desistance from criminal offending: Exploring gender
+similarities and differences." Criminology, Criminal Justice, Law and
+Society. 2014, 15, (3), 75 - 95.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+66. Gunnison, Elaine, "Investigating life course offender subgroup
+heterogeneity: An exploratory latent class analysis approach." Women and
+Criminal Justice. 2015, 25, (4), 223 - 240. DOI:
+10.1080/08974454.2014.989300
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+67. Harrell, E., Criminal Justice: Recent Scholarship. New York, NY: LFB
+Scholarly Publishing LLC, 2007.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+68. Hartjen, Clayton A.; Kethineni, Sesha, Comparative Delinquency: India
+and the United States. New York: Garland Press, 1996.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+69. Hartjen, Clayton A.; Kethineni, Sesha, "Exploring the etiology of
+delinquency across country and gender." Journal of Crime and Justice. 1999,
+22, (2), 55 - 90. DOI: 10.1080/0735648X.1999.9721095
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+70. Hartjen, Clayton A.; Kethineni, Sesharajani, "Culture, gender, and
+delinquency: A study of youths in the United States and India." Women and
+Criminal Justice. 1993, 5, (1), 37 - 69. DOI: 10.1300/J012v05n01_03
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+71. Hawkins, J.D.; Herrenkohl, Todd; Farrington, David P.; Brewer, Devon;
+Catalano, Richard F.; Harachi, Tracy W., "A review of predictors of youth
+violence." In Serious and Violent Juvenile Offenders: Risk Factors and
+Successful Interventions. 106 - 146, Thousand Oaks, CA: SAGE
+Publications,1999. DOI: 10.4135/9781452243740.n7
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+72. Hayes, Hennessey D., "Using integrated theory to explain the movement
+into juvenile delinquency." Deviant Behavior. Apr/Jun 1997, 18, (2), 161 -
+184. DOI: 10.1080/01639625.1997.9968051
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+73. Hayes, Hennessey Duane, "From Good to Bad: An Examination of the
+Movement into Juvenile Delinquency." Dissertation, Tulane University, 1994.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=119542
+
+74. Heimer, Karen, "Gender, interaction, and delinquency: Testing a theory
+of differential social control." Social Psychology Quarterly. Mar 1996, 59,
+(1), 39 - 61.
+Full text: http://www.jstor.org/stable/2787118
+
+75. Heimer, Karen, "Socioeconomic Status, Subcultural Definitions, and
+Violent Delinquency." Social Forces. Mar 1997, 75, (3), 799 - 833.
+Full text: http://www.jstor.org/stable/2580520
+
+76. Heimer, Karen ; De Coster, Stacy, "The gendering of violent
+delinquency." Criminology. May 1999, 37, (2), 277 - 317. DOI:
+10.1111/j.1745-9125.1999.tb00487.x
+Full text: http://www.jstor.org/stable/2580520
+
+77. Heimer, Karen Valinda, "Sex, Interaction, and Delinquency."
+Dissertation, University of Wisconsin-Madison, 1989.
+Full text: http://www.jstor.org/stable/2580520
+
+78. Heimer, Karen; Matsueda, Ross L., "Role-taking, role commitment, and
+delinquency: A theory of differential social control." American
+Sociological Review. 1994, 59, (3), 365 - 390.
+Full text: http://www.jstor.org/stable/2095939
+
+79. Hoffmann, J.P., "The effects of family-structure and family-relations
+on adolescent marijuana use." International Journal of the Addictions.
+1995, 30, (10), 1207 - 1241.
+Full text: http://www.jstor.org/stable/2095939
+
+80. Hoffmann, John P., "Exploring the direct and indirect family effects on
+adolescent drug use." Journal of Drug Issues. Sum 1993, 23, (3), 535 - 557.
+Full text: http://www.jstor.org/stable/2095939
+
+81. Hoffmann, John P., "Investigating the age effects of family structure
+on adolescent marijuana use." Journal of Youth and Adolescence. Apr 1994,
+23, (2), 215 - 235. DOI: 10.1007/BF01537446
+Full text: http://www.jstor.org/stable/2095939
+
+82. Hoffmann, John P., "The effects of family structure and family
+relations on adolescent marijuana use." International Journal of the
+Addictions. Aug 1995, 30, (10), 1207 - 1241.
+Full text: http://www.jstor.org/stable/2095939
+
+83. Houck, Michelle Nadine, "Understanding Delinquency: A Theory of
+Adolescent Attachments." Thesis, Baylor University, 1996.
+Full text: http://www.jstor.org/stable/2095939
+
+84. Hsieh, C.A.; von Eye, A.A.; Maier, K.S., "Using a multivariate
+multilevel polytomous item response theory model to study parallel
+processes of change: The dynamic association between adolescents' social
+isolation and engagement with delinquent peers in the National Youth
+Survey." Multivariate Behavioral Research. May 2010, 45, (3), 508 - 552.
+DOI: 10.1080/00273171.2010.483387
+Full text: http://www.jstor.org/stable/2095939
+
+85. Huizinga, D.H.; Elliott, D.S., "A Longitudinal Study of Drug Use and
+Delinquency in a National Sample of Youth: An Assessment of Causal Order."
+Project Report No. 16, The National Youth Survey. NCJ 84818, Boulder, CO:
+Behavioral Research Institute, Jun 1981. 78-JN-AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=84818
+Full text PDF: https://www.ncjrs.gov/pdffiles1/Digitization/84818NCJRS.pdf
+
+86. Huizinga, David H.; Menard, Scott; Elliott, Delbert S., "Delinquency
+and drug use: Temporal and developmental patterns." Justice Quarterly. Sep
+1989, 6, (3), 419 - 455. DOI: 10.1080/07418828900090281 NCJ 120851 78-JN-
+AX-0003
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+87. Huizinga, David; Elliott, Delbert S., "Juvenile offenders: Prevalence,
+offender incidence, and arrest rates by race." Crime and Delinquency. Apr
+1987, 3, (2), 206 - 223.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+88. Imai, Susumu; Katayama, Hajime; Krishna, Kala, "Crime and Young Men:
+The Role of Arrest, Criminal Experience, and Heterogeneity." NBER Working
+Papers. 12221, Cambridge, MA: 2006.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+89. Iovanni, LeeAnn, "Age, Cohort and Period Differences in the Effect of
+Social Control, Social Learning and Strain Variables on Self-Reported
+Delinquency." Dissertation, University of Maryland, College Park, 1990.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+90. Jang, Sung Joon, "Age-varying effects of family, school, and peers on
+delinquency: A multilevel modeling test of interactional theory."
+Criminology. Aug 1999, 37, (3), 643 - 685. DOI: 10.1111/j.1745-
+9125.1999.tb00499.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+91. Jang, Sung Joon, "Different definitions, different modeling decisions,
+and different interpretations: A rejoinder to Lauritsen." Criminology. Aug
+1999, 37, (3), 695 - 702. DOI: 10.1111/j.1745-9125.1999.tb00501.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+92. Jang, Sung Joon, "The effects of family, school, peers, and attitudes
+on adolescents' drug use: Do they vary with age?." Justice Quarterly. Mar
+2002, 19, (1), 97 - 126. DOI: 10.1080/07418820200095181
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+93. Jang, Sung Joon; Johnson, Byron R., "Neighborhood disorder, individual
+religiosity, and adolescent use of illicit drugs: A test of multilevel
+hypotheses." Criminology. Feb 2001, 39, (1), 109 - 143. DOI:
+10.1111/j.1745-9125.2001.tb00918.x
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+94. Johnson, Byron R.; Jang, Sung Joon; Larson, David B.; Li, Spencer De,
+"Does adolescent religious commitment matter?  A reexamination of the
+effects of religiosity on delinquency." Journal of Research in Crime and
+Delinquency. 2001, 38, (1), 22 - 44. DOI: 10.1177/0022427801038001002
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+95. Johnson, Matthew C.; Menard, Scott, "A longitudinal study of
+delinquency abstention: Differences between life-course abstainers and
+offenders from adolescence into adulthood." Youth Violence and Juvenile
+Justice. 2012, 10, (3), 278 - 291. DOI: 10.1177/1541204011427714
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+96. Junger-Tas, Josine; Marshall, Ineka Haen, "The self-report methodology
+in crime research." In Tonry, Michael, Crime and Justice: A Review of
+Research. 291 - 367, Chicago, IL: University of Chicago Press,1999.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+97. Kethineni, Sesha Rajani K., "Delinquency and Substance Abuse in India
+and the United States: A Test of Strain, Control, and Social Learning
+Perspectives." Dissertation, Rutgers University-Newark, 1991.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+98. Kim, Young S.; Lo, Celia C., "Short- and mid-term effects of violent
+victimization on delinquency: A multilevel growth-curve modeling approach."
+Journal of Interpersonal Violence. in press 2015,. DOI:
+10.1177/0886260515580368
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+99. King, Ryan D.; Massoglia, Michael; MacMillan, Ross, "The context of
+marriage and crime: Gender, the propensity to marry, and offending in early
+adulthood." Criminology. Feb 2007, 45, (1), 33 - 65. DOI: 10.1111/j.1745-
+9125.2007.00071.x 82-IJ-CX-0011; 83-IJ-CX-0063
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+100. King, Ryan D.; South, Scott J., "Crime, race, and the transition to
+marriage." Journal of Family Issues. 2011, 32, (1), 99 - 126. DOI:
+10.1177/0192513X10375059
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+101. Knight, Kelly E.; Ellis, Colter; Roark, Jennifer; Henry, Kimberly L.;
+Huizinga, Henry; Huizinga, David, "Testing the role of aspirations, future
+expectations, and strain on the development of problem behaviors across
+young and middle adulthood." Deviant Behavior. 2017, 38, (12), 1456 - 1473.
+DOI: 10.1080/01639625.2016.1206716
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+102. Knight, Kelly E.; Menard, Scott; Simmons, Sara B., "Intergenerational
+continuity of substance use." Substance Use and Misuse. Feb 2014, 49, (3),
+221 - 233. DOI: 10.3109/10826084.2013.824478
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+103. Kobayashi, Kyoko, "Itsudatsukodo to shakaiteki kizuna no tsuyosa no
+kankei ni tsuite -- sogosayoteki kenchi karano kento (The relationship
+between delinquent behavior and social bonds, from the standpoint of
+interaction theory)." Japanese Journal of Criminal Psychology. 1993, 31,
+(1), 39 - 48.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+104. Koita, Kiyofumi; Triplett, Ruth A., "An examination of gender and race
+effects on the parental appraisal process: A reanalysis of Matsueda's model
+of the self." Criminal Justice and Behavior. Sep 1998, 25, (3), 382 - 400.
+DOI: 10.1177/0093854898025003006
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=120851
+
+105. Krisberg, Barry; Schwartz, Ira M.; Fishman, Gideon; Eisikovits, Zvi;
+Guttman, Edna; Joe, Karen, "The incarceration of minority youth." Crime and
+Delinquency. Apr 1987, 33, (2), 173 - 205. NCJ 101961
+Abstract: http://www.ncjrs.gov/App/publications/abstract.aspx?ID=101961
+
+106. Lackey, Chad , "Violent family heritage, the transition to adulthood,
+and later partner violence." Journal of Family Issues. Jan 2003, 24, (1),
+74 -. DOI: 10.1177/0192513X02238521
+Abstract: http://www.ncjrs.gov/App/publications/abstract.aspx?ID=101961
+
+107. Lang, J.B.; McDonald, J.W.; Smith, P.W.F., "Association-marginal
+modeling of multivariate categorical responses: A maximum likelihood
+approach." Journal of the American Statistical Association. Dec 1999, 94,
+(448), 1161 - 1171.
+Full text: http://www.jstor.org/stable/2669932
+
+108. Lauritsen, Janet L., "Limitations in the use of longitudinal self-
+report data: A comment." Criminology. 1999, 37, (3), 687 - 694. DOI:
+10.1111/j.1745-9125.1999.tb00500.x
+Full text: http://www.jstor.org/stable/2669932
+
+109. Lauritsen, Janet L., "The age-crime debate: Assessing the limits of
+longitudinal self-report data." Social Forces. Sep 1998, 77, (1), 127 -
+154.
+Full text: http://www.jstor.org/stable/3006012
+
+110. Lauritsen, Janet L.; Laub, John H.; Sampson, Robert J., "Conventional
+and delinquent activities: Implications for the prevention of violent
+victimization among adolescents." Violence and Victims. 1992, 7, (2), 91 -
+108.
+Full text: http://www.jstor.org/stable/3006012
+
+111. Lauritsen, Janet L.; Quinet, Kenna F. Davis, "Repeat victimization
+among adolescents and young adults." Journal of Quantitative Criminology.
+1995, 11, (2), 143 - 166. DOI: 10.1007/BF02221121
+Full text: http://www.jstor.org/stable/3006012
+
+112. Lauritsen, Janet L.; Sampson, Robert J.; Laub, John H., "The Link
+Between Offending and Victimization among Adolescents." Criminology. May
+1991, 29, (2), 265 - 292. DOI: 10.1111/j.1745-9125.1991.tb01067.x
+Full text: http://www.jstor.org/stable/3006012
+
+113. Lauritsen, Janet L.; Swicegood, C. Gray, "The consistency of self-
+reported initiation of sexual activity." Family Planning Perspectives. Sep
+1997, 29, (5), 215 - 221.
+Full text: http://www.jstor.org/stable/2953398
+
+114. Lawrence, Richard, "School performance, peers and delinquency
+implications for juvenile justice." Juvenile and Family Court Journal.
+1991, 42, (3), 59 - 69. DOI: 10.1111/j.1755-6988.1991.tb00895.x
+Full text: http://www.jstor.org/stable/2953398
+
+115. Lee, Gang, "Social Structure and Social Learning in Adolescent
+Delinquency and Substance Use: A Test of the Mediating Process of Social
+Learning Theory." Dissertation, University of Florida, 1998.
+Full text: http://www.jstor.org/stable/2953398
+
+116. Lee, Joongyeup; Menard, Scott; Bouffard, Lena A., "Extending
+interactional theory: The labeling dimension." Deviant Behavior. Jan 2014,
+35, (1), 1 - 19. DOI: 10.1080/01639625.2013.822208
+Full text: http://www.jstor.org/stable/2953398
+
+117. Li, Yonghai, "Likelihood Analysis of the Multivariate Ordinal Probit
+Model for Repeated and Spatial Ordered Categorical Responses."
+Dissertation, Ohio State University, 2007.
+Full text: http://www.jstor.org/stable/2953398
+
+118. Lipsey, Mark W.; Derzon, James H., "Predictors of violent or serious
+delinquency in adolescence and early adulthood: A synthesis of longitudinal
+research." In Serious and Violent Juvenile Offenders: Risk Factors and
+Successful Interventions. 86 - 105, Thousand Oaks, CA: SAGE
+Publications,1999. DOI: 10.4135/9781452243740.n6
+Full text: http://www.jstor.org/stable/2953398
+
+119. Liu, Xiaoru, "The Moderating Influence of Peer Group on the
+Relationship between Negative Social Relations and Adolescent Delinquency."
+Association Paper. American Sociological Association, 1999.
+Full text: http://www.jstor.org/stable/2953398
+
+120. Liu, Xiaoru R., "The Conditional Effect of Peer Groups on the
+Relationship Between Parental Labeling and Youth Delinquency." Sociological
+Perspectives. Fal 2000, 43, (3), 499 - 514.
+Full text: http://www.jstor.org/stable/1389540
+
+121. Lo, Celia C.; Cheng, Tyrone C., "The impact of childhood maltreatment
+on young adults' substance abuse." American Journal of Drug and Alcohol
+Abuse. 2007, 33, (1), 139 - 146. DOI: 10.1080/00952990601091119
+Full text: http://www.jstor.org/stable/1389540
+
+122. Lo, Celia C.; Kim, Young S.; Church, Wesley T., "The effects of
+victimization on drug use: A multilevel analysis." Substance Use and
+Misuse. 2008, 43, (10), 1340 - 1361. DOI: 10.1080/10826080801922157
+Full text: http://www.jstor.org/stable/1389540
+
+123. MacMillan, Ross, "Adolescent victimization and income deficits in
+adulthood: Rethinking the costs of criminal violence from a life-course
+perspective." Criminology. 2000, 38, (2), 553 - 587. DOI: 10.1111/j.1745-
+9125.2000.tb00899.x
+Full text: http://www.jstor.org/stable/1389540
+
+124. Macmillan, Ross; Hagan, John, "Violence in the transition to
+adulthood: Adolescent victimization, education, and socioeconomic
+attainment in later life." Journal of Research on Adolescence. Jun 2004,
+14, (2), 127 - 158. DOI: 10.1111/j.1532-7795.2004.01402001.x
+Full text: http://www.jstor.org/stable/1389540
+
+125. Manasse, Michelle; Rebellon, Cesar J., "Do 'Bad Boys' Really Get the
+Girls? Delinquency as a Cause and Consequence of Dating Behavior Among
+Adolescents." Justice Quarterly. Jun 2004, 21, (2), 355 - 389.
+Full text: http://www.jstor.org/stable/1389540
+
+126. Matsueda, Ross L., "Reflected Appraisals, Parental Labeling, and
+Delinquency: Specifying a Symbolic Interactionist Theory." American Journal
+of Sociology. May 1992, 97, (6), 1577 - 1611. DOI: 10.1086/229940
+Full text: http://www.jstor.org/stable/1389540
+
+127. Matsueda, Ross L.; Anderson, Kathleen, "The dynamics of delinquent
+peers and delinquent behavior." Criminology. May 1998, 36, (2), 269 - 308.
+DOI: 10.1111/j.1745-9125.1998.tb01249.x
+Full text: http://www.jstor.org/stable/1389540
+
+128. Mazerolle, Paul, "Delinquent definitions and participation age:
+Assessing the invariance hypothesis." Studies on Crime and Crime
+Prevention. 1997, 6, (2), 151 - 168.
+Full text: http://www.jstor.org/stable/1389540
+
+129. Mazerolle, Paul Joseph, "Toward a Theoretical and Empirical
+Understanding of Late Onset to Delinquent Behavior." Dissertation,
+University of Maryland, College Park, 1995.
+Full text: http://www.jstor.org/stable/1389540
+
+130. McDermott, Shaun; Nagin, Daniel S., "Same or different?  Comparing
+offender goups and covariates over time." Sociological Methods and
+Research. Feb 2001, 29, (3), 282 - 318. DOI: 10.1177/0049124101029003002
+Full text: http://www.jstor.org/stable/1389540
+
+131. Mears, Daniel P.; Ploeger, Matthew; Warr, Mark, "Explaining the gender
+gap in delinquency: Peer influence and moral evaluations of behavior."
+Journal of Research in Crime and Delinquency. Aug 1998, 35, (3), 251 - 266.
+DOI: 10.1177/0022427898035003001
+Full text: http://www.jstor.org/stable/1389540
+
+132. Menard, Scott, "A developmental test of Mertonian anomie theory."
+Journal of Research in Crime and Delinquency. May 1995, 32, (2), 136 - 174.
+DOI: 10.1177/0022427895032002002
+Full text: http://www.jstor.org/stable/1389540
+
+133. Menard, Scott, "Demographic and theoretical variables in the age-
+period-cohort analysis of illegal behavior." Journal of Research in Crime
+and Delinquency. May 1992, 29, (2), 178 - 199. DOI:
+10.1177/0022427892029002005
+Full text: http://www.jstor.org/stable/1389540
+
+134. Menard, Scott, "Short-term trends in crime and delinquency: A
+comparison of UCR, NCS, and self-report data.." Justice Quarterly. 1987, 4,
+(3), 455 - 474. DOI: 10.1080/07418828700089451
+Full text: http://www.jstor.org/stable/1389540
+
+135. Menard, Scott, "The 'normality' of repeat victimization from
+adolescence through early adulthood." Justice Quarterly. Sep 2000, 17, (3),
+543 - 574. DOI: 10.1080/07418820000094661
+Full text: http://www.jstor.org/stable/1389540
+
+136. Menard, Scott; Elliott, Delbert S., "Delinquent bonding, moral
+beliefs, and illegal behavior: A three-wave panel model." Justice
+Quarterly. Jun 1994, 11, (2), 173 - 188. DOI: 10.1080/07418829400092211
+Full text: http://www.jstor.org/stable/1389540
+
+137. Menard, Scott; Elliott, Delbert S., "Longitudinal and cross-sectional
+data collection and analysis in the study of crime and delinquency."
+Justice Quarterly. 1990, 7, (1), 11 - 55. DOI: 10.1080/07418829000090461
+Full text: http://www.jstor.org/stable/1389540
+
+138. Menard, Scott; Elliott, Delbert S., "Self-reported offending,
+maturational reform, and the Easterlin hypothesis." Journal of Quantitative
+Criminology. Sep 1990, 6, (3), 237 - 267.
+Full text: http://www.jstor.org/stable/1389540
+
+139. Menard, Scott; Huizinga, David, "Age, period, and cohort size effects
+on self-reported alcohol, marijuana, and polydrug use: Results from the
+National Youth Survey." Social Science Research. Jun 1989, 18, (2), 174 -
+194. DOI: 10.1016/0049-089X(89)90018-5
+Full text: http://www.jstor.org/stable/1389540
+
+140. Menard, Scott; Huizinga, David, "Changes in conventional attitudes and
+delinquent behavior in adolescence." Youth and Society. 1994, 26, (1), 23 -
+53. DOI: 10.1177/0044118X94026001002
+Full text: http://www.jstor.org/stable/1389540
+
+141. Menard, Scott; Mihalic, Sharon, "The tripartite conceptual framework
+in adolescence and adulthood: Evidence from a national sample." Journal of
+Drug Issues. Fal 2001, 31, (4), 905 - 940. DOI: 10.1177/002204260103100406
+Full text: http://www.jstor.org/stable/1389540
+
+142. Menard, Scott; Pollock, Wendi, "Self reports of being falsely accused
+of criminal behavior." Deviant Behavior. 2014, 35, (5), 378 - 393. DOI:
+10.1080/01639625.2014.855096
+Full text: http://www.jstor.org/stable/1389540
+
+143. Mihalic, Sharon W.; Elliott, Delbert, "A social learning theory model
+of marital violence." Journal of Family Violence. Mar 1997, 12, (1), 21 -
+47. DOI: 10.1023/A:1021941816102 NCJ 165187
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+144. Mihalic, Sharon Wofford; Elliott, Delbert S., "Short- and long-term
+consequences of adolescent work." Youth and Society. Jun 1997, 28, (4), 464
+- 498. DOI: 10.1177/0044118X97028004004
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+145. Miller, Todd Q.; Volk, Robert J., "Family relationships and adolescent
+cigarette smoking: Results from a national longitudinal survey." Journal of
+Drug Issues. Sum 2003, 32, (3), 945 - 972. DOI: 10.1177/002204260203200314
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+146. Miyazaki, Yasuo; Raudenbush, Stephen W., "Tests for linkage of
+multiple cohorts in an accelerated longitudinal design." Psychological
+Methods. Mar 2000, 5, (1), 44 - 63. DOI: 10.1037/1082-989X.5.1.44
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+147. Morse, Barbara J., "Beyond the conflict tactics scale: Assessing
+gender differences." Violence and Victims. 1995, 10, (4), 251 - 272.
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+148. Morse, Barbara Jean, "Self-Reported Juvenile Violent Offenders and
+Their Offending Careers: A Descriptive Analysis." Dissertation, University
+of Colorado at Boulder, 1986.
+Abstract: https://www.ncjrs.gov/app/publications/abstract.aspx?id=165187
+
+149. Myers, Samuel L., "Does violence beget violence? Impacts of childhood
+abuse on juvenile violence." International Journal of Environmental
+Research and Public Health. Apr 2013,.
+Full text PDF: https://d1wqtxts1xzle7.cloudfront.net/63614151/DOES_VIOLENCE_BEGET_VIOLENCE__APRIL_201320200613-120015-y2rq5o.pdf?1592032955=&response-content-disposition=inline%3B+filename%3DDoes_Violence_Beget_Violence_Impacts_of.pdf&Expires=1592840951&Signature=cnO57T0xHwN5iIP7J90Tv5sh6BnACwCX~IvHgT4YVIgGIUiYj5kC67I2VsBvbjG-ybkdqb-KrBBzXWti18ZxDac2S9ZXDMXWFP-O5~hcyTMf-uHxXgJzYNDDIbKsKToGSgrbRnol0Tfid3Tfsbt~K16JD7H4U3LMVDesL84syiZb5xAk-N5dPkJ~kBlGeexZlTKmDFiNgCicqGvDicADG0PQ8Gjln4T-j2WVazxTeFIJC4t1UjJAyM0dHqb3ZxVFGlNCnHqbD0leTZv-qJSo9OUjGOSrIl5P3psVpySTrVg5pOXbCct1HWMEmMHsEDuA3B26afwbcPEwhvNDJVpC2w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+
+150. Nash, James K.; Kim, Jong Sung, "Patterns of change over time in
+beliefs legitimizing agression in adolescents and young adults: Risk
+trajectories and their relationship with serious aggression." Social Work
+Research. Dec 2007, 31, (4), 231 - 240. DOI: 10.1093/swr/31.4.231
+Full text PDF: https://d1wqtxts1xzle7.cloudfront.net/63614151/DOES_VIOLENCE_BEGET_VIOLENCE__APRIL_201320200613-120015-y2rq5o.pdf?1592032955=&response-content-disposition=inline%3B+filename%3DDoes_Violence_Beget_Violence_Impacts_of.pdf&Expires=1592840951&Signature=cnO57T0xHwN5iIP7J90Tv5sh6BnACwCX~IvHgT4YVIgGIUiYj5kC67I2VsBvbjG-ybkdqb-KrBBzXWti18ZxDac2S9ZXDMXWFP-O5~hcyTMf-uHxXgJzYNDDIbKsKToGSgrbRnol0Tfid3Tfsbt~K16JD7H4U3LMVDesL84syiZb5xAk-N5dPkJ~kBlGeexZlTKmDFiNgCicqGvDicADG0PQ8Gjln4T-j2WVazxTeFIJC4t1UjJAyM0dHqb3ZxVFGlNCnHqbD0leTZv-qJSo9OUjGOSrIl5P3psVpySTrVg5pOXbCct1HWMEmMHsEDuA3B26afwbcPEwhvNDJVpC2w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+
+151. Nash, James; Kim, Jong Sung, "Trajectories of Violent Offending and
+Risk Status in Adolescence and Early Adulthood." NCJ 213339, Washington,
+DC: United States Department of Justice, National Institute of Justice, Mar
+2006. 2004-IJ-CX-1017
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+152. National Institute on Alcohol Abuse and Alcoholism, Division of
+Biometry and Epidemiology, Alcohol Epidemiologic Data System, "Alcohol
+Epidemiologic Data Directory." Arlington, VA: Department of Health and
+Human Services, Jun 2003.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+153. Nielsen, Amie L., "Continuity and Change in Delinquency over the Life
+Course: An Examination of Race Differences." Dissertation, University of
+Delaware, 1997.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+154. O'Brien, Daniel T.; Farrell, Chelsea; Welsh, Brandon C., "Broken
+(windows) theory: A meta-analysis of the evidence for the pathways from
+neighborhood disorder to resident health outcomes and behaviors." Social
+Science and Medicine. May 2019, 228, 272 - 292. DOI:
+10.1016/j.socscimed.2018.11.015
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+155. O'Neal, Keri Kristen, "Adolescent Risk Behaviors and Developmental
+Contextualism: A Person-Oriented Approach." Dissertation, Texas Tech
+University, 2001.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+156. Pampel, F.C., "Racial convergence in cigarette use from adolescence to
+the mid-thirties." Journal of Health and Social Behavior. Dec 2008, 49,
+(4), 484 - 498.
+Abstract: https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=234835
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/213339.pdf
+
+157. Pantano, Juan, "Essays in Applied Microeconomics." dissertation,
+University of California, Los Angeles, 2008. 2006-IJ-CX-0002
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+158. Paternoster, Raymond; Brame, Robert, "Multiple routes to delinquency?
+A test of developmental and general theories of crime." Criminology. Feb
+1997, 35, (1), 49 - 84. DOI: 10.1111/j.1745-9125.1997.tb00870.x
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+159. Payne, Brian; Triplett, Ruth, "Problem Solving as Reinforcement in
+Adolescent Drug Use: Implications for Theory and Policy." Journal of
+Criminal Justice. Nov/Dec 2004, 32, (6), 617 - 630.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+160. Phelan, Michael Patrick, "Towards a Developmental Social Psychology of
+Crime." Dissertation, University of Kentucky, 2003.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+161. Piper, Doshie , "The life course perspective of delinquency: An
+empirical analysis of female juvenile offending from the National Youth
+Survey." Journal of Knowledge and Best Practices in Juvenile Justice and
+Psychology. Aug 2014, 8, (1), 21 - 28.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+162. Ploeger, Matthew, "Youth employment and delinquency: Reconsidering a
+problematic relationship." Criminology. 1997, 35, (4), 659 - 675. DOI:
+10.1111/j.1745-9125.1997.tb01234.x
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+163. Potter, Joel, "Reexamining the economics of marital infidelity."
+Economics Bulletin. Jan 2011, 31, (1), 41 - 52.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+164. Ramchand, Rajeev; MacDonald, John M.; Haviland, Amelia; Morral, Andrew
+R., "A developmental approach for measuring the severity of crimes."
+Journal of Quantitative Criminology. Jun 2009, 25, (2), 129 - 153. DOI:
+10.1007/s10940-008-9061-7
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+165. Raudenbush, S.W., "Hierarchical linear models to study the effects of
+social context on development." In Gottman, J. M., The Analysis of Change.
+Mahwah, NJ: Lawrence Erlbaum,1995.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+166. Raudenbush, Stephen W.; Chan, Wing Shing, "Growth Curve Analysis in
+Accelerated Longitudinal Designs." Journal of Research in Crime and
+Delinquency. 1992, 29, (4), 387 - 411. DOI: 10.1177/0022427892029004001
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+167. Rebellon, Cesar J., "Differential association and substance use:
+Assessing the roles of discriminant validity, socialization, and selection
+in traditional empirical tests." European Journal of Criminology. Jan 2012,
+9, (1), 73 - 96. DOI: 10.1177/1477370811421647
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+168. Rebellon, Cesar J., "Do adolescents engage in delinquency to attract
+the social attention of peers?." Journal of Research in Crime and
+Delinquency. Nov 2006, 43, (4), 387 - 411. DOI: 10.1177/0022427806291259
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+169. Rebellon, Cesar J., "Reconsidering the broken homes/delinquency
+relationship and exploring its mediating mechanism(s)." Criminology. Feb
+2002, 40, (1), 103 - 135. DOI: 10.1111/j.1745-9125.2002.tb00951.x
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+170. Rebellon, Cesar J.; Gundy, Karen Van, "Can social psychological
+delinquency theory explain the link between marijuana and other illicit
+drug use? A longitudinal analysis of the gateway hypothesis." Journal of
+Drug Issues. Sum 2006, 36, (3), 515 - 539. DOI: 10.1177/002204260603600302
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+171. Rebellon, Cesar J.; Manasse, Michelle, "Do 'bad boys' really get the
+girls? Delinquency as a cause and consequence of dating behavior among
+adolescents." Justice Quarterly. Jun 2004, 21, (2), 355 - 390. DOI:
+10.1080/07418820400095841
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+172. Rebellon, Cesar J.; Van Gundy, Karen, "Can Control Theory Explain the
+Link Between Parental Physical Abuse and Delinquency? A Longitudinal
+Analysis." Journal of Research in Crime and Delinquency. Aug 2005, 42, (3),
+247 - 274. DOI: 10.1177/0022427804271926
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+173. Reed, Mark D.; Rose, Dina R., "Doing what Simple Simon says?
+Estimating the underlying causal structures of delinquent associations,
+attitudes, and serious theft." Criminal Justice and Behavior. Jun 1998, 25,
+(2), 240 - 274. DOI: 10.1177/0093854898025002006
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+174. Reed, Mark D.; Rountree, Pamela Wilcox, "Peer pressure and adolescent
+substance use." Journal of Quantitative Criminology. 1997, 13, (2), 143 -
+180. DOI: 10.1007/BF02221306
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+175. Roitberg, Thalia; Menard, Scott, "Adolescent violence: A test of
+integrated theory." Studies on Crime and Crime Prevention. 1995, 4, (2),
+177 - 196.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+176. Rowe, David C.; Britt, Chester L., III, "Developmental explanations of
+delinquent behavior among siblings: Common factor vs. transmission
+mechanisms." Journal of Quantitative Criminology. 1991, 7, (4), 315 - 332.
+DOI: 10.1007/BF01066586
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+177. Sakai, J.T.; Boardman, J.D.; Gelhorn, H.L.; Smolen, A.; Corley, R.P.;
+Huizinga, D.; Menard, S.; Hewitt, J.K.; Stallings, M.C., "Using trajectory
+analyses to refine phenotype for genetic association: Conduct problems and
+the serotonin transporter (5HTTLPR)." Psychiatric Genetics. Oct 2010, 20,
+(5), 199 - 206. DOI: 10.1097/YPG.0b013e32833a20f1
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+178. Scheider, Matthew C., "Testing the Need for Disaggregation of the
+Dependent Variable in Criminology." Dissertation, Washington State
+University, 2001.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+179. Smith, Douglas A.; Brame, Robert, "On the initiation and continuation
+of delinquency." Criminology. 1994, 32, (4), 607 - 629. DOI:
+10.1111/j.1745-9125.1994.tb01167.x
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+180. Su, Shiang-Wen Susan, "The Role of Strain in Explaining Adolescent
+Deviant Behavior." Dissertation, University of Minnesota, 1989.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+181. Suzuki, Hideo, "Prospectively Tracing Profiles of Juvenile Delinquents
+and Non-delinquents: An Optimal Data Analysis." Dissertation, Loyola
+University Chicago, 2005.
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+182. Talbott, Elizabeth; Thiede, Keith, "Pathways to Antisocial Behavior
+Among Adolescent Girls." Journal of Emotional and Behavioral Disorders. Spr
+1999, 7, (1), 31 - 39. DOI: 10.1177/106342669900700104
+Full text PDF: http://www.ncjrs.gov/pdffiles1/nij/grants/223028.pdf
+
+183. Thomas, Kyle J., "On the Relationship between Peers and Propensity:
+Examining Vulnerability to Peer Reinforcement." Thesis, University of
+Maryland, 2011.
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+184. Thomas, Kyle J., "On the relationship between peer isolation and
+offending specialization: The role of peers in promoting versatile
+offending." Crime and Delinquency. in press 2013,. DOI:
+10.1177/0011128713501031
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+185. Thomas, Kyle J., "Rationalizing delinquency: Understanding the person-
+situation interaction through item response theory." Journal of Research in
+Crime and Delinquency. Jul 2018, 00, 1 - 39. DOI: 10.1177/0022427818789752
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+186. Tolan, Patrick H.; Thomas, Peter, "The implications of age of onset
+for delinquency risk II: Longitudinal data." Journal of Abnormal Child
+Psychology. Apr 1995, 23, (2), 157 - 181. DOI: 10.1007/BF01447087
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+187. Triplett, Ruth A.; Jarjoura, G. Roger, "Theoretical and empirical
+specification of a model of informal labeling." Journal of Quantitative
+Criminology. 1994, 10, (3), 241 - 276. DOI: 10.1007/BF02221212
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+188. Triplett, Ruth Ann, "Labeling and Differential Association: The
+Effects on Delinquent Behavior." Dissertation, University of Maryland,
+College Park, 1990.
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+189. Uggen, Christopher; Wakefield, Sara, "What have we learned from
+longitudinal studies of work and employment?." In Liberman, Akiva, The Long
+View of Crime: A Synthesis of Longitudinal Research. 191 - 219, New York,
+NY: Springer,2008.
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+190. Vasquez, Bob Edward, "Modeling Peer Influence and Peer Selection as
+Processes." Dissertation, State University of New York at Albany, 2009.
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+191. Vlajnic, Maja Milana, "Beyond the Mainstream: A Theory Test of School
+Engagement and Sexual Assault." Thesis, University of Maryland, College
+Park, 2012.
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+192. Vásquez, Bob Edward; Zimmerman, Gregory M., "An investigation into the
+empirical relationship between time with peers, friendship, and
+delinquency." Journal of Criminal Justice. May-Jun 2014, 1, (244), 256.
+DOI: 10.1016/j.jcrimjus.2014.03.001
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+193. Walters, G.D., "Viewing the cycle of violence through a gendered
+pathways lens: Perceived parental tolerance of violence, peer influence,
+and child aggressive behavior." Journal of Interpersonal Violence. Jun
+2020, 35, (11-12), 2189 - 2209. DOI: 10.1177/0886260517702493
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+194. Walters, Glenn D., "Are the effects of parental control/support and
+peer delinquency on future offending cumulative or interactive? A multiple
+group analysis of 10 longitudinal studies." Journal of Criminal Justice.
+Jan-Feb 2019, 60, 13 - 24. DOI: 10.1016/j.jcrimjus.2018.10.007 2011-MU-FX-
+0022
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+195. Walters, Glenn D., "Criminal thought content and criminal thought
+process as mediators of peer influence: Combined versus individual
+effects." Criminal Justice Review. May 2016, 41, (3), 318 - 334. DOI:
+10.1177/0734016816650000
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+196. Walters, Glenn D., "Parental attitude toward deviance as a predictor
+of delinquency: Making the connection via perception and cognition."
+Journal of Adolescence. Feb 2015, 39, 27 - 35. DOI:
+10.1016/j.adolescence.2014.12.002
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+197. Walters, Glenn D., "Perceived peer delinquency, proactive criminal
+thinking, neighborhood disorder, and serious offending: Moderated mediation
+and theoretical integration." Journal of Crime and Justice. In press 2020,.
+DOI: 10.1080/0735648X.2019.1701527
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+198. Walters, Glenn D., "Proactive criminal thinking and deviant identity
+as mediators of the peer influence effect." Youth Violence and Juvenile
+Justice. Mar 2016, 15, (3), 281 - 298. DOI: 10.1177/1541204016636436
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+199. Walters, Glenn D., "The parent-peer interface: Does inductive
+parenting reduce the criminogenic effect of delinquent peers?." Youth
+Violence and Juvenile Justice. in press 2015,. DOI:
+10.1177/1541204015581058
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+200. Warr, Mark, "Age, Peers, and Delinquency." Criminology. Feb 1993, 31,
+(1), 17 - 40. DOI: 10.1111/j.1745-9125.1993.tb01120.x
+Abstract: http://drum.lib.umd.edu/handle/1903/12185
+
+201. Warr, Mark, "Parents, Peers, and Delinquency." Social Forces. Sep
+1993, 72, (1), 247 - 264.
+Full text: http://www.jstor.org/stable/2580168
+
+202. Warr, Mark; Stafford, Mark, "The Influence of Delinquent Peers: What
+They Think or What They Do?." Criminology. Nov 1991, 29, (4), 851 - 866.
+DOI: 10.1111/j.1745-9125.1991.tb01090.x
+Full text: http://www.jstor.org/stable/2580168
+
+203. Weiss, Andrea J., "An examination of the effects of military service
+over the life course on offending behavior and life outcomes."
+Dissertation, Sam Houston State University, 2013.
+Full text: http://www.jstor.org/stable/2580168
+
+204. Welch, Kristen L., "Do Angels Fall? An Analysis of Late Onset
+Offending and Substance Use in Adults Based on Findings from the National
+Youth Survey Family Study." Sam Houston State University, 2009.
+Full text: http://www.jstor.org/stable/2580168
+
+205. Wiecko, Filip M., "Late-onset offending: Fact or fiction."
+International Journal of Offender Therapy and Comparative Criminology. Jan
+2014, 58, (1), 107 - 129. DOI: 10.1177/0306624X12458503
+Full text: http://www.jstor.org/stable/2580168
+
+206. Wiecko, Filip M., "Research note: Assessing the validity of college
+samples: Are students really that different?." Journal of Criminal Justice.
+Nov-Dec 2010, 38, (6), 1186 - 1190. DOI: 10.1016/j.jcrimjus.2010.09.007
+Full text: http://www.jstor.org/stable/2580168
+
+207. Wiecko, Filip Matthew, "Late Onset Offending: Fact or Fiction."
+Dissertation, Washington State University, 2009.
+Full text: http://www.jstor.org/stable/2580168
+
+208. Witten, Dell-Autumn Wailani, "Religion and Delinquency in the Context
+of Race and Place." Dissertation , University of Maryland, College Park,
+2005.
+Full text: http://www.jstor.org/stable/2580168
+
+209. Wofford, Sharon, "A Theoretical Analysis of the Relationship Between
+Employment and Delinquency." National Youth Survey Report. 56, Boulder, CO:
+Behavioral Research Institute, 1989.
+Full text: http://www.jstor.org/stable/2580168
+
+210. Woodley, Carla Lennail, "An Examination of Sex Differences in Juvenile
+Delinquency Using Traditional Criminological Theories." Thesis, Mississippi
+State University, 1993.
+Full text: http://www.jstor.org/stable/2580168
+
+211. Youstin, Tasha J., "Exploring Gender Differences in Developmental and
+Life-course Criminology: An Examination of the Relationship between
+Stigmatization and Social Bonds in the Desistance Process." Dissertation,
+City University of New York, 2012.
+Full text: http://www.jstor.org/stable/2580168

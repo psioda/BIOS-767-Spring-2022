@@ -1,0 +1,7243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div class="c proctitle">The CONTENTS Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Contents: Variables">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="l b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="l b header" scope="col">Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">CASEID</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">CASE IDENTIFICATION NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">V5</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">1. SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">V6</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">2. ETHNICITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">V10</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4. AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">V11</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">5. WITH WHOM LIVING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">V12</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6A1. EVENT-MARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">V13</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6A2. WHEN-MONTH-MAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">V14</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6A3. WHEN-YEAR-MAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">V15</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6B1. EVENT-CHILDREN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">V16</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6B2. WHEN-MONTH-CHILD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">V17</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6B3. WHEN-YEAR-CHILD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">V18</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6C1. EVENT-SEPARATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">V19</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6C2. WHEN-MONTH-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">V20</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6C3. WHEN-YEAR-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">V21</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6D1. EVENT-DIVORCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">V22</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6D2. WHEN-MONTH-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">V23</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6D3. WHEN-YEAR-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">V24</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6E1. EVENT-REMARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">V25</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6E2. WHEN-MONTH-REMAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">V26</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">6E3. WHEN-YEAR-REMAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">V27</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7A1. PARENTS-DIVORCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">V28</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7A2. 1ST DATE-MONTH-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">V29</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7A3. 1ST DATE-YEAR-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">V30</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7A4. 2ND DATE-MONTH-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">V31</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7A5. 2ND DATE-YEAR-DIV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">V32</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7B1. PARENTS-SEPARATION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">V33</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7B2. 1ST DATE-MONTH-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">V34</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7B3. 1ST DATE-YEAR-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">V35</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7B4. 2ND DATE-MONTH-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">V36</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7B5. 2ND DATE-YEAR-SEP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">V37</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7C1. PARENTS-REMARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">V38</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7C2. 1ST DATE-MONTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">V39</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7C3. 1ST DATE-YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">V40</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7C4. 2ND DATE-MONTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">V41</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7C5. 2ND DATE-YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">V42</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PSU NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">V43</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">FUNDING AGENCY DESIGN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">V44</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">HOUSEHOLD ID #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">V45</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RESPONDENT ID #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">V46</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DATA SET NUMBER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">V47</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7D1. PARENTS-DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">V48</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7D2.1ST DATE-MONTH-DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">V49</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7D3. 1ST DATE-YEAR-DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">V50</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7D4.2ND DATE-MONTH-DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">V51</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7D5.2ND DATE-YEAR-DEATH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">V52</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7E1.PAR-FATHER LOST JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">V53</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7E2.1ST DATE-MONTH-JOB-F</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">V54</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7E3. 1ST DATE-YEAR-JOB-F</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">V55</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7E4. 2ND DATE-MNTH-JOB-F</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">V56</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7E5. 2ND DATE-YEAR-JOB-F</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">V57</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7F1.PAR-MOTHER LOST JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">V58</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7F2. 1ST DATE-MNTH-JOB-M</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">V59</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7F3. 1ST DATE-YEAR-JOB-M</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">V60</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7F4. 2ND DATE-MNTH-JOB-M</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">V61</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7F5. 2ND DATE-YEAR-JOB-M</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">V62</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7G1. ADULT MOVED IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">V63</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7G2. 1ST DATE-MONTH-IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">V64</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7G3. 1ST DATE-YEAR-IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">V65</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7G4. 2ND DATE-MONTH-IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">V66</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7G5. 2ND DATE-YEAR-IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">V67</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7H1. ADULT MOVED OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">V68</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7H2. 1ST DATE-MONTH-OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">V69</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7H3. 1ST DATE-YEAR-OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">V70</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7H4. 2ND DATE-MONTH-OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">V71</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7H5. 2ND DATE-YEAR-OUT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">V72</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">7I. CODING PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">V73</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">8.1 GRP/FRNDS LST YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">V74</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">8.2 CLOSE FRNDS LST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">V75</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">9. IMPRTNCE/HAVING FRNDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">V76</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">11.#AFTERNOONS W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">V77</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">12. #EVENINGS W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">V78</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">13. WEEKENDS W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">V79</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">14. FRIENDS INFLUENCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">V80</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">15.HOW IMP HAVE FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">V81</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">16.EVENING/WEEK ON DATES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">V82</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">17.IMPORT OF SOC ACTIV.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">V83</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">18.ATTND SCHOOL PROGRAMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">V84</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">19. GRADE IN SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">V85</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">20. GRADE POINT AVERAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">V86</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">21.# AFTERNOONS STUDYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">V87</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">22. # EVENINGS STUDYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">V88</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">23. # WEEKENDS STUDYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">V89</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">24.IMPRTNCE OF SCHOOLWRK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">V90</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">SOCIAL CLASS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">V91</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">25.1 MEMBER/ATHLTIC TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">V92</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">25.2 TYPE/ATHLTIC TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">V93</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">26.IMPRTNCE OF ATHLETICS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">V94</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">27.#AFTERNOONS W/TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">V95</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">28.#EVENINGS W/TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">V96</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">29.#WEEKENDS W/TEAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">V97</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">30.HOW IMP ARE ATHLETICS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">V98</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">31.1 PRTCPATE/SCH ACTIV.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">V99</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">31.2 TYPE OF ACTIVITY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">V100</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">32.HOW IMP/SCHL ACTVTIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">V101</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">33.#AFTERNOONS W/ACTIVIT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">V102</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">34.#EVENINGS W/ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">V103</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">35.WEEKENDS W/ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">V104</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">36.HOW IMP SCH ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">V105</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">37.HW CLASSMATES SEE R</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">V106</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">38.1 PRTCPATES COMM ACTV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">V107</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">38.2 TYPE OF COMM ACTIV.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">V108</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">39.IMP OF COMM ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">V109</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">40.#AFTERNOONS/COMM ACTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">V110</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">41.#EVES/COMM ACTIVITIES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">V111</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">42.WKENDS/COMM ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">V112</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">43.HW IMP COMM ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">V113</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">44.ANY JOBS IN PAST YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">V114</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">45.IMPRTNCE/HAVING JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">V115</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">46.1 JOB DESCRIPTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">V116</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">46.2 LENGTH/TIME ON JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">V117</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">46.3 WHAT KIND OF WORK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">V118</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">46.4 DUNCAN SOCIOEC INDX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">V119</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">47. REASON FOR WORKING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">V120</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">48.WAS JOB SUPERVISORY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">V121</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">49.SPEND EXTRA TIME/JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">V122</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">50.LIKE/STAY IN THIS WRK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">V123</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">51.HW IMP HAS JOB BEEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">V124</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">52.#AFTERNOONS W/FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">V125</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">53.#EVENINGS W/FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">V126</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">54.WEEKENDS W/FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">V127</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">55.IMPRTNCE OF FAM ACT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">V128</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">56.PARENTS INFLUENCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">V129</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">57.OFTN ATTND REL SRVCES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">V130</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">58.HW IMP IS RELIGION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">V131</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">59.1 IMP OF FAM ACTIVIT.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">V132</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">59.2 FAM ACTIV.-HW DOING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">V133</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">60.1 IMP-OTH STDNTS OPIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="l data">V134</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">60.2 STDNTS OPIN-HW DOIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="l data">V135</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">61.1 IMP-LOTS OF DATES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="l data">V136</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">61.2 LOTS/DATES-HW DOING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="l data">V137</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">62.1 IMP-TALK W/PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="l data">V138</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">62.2 TALK W/PARNTS-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="l data">V139</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">63.1 IMP-DO WELL ACADEM.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<td class="l data">V140</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">63.2 WELL ACAD-HW DOING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<td class="l data">V141</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">64.1 IMP-SOC W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<td class="l data">V142</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">64.2 SOC W/FRIENDS-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<td class="l data">V143</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">65.1 IMP-COMFORT/PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<td class="l data">V144</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">65.2 PRNTS COMFORT-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<td class="l data">V145</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">66.1 IMP-SCH WRK/NO HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<td class="l data">V146</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">66.2 SCHOOL/NO HLP-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<td class="l data">V147</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">67.1 IMP-SPEC B/GFRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<td class="l data">V148</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">67.2 B/GFRIEND-HOW DOING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<td class="l data">V149</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">68.1 IMP-PARENTS OPINION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<td class="l data">V150</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">68.2 PARENTS OPIN-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<td class="l data">V151</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">69.1 IMP-TEACHERS OPIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<td class="l data">V152</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">69.2 TEACH OPIN-HW DOING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<td class="l data">V153</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">70.1IMP-FR ASK SPND TIME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<td class="l data">V154</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">70.2FRND/SPND TIME-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<td class="l data">V155</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">71.1 IMP-HI GRADE PT AVG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<td class="l data">V156</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">71.2 HI GRADE PT-HW DOIN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<td class="l data">V157</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">72.1 IMP-GET ALNG W/PARS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<td class="l data">V158</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">72.2 ALNG W/PARNTS-HW DO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<td class="l data">V159</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">73. IMPORTANCE/GOOD JOB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<td class="l data">V160</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">74. IMPORTANCE/COLLEGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<td class="l data">V161</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">75. IMPORTANCE/MARRIAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<td class="l data">V162</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">76. IMPORTNCE/CHILDREN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<td class="l data">V163</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77.1 JOB PLANS-SPECIFIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<td class="l data">V164</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77A.JOB PLANS-CHANGING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<td class="l data">V165</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77B.PLANS-LOOK FOR INFOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<td class="l data">V166</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77C.JOB PLANS-CONFUSION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<td class="l data">V167</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77D.PLNS-PARNTS DISAGREE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<td class="l data">V168</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">77E.JOB PLANS-PLNS V PAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<td class="l data">V169</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78.1 COLL PLNS-SPECIFIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<td class="l data">V170</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78A.COLL PLNS-CHANGING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<td class="l data">V171</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78B.PLNS-LOOK FOR INFOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<td class="l data">V172</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78C.COLL PLNS-CONFUSION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<td class="l data">V173</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78D.PLANS-PARNTS DISAGRE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<td class="l data">V174</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">78E.PLNS-PLNS VS PARNTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<td class="l data">V175</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79.1 MARR/CHIL-SPECIFIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<td class="l data">V176</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79A.MARR/CHIL-CHANGING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<td class="l data">V177</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79B.M/CHL-LOOK FOR INFOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<td class="l data">V178</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79C.MARR/CHIL-CONFUSION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<td class="l data">V179</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79D.M/CHL-PARNTS DISAGRE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<td class="l data">V180</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">79E.M/CHL-PLNS VS PARNTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<td class="l data">V181</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80.1 RELIGION-SPECIFIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<td class="l data">V182</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80A.RELIGION-CHANGING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<td class="l data">V183</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80B.REL.-LOOK FOR INFOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<td class="l data">V184</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80C.RELIGION-CONFUSION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<td class="l data">V185</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80D.REL.-PARENTS DISAGRE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<td class="l data">V186</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">80E.REL.-PLNS VS PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<td class="l data">V187</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">81.CHANCES-JOB YOU LIKE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<td class="l data">V188</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">82.CHANCES-COMPLTNG COLL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<td class="l data">V189</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">83.DONT FIT W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<td class="l data">V190</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">84.TEACH. DONT CALL ON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<td class="l data">V191</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">85.FAMILY OUTSIDER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<td class="l data">V192</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">86.NOBODY AT SCHOOL CARES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<td class="l data">V193</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">87.FRIENDS NOT INTEREST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<td class="l data">V194</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">88.FAM LISTENS/PROBLEMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<td class="l data">V195</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">89.FEEL CLOSE TO FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<td class="l data">V196</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">90.FEEL LONELY W/FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<td class="l data">V197</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">91.DONT BELONG AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<td class="l data">V198</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">92.FRIENDS LISTEN PROBLM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<td class="l data">V199</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">93.FEEL LONELY AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<td class="l data">V200</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">94.TCHRS DNT ASK/PROJCTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<td class="l data">V201</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">95.FEEL CLOSE TO FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<td class="l data">V202</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">96.FEEL LONELY W/FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<td class="l data">V203</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">97.FAM NOT INTRSTED/PROB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<td class="l data">V204</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">98.IMP HONEST W/PARENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<td class="l data">V205</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">99.LIE TCHRS-AVOID TRBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<td class="l data">V206</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">100.FRIENDS IMPRESN IMP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<td class="l data">V207</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">101.PLAY DRTY TO WIN/SCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">202</th>
+<td class="l data">V208</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">102.LYING FOR FRIENDS OK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">203</th>
+<td class="l data">V209</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">103.1ST IMPRESN IMP-PARS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">204</th>
+<td class="l data">V210</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">104.FIGHT KIDS/RESPECT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">205</th>
+<td class="l data">V211</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">105.SUCCEED W/O CHEATING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">206</th>
+<td class="l data">V212</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">106.BREAK RULES/POPULAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">207</th>
+<td class="l data">V213</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">107.LIE PRNTS KEEP TRUST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">208</th>
+<td class="l data">V214</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">108.DOING OWN WORK/IMPOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">209</th>
+<td class="l data">V215</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">109.BREAKING PARENT RULE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">210</th>
+<td class="l data">V216</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">110.GOOD IMP W/TEACHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">211</th>
+<td class="l data">V217</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">111.PRNTS AGRE-WELL LIKD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">212</th>
+<td class="l data">V218</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">112.PRNTS AGRE-NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">213</th>
+<td class="l data">V219</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">113.PARENTS AGRE-BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">214</th>
+<td class="l data">V220</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">114.PRNTS AG-OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">215</th>
+<td class="l data">V221</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">115.PRNTS AG-GOOD CITIZN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">216</th>
+<td class="l data">V222</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">116.PARNTS AGRE-AMIABLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">217</th>
+<td class="l data">V223</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">117.PRNTS AGRE-MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">218</th>
+<td class="l data">V224</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">118.PRNTS AG-BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">219</th>
+<td class="l data">V225</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">119.PRNTS AG-PRSNL PROBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">220</th>
+<td class="l data">V226</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">120.PRTS AG-GT INTO TRBL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">221</th>
+<td class="l data">V227</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">121.PRNTS AG-LKLY TO SUC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">222</th>
+<td class="l data">V228</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">122.PRNTS AG-BREAK LAWS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">223</th>
+<td class="l data">V229</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">123.FRNDS AG-WELL-LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">224</th>
+<td class="l data">V230</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">124.FRNDS AGRE-NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">225</th>
+<td class="l data">V231</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">125.FRNDS AGRE-BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">226</th>
+<td class="l data">V232</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">126.FRNDS AG-OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">227</th>
+<td class="l data">V233</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">127.FRNDS AGRE-AMIABLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">228</th>
+<td class="l data">V234</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">128.FRNDS AGRE-MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">229</th>
+<td class="l data">V235</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">129.FRNDS AG-BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">230</th>
+<td class="l data">V236</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">130.FRNDS AG-PRSNL PROBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">231</th>
+<td class="l data">V237</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">131.FRNDS AG-GT IN TRBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">232</th>
+<td class="l data">V238</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">132.FRNDS AG-LIKLY SUCCD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">233</th>
+<td class="l data">V239</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">133.FRNDS AGRE-BREAK LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">234</th>
+<td class="l data">V240</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">134.TCHRS AGR-WELL-LIKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">235</th>
+<td class="l data">V241</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">135.TCHRS AGRE-NEED HELP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">236</th>
+<td class="l data">V242</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">136.TCHRS AGRE-BAD KID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">237</th>
+<td class="l data">V243</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">137.TCHRS AG-OFTEN UPSET</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">238</th>
+<td class="l data">V244</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">138.TCHRS AG-GOOD CITZEN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">239</th>
+<td class="l data">V245</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">139.TCHRS AGRE-AMIABLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">240</th>
+<td class="l data">V246</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">140.TCHRS AGRE-MESSED UP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">241</th>
+<td class="l data">V247</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">141.TCHRS AG-BREAK RULES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">242</th>
+<td class="l data">V248</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">142.TCHRS AG-PERSNL PRBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">243</th>
+<td class="l data">V249</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">143.TCHRS AG-GT IN TRBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">244</th>
+<td class="l data">V250</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">144.TCHRS AGR-LKLY SUCCD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">245</th>
+<td class="l data">V251</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">145.TCHRS AGR-BREAK LAWS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">246</th>
+<td class="l data">V252</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">146.P DSAPRV-KPT PROMISE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">247</th>
+<td class="l data">V253</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">147.PNTS DSAPRV-CHEATING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">248</th>
+<td class="l data">V254</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">148.PNTS DSAPRV-STEAL&lt;$5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">249</th>
+<td class="l data">V255</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">149.PTS DSAPRV-OTHR RACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">250</th>
+<td class="l data">V256</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">150.PS DSAPRV-SOLD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">251</th>
+<td class="l data">V257</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">151.P DSAPRV-RTRND MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">252</th>
+<td class="l data">V258</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">152.PTS DSAPRV-MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">253</th>
+<td class="l data">V259</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">153.PTS DSAPRV-STEAL&gt;$50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">254</th>
+<td class="l data">V260</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">154.P DSAPRV-HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">255</th>
+<td class="l data">V261</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">155.PS DSAPRV-HELP NEEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">256</th>
+<td class="l data">V262</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">156.PRNTS DSAPRV-ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">257</th>
+<td class="l data">V263</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">157.PRNTS DSAPRV-A FAVOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">258</th>
+<td class="l data">V264</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">158.P DSAPRV-DEST PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">259</th>
+<td class="l data">V265</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">159.P DSAPRV-LARCNY VHCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">260</th>
+<td class="l data">V266</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">160.PEERS DSAPRV-PROMISE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">261</th>
+<td class="l data">V267</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">161.PEERS DSAPRV-CHEATED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">262</th>
+<td class="l data">V268</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">162.PEER DSAPRV-STEAL&lt;$5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">263</th>
+<td class="l data">V269</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">163.PEER DSAPRV-DIF RACE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">264</th>
+<td class="l data">V270</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">164.PEER DSAPRV-SLD DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">265</th>
+<td class="l data">V271</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">165.PEER DSAPRV-RETND $$</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">266</th>
+<td class="l data">V272</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">166.PEER DSAPRV-MARIJUAN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">267</th>
+<td class="l data">V273</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">167.PEER DSAPRV-STLE&gt;$50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">268</th>
+<td class="l data">V274</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">168.PEER DSAPRV-HIT SONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">269</th>
+<td class="l data">V275</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">169.PEER DSAPRV-HLP NEDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">270</th>
+<td class="l data">V276</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">170.PEERS DSAPRV-ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">271</th>
+<td class="l data">V277</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">171.PEER DSAPRV-A FAVOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">272</th>
+<td class="l data">V278</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">172.PEER DSAPRV-SEX PRES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">273</th>
+<td class="l data">V279</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">173.PEER DSAPRV-DES PROP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">274</th>
+<td class="l data">V280</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">174.PEER DSPRV-LRCNY VEH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">275</th>
+<td class="l data">V281</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">175.PEER DSPRV-SEX INTER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">276</th>
+<td class="l data">V282</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">176.1MTHR RECT-TRBLE/SCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">277</th>
+<td class="l data">V283</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">176.2FTHR RECT-TRBLE/SCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">278</th>
+<td class="l data">V284</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">176.3FRNDS RCT-TRBLE/SCH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">279</th>
+<td class="l data">V285</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">177.1MTHR RCT-TRBL/POLCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">280</th>
+<td class="l data">V286</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">177.2FTHR RCT-TRBL/POLCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">281</th>
+<td class="l data">V287</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">177.3FRNDS RCT-TRB/POLCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">282</th>
+<td class="l data">V288</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">178.1MTHR RCT-TRBL NBRHD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">283</th>
+<td class="l data">V289</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">178.2FTHR RCT-TRBL NBRHD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">284</th>
+<td class="l data">V290</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">178.3FRNDS RCT-TRB NBRHD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">285</th>
+<td class="l data">V291</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">179.1MTHR REACTN-W/RUMOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">286</th>
+<td class="l data">V292</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">179.2FTHR REACTN-W/RUMOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">287</th>
+<td class="l data">V293</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">179.3FRNDS REACT-W/RUMOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">288</th>
+<td class="l data">V294</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">180.R- ATT:CHEAT SCL/TST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">289</th>
+<td class="l data">V295</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">181.R - ATT:DESTY PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">290</th>
+<td class="l data">V296</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">182.R - ATT:USE MARIJUAN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">291</th>
+<td class="l data">V297</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">183.R - ATT:STEAL &lt; $5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">292</th>
+<td class="l data">V298</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">184.R - ATT:HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">293</th>
+<td class="l data">V299</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">185.R - ATT:USE ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">294</th>
+<td class="l data">V300</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">186.R - ATT:BRK IN VEHCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">295</th>
+<td class="l data">V301</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">187.R- ATT:SELL HRD DRGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">296</th>
+<td class="l data">V302</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">188.R- ATT:STEAL &gt; $50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">297</th>
+<td class="l data">V303</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">189.R- ATT:GET DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">298</th>
+<td class="l data">V304</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">190.R ATT:USE PRESC DRGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">299</th>
+<td class="l data">V305</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">191.R ATT:GIV/SELL ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">300</th>
+<td class="l data">V306</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">192.R- FRNDS:CHEAT/SCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">301</th>
+<td class="l data">V307</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">193.R- FRND:DEST PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">302</th>
+<td class="l data">V308</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">194.R- FRNDS:USE MARIJ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">303</th>
+<td class="l data">V309</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">195.R- FRNDS:STEAL &lt;$5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">304</th>
+<td class="l data">V310</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">196.R- FRNDS:HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">305</th>
+<td class="l data">V311</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">197.R- FRNDS:USE ALCHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">306</th>
+<td class="l data">V312</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">198.R- FRNDS:BRK IN VEH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">307</th>
+<td class="l data">V313</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">199.R FRNDS:SLL HRD DRGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">308</th>
+<td class="l data">V314</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">200.R- FRNDS:STEAL &gt;$50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">309</th>
+<td class="l data">V315</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">201.R FDS:SUGGST BRK LAW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">310</th>
+<td class="l data">V316</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">202.R- FRNDS:GET DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">311</th>
+<td class="l data">V317</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">203.R- FRNDS:PRESC DRGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">312</th>
+<td class="l data">V318</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">204.R FRDS:GVE/SLL ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">313</th>
+<td class="l data">V319</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">205.DEV FRNDS-CONT ASSOC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">314</th>
+<td class="l data">V320</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">206.DEV FRNDS-ST ACTVTES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">315</th>
+<td class="l data">V321</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">207.DEV FRNDS-LIE FR THM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">316</th>
+<td class="l data">V322</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">208.R AGRE-FA GRTR AUTHY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">317</th>
+<td class="l data">V323</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">209.R AGR-WOMN/MOST JOBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">318</th>
+<td class="l data">V324</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">210.R AGR-MEN MST RELBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">319</th>
+<td class="l data">V325</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">211.R AGR-WOMEN EMOTIONL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">320</th>
+<td class="l data">V326</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">212.R AGR-WOMEN SMART</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">321</th>
+<td class="l data">V327</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">213.R AGR-MEN SHDNT CRY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">322</th>
+<td class="l data">V328</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">214.R AGR-WMN RESP/CHILD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">323</th>
+<td class="l data">V329</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">215.R AGR-MEN RESP/MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">324</th>
+<td class="l data">V330</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">216.R AGR-WOMEN WEAK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">325</th>
+<td class="l data">V331</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">217.R AGR-AGGR WMN/UNFEM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">326</th>
+<td class="l data">V332</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">218.R AGR-BEAT SOMONE OK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">327</th>
+<td class="l data">V333</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">219.R AGR-FIGHTNG &amp; PROB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">328</th>
+<td class="l data">V334</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">220.R AGRE-HIT ACCEPTBLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">329</th>
+<td class="l data">V335</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">221.R AGRE-TV VIOL EFCTV</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">330</th>
+<td class="l data">V336</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">222.R AGRE-NO RSN FR HIT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">331</th>
+<td class="l data">V337</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">223.R AGRE-RETALIATE/HIT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">332</th>
+<td class="l data">V338</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">224.R AGR-OK HIT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">333</th>
+<td class="l data">V339</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">225.R AGR-TIMES/NEC FGHT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">334</th>
+<td class="l data">V340</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">226.R AGR-FORC/TIMES NEC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">335</th>
+<td class="l data">V341</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">227.R AGRE-RAPIST VIOLNT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">336</th>
+<td class="l data">V342</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">228.R AGRE-WOMN WNT RAPE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">337</th>
+<td class="l data">V343</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">229.R AG-HTCHKRS WNT RAP</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">338</th>
+<td class="l data">V344</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">230.R AG-MEN RAPE FR SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">339</th>
+<td class="l data">V345</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">231.R AG-WMN RESIST RAPE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">340</th>
+<td class="l data">V346</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">232.R AG-VCTM FEEL GUILT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">341</th>
+<td class="l data">V347</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">233.R AG-RAPISTS MENTAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">342</th>
+<td class="l data">V348</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">234.R AG-WMN ASK FR RAPE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">343</th>
+<td class="l data">V349</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">235.R AG-WOMN NOT RAPED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">344</th>
+<td class="l data">V350</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">236.R AG-RAPISTS ANGRY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">345</th>
+<td class="l data">V351</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">237.R AG-WMN RESPBL RAPE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">346</th>
+<td class="l data">V352</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">238.FRNDS SUGG GO DRINKN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">347</th>
+<td class="l data">V353</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">239.FRNDS PRESURE/DRINK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">348</th>
+<td class="l data">V354</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">240.FRNDS SUGG GET DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">349</th>
+<td class="l data">V355</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">241.FRNDS OFFER MARIJUAN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">350</th>
+<td class="l data">V356</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">242.FRNDS SUGG GET HIGH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">351</th>
+<td class="l data">V357</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">243.FRNDS PRESS US DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">352</th>
+<td class="l data">V358</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">244.1HW OFT FA USD ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">353</th>
+<td class="l data">V359</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">244.2HW OFT MO USD ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">354</th>
+<td class="l data">V360</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">245.1HW OFT FA GOT DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">355</th>
+<td class="l data">V361</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">245.2HW OFT MO GOT DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">356</th>
+<td class="l data">V362</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">246.1HW OFT FA US MARIJA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">357</th>
+<td class="l data">V363</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">246.2HW OFT MO US MARIJA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">358</th>
+<td class="l data">V364</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">247.1HW OFTN FA/TRANQZRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">359</th>
+<td class="l data">V365</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">247.2HW OFTN MO/TRANQZRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">360</th>
+<td class="l data">V366</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">248.1FRQ-DMG FAM PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">361</th>
+<td class="l data">V367</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">248.2RATE-DMG FAM PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">362</th>
+<td class="l data">V368</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">249.1FRQ-DMG SCHL PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">363</th>
+<td class="l data">V369</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">249.2RATE-DMG SCL PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">364</th>
+<td class="l data">V370</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">250.1FRQ-DMG OTHR PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">365</th>
+<td class="l data">V371</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">250.2RATE-DMG OTH PROPTY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">366</th>
+<td class="l data">V372</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">251.1FRQ -STLN MOTR VEHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">367</th>
+<td class="l data">V373</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">251.2RATE-STLN MOTR VEHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">368</th>
+<td class="l data">V374</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">252.1FRQNCY-STOLEN &gt; $50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">369</th>
+<td class="l data">V375</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">252.2RATE-STOLEN &gt; $50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">370</th>
+<td class="l data">V376</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">253.1FRQ-BGHT STOLEN GDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">371</th>
+<td class="l data">V377</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">253.2RATE-BGHT STOLN GDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">372</th>
+<td class="l data">V378</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">254.1FRQ -RETURN THINGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">373</th>
+<td class="l data">V379</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">254.2RATE-RETURN  THINGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">374</th>
+<td class="l data">V380</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">255.1FRQ -THROWN OBJECTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">375</th>
+<td class="l data">V381</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">255.2RATE-THROWN OBJECTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">376</th>
+<td class="l data">V382</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">256.1FRQ-RUNAWAY HOME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">377</th>
+<td class="l data">V383</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">256.2RATE-RUNAWAY/HOME</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">378</th>
+<td class="l data">V384</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">257.1FRQNCY-LIED ABT AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">379</th>
+<td class="l data">V385</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">257.2RATE-LIED ABT AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">380</th>
+<td class="l data">V386</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">258.1FRQNCY-CARRY WEAPON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">381</th>
+<td class="l data">V387</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">258.2RATE-CARRIED WEAPON</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">382</th>
+<td class="l data">V388</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">259.1FRQNCY-STOLEN &lt; $5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">383</th>
+<td class="l data">V389</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">259.2RATE-STOLEN &lt; $5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">384</th>
+<td class="l data">V390</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">260.1FRQ-ATTCKD SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">385</th>
+<td class="l data">V391</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">260.2RATE-ATTCKD SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">386</th>
+<td class="l data">V392</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">261.1FRQNCY-PAID SEX REL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">387</th>
+<td class="l data">V393</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">261.2RATE-PAID SEX RELS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">388</th>
+<td class="l data">V394</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">262.1FRQNCY-SEX INTRCRSE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">389</th>
+<td class="l data">V395</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">262.2RATE-SEX INTRCOURSE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">390</th>
+<td class="l data">V396</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">263.1FRQNCY-GANG FIGHTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">391</th>
+<td class="l data">V397</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">263.2RATE-GANG FIGHTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">392</th>
+<td class="l data">V398</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">264.1FRQNCY-SOLD MARIJUA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">393</th>
+<td class="l data">V399</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">264.2RATE-SOLD MARIJUANA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">394</th>
+<td class="l data">V400</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">265.1FRQNCY-CHEATED/TEST</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">395</th>
+<td class="l data">V401</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">265.2RATE-CHEATED/TESTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">396</th>
+<td class="l data">V402</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">266.1FRQ-HTCHHKD ILLEGLY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">397</th>
+<td class="l data">V403</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">266.2RATE-HTCHHK ILLEGLY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">398</th>
+<td class="l data">V404</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">267.1FRQ-HLP SOMONE HURT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">399</th>
+<td class="l data">V405</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">267.2RATE-HLP SOMONE HRT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">400</th>
+<td class="l data">V406</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">268.1FRQ-STLN MONEY FMLY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">401</th>
+<td class="l data">V407</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">268.2RATE-STLN MONY FMLY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">402</th>
+<td class="l data">V408</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">269.1FRQ-FORCED/HVE SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">403</th>
+<td class="l data">V409</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">269.2RATE-FORCED/HVE SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">404</th>
+<td class="l data">V410</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">270.1FRQNCY-HIT TEACHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">405</th>
+<td class="l data">V411</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">270.2RATE-HIT TEACHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">406</th>
+<td class="l data">V412</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">271.1FRQNCY-HIT PARENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">407</th>
+<td class="l data">V413</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">271.2RATE-HIT PARENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">408</th>
+<td class="l data">V414</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">272.1FRQ-HIT OTH STUDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">409</th>
+<td class="l data">V415</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">272.2RATE-HIT OTH STUDNT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">410</th>
+<td class="l data">V416</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">273.1FRQ-LOUD AND ROWDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">411</th>
+<td class="l data">V417</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">273.2RATE-LOUD AND ROWDY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">412</th>
+<td class="l data">V418</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">274.1FRQ-SOLD HARD DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">413</th>
+<td class="l data">V419</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">274.2RATE-SOLD HARD DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">414</th>
+<td class="l data">V420</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">275.1FRQ-TAKEN VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">415</th>
+<td class="l data">V421</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">275.2RATE-TAKEN VEHICLE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">416</th>
+<td class="l data">V422</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">276.1FRQ-BOUGHT LIQUOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">417</th>
+<td class="l data">V423</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">276.2RATE-BOUGHT LIQUOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">418</th>
+<td class="l data">V424</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">277.1FRQ-GIVE MONEY,GOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">419</th>
+<td class="l data">V425</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">277.2RATE-GIV MONEY/GOOD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">420</th>
+<td class="l data">V426</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">278.1FRQ-PRSS SOMONE SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">421</th>
+<td class="l data">V427</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">278.2RATE-PRS SOMONE SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">422</th>
+<td class="l data">V428</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">279.1FRQ-USD FRCE/ STDNT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">423</th>
+<td class="l data">V429</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">279.2RATE-USD FRCE/STDNT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">424</th>
+<td class="l data">V430</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">280.1FRQ-USD FRCE/ TCHRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">425</th>
+<td class="l data">V431</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">280.2RATE-USD FRCE/TCHRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">426</th>
+<td class="l data">V432</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">281.1FRQ-REFSD HLP CHEAT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">427</th>
+<td class="l data">V433</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">281.2RATE-REFUSD/HLP CHT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">428</th>
+<td class="l data">V434</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">282.1FRQ-USD FRCE/ OTHRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">429</th>
+<td class="l data">V435</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">282.2RATE-USD FRCE/OTHRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">430</th>
+<td class="l data">V436</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">283.1FRQ-AVOIDED PAYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">431</th>
+<td class="l data">V437</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">283.2RATE-AVOIDED PAYING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">432</th>
+<td class="l data">V438</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">284.1FRQ-BEEN DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">433</th>
+<td class="l data">V439</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">284.2RATE-BEEN DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">434</th>
+<td class="l data">V440</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">285.1FRQ-STOLEN $5-$50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">435</th>
+<td class="l data">V441</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">285.2RATE-STOLEN $5-$50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">436</th>
+<td class="l data">V442</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">286.1FRQ-STOLN AT SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">437</th>
+<td class="l data">V443</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">286.2RATE-STOLN/ SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">438</th>
+<td class="l data">V444</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">287.1FRQ-BROKEN INT BLDG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">439</th>
+<td class="l data">V445</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">287.2RATE-BROKN INT BLDG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">440</th>
+<td class="l data">V446</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">288.1FRQ-BEGGD FOR MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">441</th>
+<td class="l data">V447</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">288.2RATE-BEGGD FR MONEY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">442</th>
+<td class="l data">V448</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">289.1FRQ-SKIPPED CLASSES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">443</th>
+<td class="l data">V449</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">289.2RATE-SKIPPED CLASS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">444</th>
+<td class="l data">V450</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">290.1FRQ-NOT RTRN CHANGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">445</th>
+<td class="l data">V451</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">290.2RATE-NOT RTRN CHANG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">446</th>
+<td class="l data">V452</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">291.1FRQ-AGGRSV SEX DMND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">447</th>
+<td class="l data">V453</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">291.2RATE-AGRSV SEX DMND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">448</th>
+<td class="l data">V454</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">292.1FRQ-TLK FRNDS/ILLGL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">449</th>
+<td class="l data">V455</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">292.2RATE-TLK /ILLGL ACT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">450</th>
+<td class="l data">V456</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">293.1FRQ-BEEN SUSPENDED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">451</th>
+<td class="l data">V457</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">293.2RATE-BEEN SUSPENDED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">452</th>
+<td class="l data">V458</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">294.1FRQ-MDE OBSCEN CALL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">453</th>
+<td class="l data">V459</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">294.2RATE-MD OBSCEN CALL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">454</th>
+<td class="l data">V460</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.01BR-# TIMES/PAST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">455</th>
+<td class="l data">V461</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.02BR-DRINK NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">456</th>
+<td class="l data">V462</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.03BR-HW OFTEN/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">457</th>
+<td class="l data">V463</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.04BR-EPISODIC USAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">458</th>
+<td class="l data">V464</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.05BR-LAST USED BEER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">459</th>
+<td class="l data">V465</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.06BR-HW MUCH WAS USD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">460</th>
+<td class="l data">V466</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.07BR-FUNCTION/ BEER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">461</th>
+<td class="l data">V467</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.08BR-HOW EFFCTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">462</th>
+<td class="l data">V468</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.09SRCE/BR-FOOD STORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">463</th>
+<td class="l data">V469</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.10SCE/BER-LIQ STORES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">464</th>
+<td class="l data">V470</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.11SRCE/BEER-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">465</th>
+<td class="l data">V471</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.12SRCE/BEER-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">466</th>
+<td class="l data">V472</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.13SRCE/BR-RESTNT/BAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">467</th>
+<td class="l data">V473</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.14SOURCE/BEER-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">468</th>
+<td class="l data">V474</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.15HVE STOPPD DRNK BR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">469</th>
+<td class="l data">V475</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">295.16WHY STOPPD DRNK BR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">470</th>
+<td class="l data">V476</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.01WIN-# TIMES/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">471</th>
+<td class="l data">V477</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.02WIN-DRINK NEXT YER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">472</th>
+<td class="l data">V478</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.03WIN-HW OFTN/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">473</th>
+<td class="l data">V479</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.04WIN-EPISODIC USAGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">474</th>
+<td class="l data">V480</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.05WIN-LAST USED WINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">475</th>
+<td class="l data">V481</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.06WIN-HW MCH WIN USD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">476</th>
+<td class="l data">V482</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.07WIN-FUNCTION/ WINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">477</th>
+<td class="l data">V483</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.08WIN-HOW EFFCTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">478</th>
+<td class="l data">V484</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.09SOURCE/FOOD STORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">479</th>
+<td class="l data">V485</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.10SOURCE/LIQ STORES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">480</th>
+<td class="l data">V486</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.11SOURCE/WINE-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">481</th>
+<td class="l data">V487</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.12SOURCE/WINE-FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">482</th>
+<td class="l data">V488</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.13SOURCE/RESTRNT/BAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">483</th>
+<td class="l data">V489</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.14SOURCE/WINE-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">484</th>
+<td class="l data">V490</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.15HVE STPD DRNK WINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">485</th>
+<td class="l data">V491</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">296.16WHY STPD DRNK WINE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">486</th>
+<td class="l data">V492</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.01LIQR-# TIME/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">487</th>
+<td class="l data">V493</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.02LIQR-DRINK NXT YER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">488</th>
+<td class="l data">V494</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.03LIQR-HW OFT/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">489</th>
+<td class="l data">V495</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.04LIQR-EPISODIC USAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">490</th>
+<td class="l data">V496</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.05LIQ-LAST USED LIQR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">491</th>
+<td class="l data">V497</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.06LIQ-HOW MUCH/ USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">492</th>
+<td class="l data">V498</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.07LIQ-FUNCTON/LIQUOR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">493</th>
+<td class="l data">V499</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.08LIQ-HOW EFFCTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">494</th>
+<td class="l data">V500</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.09SRCE/LIQ-FOOD STRS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">495</th>
+<td class="l data">V501</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.10SRCE/LIQ-LIQ STORE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">496</th>
+<td class="l data">V502</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.11SOURCE/LIQ-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">497</th>
+<td class="l data">V503</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.12SOURCE/LIQ-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">498</th>
+<td class="l data">V504</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.13SOURCE/RESTRNT/BAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">499</th>
+<td class="l data">V505</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.14SOURCE/LIQ-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">500</th>
+<td class="l data">V506</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.15HVE STPD DRNK LIQR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">501</th>
+<td class="l data">V507</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">297.16WHY STOPD DRNK LIQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">502</th>
+<td class="l data">V508</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">298.1ALCOH BEV-#TIMES/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">503</th>
+<td class="l data">V509</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">298.2ALCOH BEV-RATE/ USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">504</th>
+<td class="l data">V510</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.01TBCO-USED/PST YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">505</th>
+<td class="l data">V511</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.02TBCO-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">506</th>
+<td class="l data">V512</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.03TBCO-HW OFT/PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">507</th>
+<td class="l data">V513</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.04TBCO-EPISODIC USAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">508</th>
+<td class="l data">V514</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.05TBCO-LST USD TOBAC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">509</th>
+<td class="l data">V515</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.06#CIGS-USED PER DAY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">510</th>
+<td class="l data">V516</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.07#CIG/PIPES USD/DAY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">511</th>
+<td class="l data">V517</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.08#CANS CHEW/TBC/MTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">512</th>
+<td class="l data">V518</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.09OTHER TOBACCO USAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">513</th>
+<td class="l data">V519</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.10TBCO-FUNCT/TOBACCO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">514</th>
+<td class="l data">V520</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.11TBCO-HW EFFECTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">515</th>
+<td class="l data">V521</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.12SRCE/TBC-STORE/GAS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">516</th>
+<td class="l data">V522</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.13SRCE/TBCO-CIG MACH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">517</th>
+<td class="l data">V523</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.14SOURCE/TBCO-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">518</th>
+<td class="l data">V524</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.15SOURCE/TBCO-FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">519</th>
+<td class="l data">V525</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.16SOURCE/RESTRNT/BAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">520</th>
+<td class="l data">V526</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.17SOURCE/TBCO-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">521</th>
+<td class="l data">V527</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.18HVE STOPPED/TOBACC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">522</th>
+<td class="l data">V528</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">299.19WHY STOPPED/TOBACC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">523</th>
+<td class="l data">V529</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.01MARJ-#TIMES PST/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">524</th>
+<td class="l data">V530</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.02MARIJ-USE NEXT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">525</th>
+<td class="l data">V531</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.03MARJ-HW OFT PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">526</th>
+<td class="l data">V532</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.04MARIJ-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">527</th>
+<td class="l data">V533</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.05MARIJ-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">528</th>
+<td class="l data">V534</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.06MARIJ-HW MUCH USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">529</th>
+<td class="l data">V535</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.07MARIJ-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">530</th>
+<td class="l data">V536</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.08MARIJ-HW EFFECTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">531</th>
+<td class="l data">V537</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.09SRCE/MARIJUANA-FAM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">532</th>
+<td class="l data">V538</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.10SRCE/MARIJ-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">533</th>
+<td class="l data">V539</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.11SRCE/MARIJ-ANONYMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">534</th>
+<td class="l data">V540</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.12SRCE/MARIJANA-GROW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">535</th>
+<td class="l data">V541</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.13SRCE/MARIJNA-STEAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">536</th>
+<td class="l data">V542</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.14SRCE/MARIJNA-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">537</th>
+<td class="l data">V543</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.15HVE STP USNG MARIJ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">538</th>
+<td class="l data">V544</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">300.16WHY STP USNG MARIJ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">539</th>
+<td class="l data">V545</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.01PSYCS-#TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">540</th>
+<td class="l data">V546</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.02PSYCS-USE NEXT  YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">541</th>
+<td class="l data">V547</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.03PSYCS-HW OFT PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">542</th>
+<td class="l data">V548</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.04PSYCS-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">543</th>
+<td class="l data">V549</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.05PSYCS-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">544</th>
+<td class="l data">V550</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.06PSYCS-HW MUCH USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">545</th>
+<td class="l data">V551</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.07PSYCS-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">546</th>
+<td class="l data">V552</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.08PSYCS-HW EFFECTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">547</th>
+<td class="l data">V553</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.09SRCE/PSYCS-PHYSICN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">548</th>
+<td class="l data">V554</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.10SRCE/PSYCS-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">549</th>
+<td class="l data">V555</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.11SRCE/PSYCS-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">550</th>
+<td class="l data">V556</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.12SRCE/PSYCS-ANONYMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">551</th>
+<td class="l data">V557</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.13SRCE/PSYCS-STEAL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">552</th>
+<td class="l data">V558</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.14SRCE/PSYCS-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">553</th>
+<td class="l data">V559</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.15HVE STP USNG PSYCS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">554</th>
+<td class="l data">V560</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">301.16WHY STP USNG PSYCS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">555</th>
+<td class="l data">V561</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.01TRANQ-#TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">556</th>
+<td class="l data">V562</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.02TRANQ-USE NEXT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">557</th>
+<td class="l data">V563</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.03TRANQ-HW OFT PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">558</th>
+<td class="l data">V564</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.04TRANQ-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">559</th>
+<td class="l data">V565</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.05TRANQ-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">560</th>
+<td class="l data">V566</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.06TRANQ-PRESCRIBED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">561</th>
+<td class="l data">V567</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.07TRANQ- AMT PRESCBD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">562</th>
+<td class="l data">V568</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.08TRANQ-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">563</th>
+<td class="l data">V569</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.09TRANQ-EFFECTIVENES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">564</th>
+<td class="l data">V570</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.10SRCE/TRANQ-PHARMCY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">565</th>
+<td class="l data">V571</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.11SRCE/TRANQ-PHYSICN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">566</th>
+<td class="l data">V572</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.12SRCE/TRANQ-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">567</th>
+<td class="l data">V573</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.13SRCE/TRANQ-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">568</th>
+<td class="l data">V574</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.14SRCE/TRANQ-ANONYMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">569</th>
+<td class="l data">V575</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.15SRCE/TRANQ-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">570</th>
+<td class="l data">V576</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.16HVE STP USNG TRANQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">571</th>
+<td class="l data">V577</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">302.17WHY STP USNG TRANQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">572</th>
+<td class="l data">V578</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.01AMPHT-#TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">573</th>
+<td class="l data">V579</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.02AMPHT-USE NEXT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">574</th>
+<td class="l data">V580</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.03AMPHT-HW OFT PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">575</th>
+<td class="l data">V581</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.04AMPHT-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">576</th>
+<td class="l data">V582</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.05AMPHT-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">577</th>
+<td class="l data">V583</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.06AMPHT-PRESCRIBED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">578</th>
+<td class="l data">V584</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.07AMPHT- AMT PRESCBD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">579</th>
+<td class="l data">V585</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.08AMPHT-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">580</th>
+<td class="l data">V586</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.09AMPHS-EFFECTIVNESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">581</th>
+<td class="l data">V587</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.10SRCE/AMPHS-PHARMCY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">582</th>
+<td class="l data">V588</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.11SRCE/AMPHS-PHYSICN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">583</th>
+<td class="l data">V589</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.12SRCE/AMPHS-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">584</th>
+<td class="l data">V590</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.13SRCE/AMPHS-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">585</th>
+<td class="l data">V591</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.14SRCE/AMPHS-ANONYMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">586</th>
+<td class="l data">V592</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.15SRCE/AMPHS-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">587</th>
+<td class="l data">V593</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.16HVE STP USNG AMPHS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">588</th>
+<td class="l data">V594</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">303.17WHY STP USNG AMPHS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">589</th>
+<td class="l data">V595</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.01BARBS-#TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">590</th>
+<td class="l data">V596</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.02BARBS-USE NEXT YER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">591</th>
+<td class="l data">V597</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.03BARBS-HW OFT PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">592</th>
+<td class="l data">V598</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.04BARBS-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">593</th>
+<td class="l data">V599</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.05BARBS-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">594</th>
+<td class="l data">V600</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.06BARBS-PRESCRIBED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">595</th>
+<td class="l data">V601</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.07BARBS-AMT PRESCRBD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">596</th>
+<td class="l data">V602</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.08BARBS-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">597</th>
+<td class="l data">V603</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.09BARBS-EFFECTIVENES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">598</th>
+<td class="l data">V604</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.10SRCE/BARBS-PHARMCY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">599</th>
+<td class="l data">V605</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.11SRCE/BARBS-PHYSICN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">600</th>
+<td class="l data">V606</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.12SRCE/BARBS-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">601</th>
+<td class="l data">V607</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.13SRCE/BARBS-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">602</th>
+<td class="l data">V608</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.14SRCE/BARBS-ANONYMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">603</th>
+<td class="l data">V609</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.15SRCE/BARBS-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">604</th>
+<td class="l data">V610</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.16HVE STP USNG BARBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">605</th>
+<td class="l data">V611</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">304.17WHY STP USNG BARBS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">606</th>
+<td class="l data">V612</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.01CODN-# TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">607</th>
+<td class="l data">V613</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.02CODN-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">608</th>
+<td class="l data">V614</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.03CODN-HW OFTN PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">609</th>
+<td class="l data">V615</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.04CODN-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">610</th>
+<td class="l data">V616</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.05CODN-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">611</th>
+<td class="l data">V617</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.06CODN-PRESCRIBED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">612</th>
+<td class="l data">V618</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.07CODN-AMT PRESCRBD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">613</th>
+<td class="l data">V619</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.08CODN-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">614</th>
+<td class="l data">V620</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.09CODN-EFFECTIVENESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">615</th>
+<td class="l data">V621</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.10SRCE/CODN-PHARMACY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">616</th>
+<td class="l data">V622</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.11SRCE/CODN-PHYSICN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">617</th>
+<td class="l data">V623</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.12SRCE/CODN-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">618</th>
+<td class="l data">V624</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.13SRCE/CODN-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">619</th>
+<td class="l data">V625</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.14SRCE/CODN-ANONYOMS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">620</th>
+<td class="l data">V626</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.15SRCE/CODEINE-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">621</th>
+<td class="l data">V627</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.16HVE STP USNG CODNE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">622</th>
+<td class="l data">V628</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">305.17WHY STP USNG CODNE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">623</th>
+<td class="l data">V629</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.01HERO-# TIMES PT/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">624</th>
+<td class="l data">V630</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.02HERO-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">625</th>
+<td class="l data">V631</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.03HERO-HOW OFT PT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">626</th>
+<td class="l data">V632</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.04HERO-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">627</th>
+<td class="l data">V633</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.05HERO-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">628</th>
+<td class="l data">V634</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.06HERO-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">629</th>
+<td class="l data">V635</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.07HERO-EFFECTIVENESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">630</th>
+<td class="l data">V636</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.08SRCE/HEROIN-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">631</th>
+<td class="l data">V637</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.09SRCE/HEROIN-FRIEND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">632</th>
+<td class="l data">V638</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.10SRCE/HERO-ANONYMOU</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">633</th>
+<td class="l data">V639</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.11SRCE/HEROIN-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">634</th>
+<td class="l data">V640</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.12HVE STPD USNG HERO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">635</th>
+<td class="l data">V641</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">306.13WHY STPD USNG HERO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">636</th>
+<td class="l data">V642</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.00CO-# TIMES PAST/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">637</th>
+<td class="l data">V643</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.01CO-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">638</th>
+<td class="l data">V644</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.02CO-HW OFTN PAST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">639</th>
+<td class="l data">V645</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.03CO-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">640</th>
+<td class="l data">V646</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.04COCAINE-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">641</th>
+<td class="l data">V647</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.05C-HOW MUCH WAS USD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">642</th>
+<td class="l data">V648</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.06COFUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">643</th>
+<td class="l data">V649</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.07COEFFECTIVENESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">644</th>
+<td class="l data">V650</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.08SRCE/COCINE-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">645</th>
+<td class="l data">V651</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.09SRCE/COINE-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">646</th>
+<td class="l data">V652</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.10SRCE/CO-ANONYMOUS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">647</th>
+<td class="l data">V653</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.11SRCE/COCAINE-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">648</th>
+<td class="l data">V654</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.12HVE STPD USNG COCE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">649</th>
+<td class="l data">V655</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">307.13WHY STPD USNG CO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">650</th>
+<td class="l data">V656</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.00IN-# TIMES PAST/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">651</th>
+<td class="l data">V657</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.01IN-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">652</th>
+<td class="l data">V658</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.02IN-HW OFTN PAST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">653</th>
+<td class="l data">V659</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.03IN-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">654</th>
+<td class="l data">V660</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.04IN-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">655</th>
+<td class="l data">V661</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.05IN-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">656</th>
+<td class="l data">V662</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.06IN-EFFECTIVENESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">657</th>
+<td class="l data">V663</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.07SRCE/IN-STORES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">658</th>
+<td class="l data">V664</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.08SRCE/IN-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">659</th>
+<td class="l data">V665</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.09SRCE/IN-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">660</th>
+<td class="l data">V666</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.10SRCE/IN-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">661</th>
+<td class="l data">V667</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.11HVE STPD USNG IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">662</th>
+<td class="l data">V668</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">308.12WHY STPD USNG IN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">663</th>
+<td class="l data">V669</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.00A D-#TIMES PAST/YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">664</th>
+<td class="l data">V670</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.01A D-USE NEXT YEAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">665</th>
+<td class="l data">V671</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.02A D-HW OFTN PST YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">666</th>
+<td class="l data">V672</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.03A D-EPISODIC USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">667</th>
+<td class="l data">V673</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.04A D-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">668</th>
+<td class="l data">V674</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.05A D-HW MCH WAS USD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">669</th>
+<td class="l data">V675</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.06A D-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">670</th>
+<td class="l data">V676</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.07A D-HW EFFECTIVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">671</th>
+<td class="l data">V677</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.08SRCE/A D-FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">672</th>
+<td class="l data">V678</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.09SRCE/A D-FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">673</th>
+<td class="l data">V679</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.10SRCE/A D-ANONYMOUS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">674</th>
+<td class="l data">V680</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.11SRCE/A D-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">675</th>
+<td class="l data">V681</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.12HVE STPD USNG A DT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">676</th>
+<td class="l data">V682</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">309.13WHY STPD USNG A DT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">677</th>
+<td class="l data">V683</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.00NN PREC DRS-U LS/Y</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">678</th>
+<td class="l data">V684</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.01NN PRESC DRGS-FRQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">679</th>
+<td class="l data">V685</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.02NN PRES-USE NXT YR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">680</th>
+<td class="l data">V686</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.03NN PRES-HW OFTN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">681</th>
+<td class="l data">V687</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.04NN PRES-EPISODIC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">682</th>
+<td class="l data">V688</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.05NN PRES-LAST USED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">683</th>
+<td class="l data">V689</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.06NN PRES-FUNCTION</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">684</th>
+<td class="l data">V690</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.07NN PRES-HW EFFCTVE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">685</th>
+<td class="l data">V691</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.08SRCE/NN PRESC DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">686</th>
+<td class="l data">V692</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.09STPD USING NN PRES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">687</th>
+<td class="l data">V693</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">310.10WHY STPD NN PRESC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">688</th>
+<td class="l data">V694</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">311.MONTHLY EXPEND-ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">689</th>
+<td class="l data">V695</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">312.MONTHLY EXPEND-TOBAC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">690</th>
+<td class="l data">V696</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">313.MONTHLY EXPEND-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">691</th>
+<td class="l data">V697</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">314.1TRBLE B/GFRND-ALCHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">692</th>
+<td class="l data">V698</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">314.2TRBLE B/GFRND-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">693</th>
+<td class="l data">V699</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">315.1PROBS W/FAM-ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">694</th>
+<td class="l data">V700</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">315.2PROBS W/FAMILY-DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">695</th>
+<td class="l data">V701</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">316.1TRBLE W/FRNDS-ALCOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">696</th>
+<td class="l data">V702</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">316.2TRBLE W/FRNDS-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">697</th>
+<td class="l data">V703</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">317.1TRBLE W/TCHERS-ALCO</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">698</th>
+<td class="l data">V704</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">317.2TRBLE W/TCHERS-DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">699</th>
+<td class="l data">V705</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">318.1FIGHTS BCAUSE ALCOH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">700</th>
+<td class="l data">V706</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">318.2FIGHTS BCAUSE DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">701</th>
+<td class="l data">V707</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">319.1HLTH PROBS-ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">702</th>
+<td class="l data">V708</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">319.2HLTH PROBS-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">703</th>
+<td class="l data">V709</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">320.1MEMORY LOSS-ALOCHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">704</th>
+<td class="l data">V710</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">320.2MEMORY LOSS-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">705</th>
+<td class="l data">V711</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">321.1STAYED DRUNK/DAYS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">706</th>
+<td class="l data">V712</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">321.2STAYED HIGH/DAYS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">707</th>
+<td class="l data">V713</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">322.1CDNT STP ALCOL USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">708</th>
+<td class="l data">V714</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">322.2CDNT STOP DRUG USE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">709</th>
+<td class="l data">V715</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">323.1HD TO BORROW/ALCOHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">710</th>
+<td class="l data">V716</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">323.2HD TO BORROW/DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">711</th>
+<td class="l data">V717</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">324.1GO W/O FOR ALCOHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">712</th>
+<td class="l data">V718</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">324.2GO WITHOUT FR DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">713</th>
+<td class="l data">V719</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.01ILLEGAL ACT/ALCOHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">714</th>
+<td class="l data">V720</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.02ILLEGAL ACTS/DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">715</th>
+<td class="l data">V721</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.03ILLGL ACT-STEALING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">716</th>
+<td class="l data">V722</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.04ILLGL ACT-PROSTITU</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">717</th>
+<td class="l data">V723</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.05ILLGL ACT-GAMBLING</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">718</th>
+<td class="l data">V724</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.06ILLGL ACT-SELL D/A</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">719</th>
+<td class="l data">V725</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.07ILLGL SELL STLN GD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">720</th>
+<td class="l data">V726</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.08ILLGL BEAT SOMEONE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">721</th>
+<td class="l data">V727</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.09ILLGL ACT-FAKE ID</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">722</th>
+<td class="l data">V728</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.10ILLGL STEAL DR/ALC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">723</th>
+<td class="l data">V729</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.11ILLGL FAKE PRESCTN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">724</th>
+<td class="l data">V730</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.12ILLGL FAKE ILLNESS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">725</th>
+<td class="l data">V731</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">325.13ILLGL ACT-GREW POT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">726</th>
+<td class="l data">V732</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.01ARRESTS FOR ALCOHL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">727</th>
+<td class="l data">V733</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.02ARRESTS FOR DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">728</th>
+<td class="l data">V734</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.03ARRESTS-INTOXICATN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">729</th>
+<td class="l data">V735</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.04ARRESTS-DRUNK DRVG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">730</th>
+<td class="l data">V736</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.05ARRESTS-POSSN ALCL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">731</th>
+<td class="l data">V737</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.06ARRESTS-POSSN/DRUG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">732</th>
+<td class="l data">V738</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.07ARRESTS-SALE/DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">733</th>
+<td class="l data">V739</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">326.08ARRESTS-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">734</th>
+<td class="l data">V740</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">327.PST YR-# TIMES DRUNK</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">735</th>
+<td class="l data">V741</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">328.PST YR-# TIMES HIGH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">736</th>
+<td class="l data">V742</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">329.VICTIM-HAD THNGS TKN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">737</th>
+<td class="l data">V743</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">330.1VICTIM-BEATN/PARNTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">738</th>
+<td class="l data">V744</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">330.2VICTMIZE-FORCED SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">739</th>
+<td class="l data">V745</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">331.VICTM-CAR/BIKE STOLN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">740</th>
+<td class="l data">V746</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">332.VICTM-THNGS TKN:CAR</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">741</th>
+<td class="l data">V747</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">333.VICTM-THNGS DAMAGED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">742</th>
+<td class="l data">V748</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">334.VICTM-THNGS STLN PUB</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">743</th>
+<td class="l data">V749</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">335.VICTM-SEXUALLY ATCKD</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">744</th>
+<td class="l data">V750</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.01VICTM-ATTCKD W/WPN</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">745</th>
+<td class="l data">V751</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.02ATTACKED/BROTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">746</th>
+<td class="l data">V752</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.03ATTACKED/SISTER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">747</th>
+<td class="l data">V753</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.04ATTACKED/TEACHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">748</th>
+<td class="l data">V754</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.05ATTACKED/STUDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">749</th>
+<td class="l data">V755</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.06ATTACKED/GANG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">750</th>
+<td class="l data">V756</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.07ATTACKED/OTH ADULT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">751</th>
+<td class="l data">V757</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.08ATTACKED/OTH YOUTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">752</th>
+<td class="l data">V758</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.09ATTACKED/OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">753</th>
+<td class="l data">V759</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">336.10ATTACK INVLVED SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">754</th>
+<td class="l data">V760</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.01BEATEN UP/OTHERS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">755</th>
+<td class="l data">V761</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.02BEATEN UP/BROTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">756</th>
+<td class="l data">V762</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.03BEATEN UP/SISTER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">757</th>
+<td class="l data">V763</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.04BEATEN UP/TEACHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">758</th>
+<td class="l data">V764</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.05BEATEN UP/STUDENT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">759</th>
+<td class="l data">V765</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.06BEATEN UP/GANG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">760</th>
+<td class="l data">V766</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.07BEAT UP/OTHR ADULT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">761</th>
+<td class="l data">V767</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.08BEAT UP/OTHR YOUTH</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">762</th>
+<td class="l data">V768</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.09BEATEN UP/OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">763</th>
+<td class="l data">V769</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">337.10BEAT INVLV FRCD SX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">764</th>
+<td class="l data">V770</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">338.SEXUALLY PRESSURED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">765</th>
+<td class="l data">V771</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">339.POCKET PICKED</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">766</th>
+<td class="l data">V772</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">387.FURTHER EXPLN OF ANS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">767</th>
+<td class="l data">V773</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">388.1UNCOMFRT QUES-DRUGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">768</th>
+<td class="l data">V774</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">388.2UNCOMFRTBL QUES-SEX</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">769</th>
+<td class="l data">V775</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">388.3SPECIFIC QUESTION #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">770</th>
+<td class="l data">V776</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">388.4SPECIFIC QUESTION #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">771</th>
+<td class="l data">V777</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">388.5SPECIFIC QUESTION #</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">772</th>
+<td class="l data">V778</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.1ASK QUES AB FRIENDS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">773</th>
+<td class="l data">V779</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.2QUES AB DRGS/ALCHOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">774</th>
+<td class="l data">V780</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.3ASK QUES AB FAMILY</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">775</th>
+<td class="l data">V781</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.4ASK QUES AB ACTIVIT</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">776</th>
+<td class="l data">V782</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.5ASK QUES AB SCHOOL</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">777</th>
+<td class="l data">V783</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">389.6ASK AB OTHER THINGS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">778</th>
+<td class="l data">V784</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">390.GOOD/POOR UNDERSTAND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">779</th>
+<td class="l data">V785</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">1.R - ANXTY AB INTERVIEW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">780</th>
+<td class="l data">V786</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">2.R HOSTILE TOWRD INTRVW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">781</th>
+<td class="l data">V787</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">3.R - INTRST/ INTERVIEW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">782</th>
+<td class="l data">V788</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.1PROBS-DFCLTY W/LNGUAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">783</th>
+<td class="l data">V789</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.2PROBS-DIFFCLTY W/QUES</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">784</th>
+<td class="l data">V790</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.3PROBS-INTERRUPTIONS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">785</th>
+<td class="l data">V791</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.4PROBS-TEMP BREAK-OFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">786</th>
+<td class="l data">V792</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.5PROBS-BREAKOFF</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">787</th>
+<td class="l data">V793</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">4.6PROBS-OTHER</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">788</th>
+<td class="l data">V794</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">5.R - ANXTY AF INTERVIEW</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">789</th>
+<td class="l data">V795</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">INTERVWER ADDNL COMMENTS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">790</th>
+<td class="l data">V796</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">SMSA CODE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">791</th>
+<td class="l data">V797</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PLACE CODE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">792</th>
+<td class="l data">V798</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PLACE SIZE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">793</th>
+<td class="l data">V799</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">URBAN-SUBURBAN-RURAL CDE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

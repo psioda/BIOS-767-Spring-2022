@@ -1,0 +1,59 @@
+File Manifest for ICPSR 9948
+
+Elliott, Delbert S. . National Youth Survey [United States]: Wave VI, 1983.
+ICPSR09948-v1. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2008-10-10.
+http://doi.org/10.3886/ICPSR09948.v1
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09948-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    09948-related_literature.txt        -       -         -       daily       -
+
+    09948-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]: Wave VI, 1983
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09948-0001-Codebook.pdf             -       -         -       2008-10-10  4d9e658c777d635235b57eb8495a25e8
+
+    09948-0001-Data.dta                 -       1,725     1506    2008-10-10  7a0f9bfe9b01df9284066b5461993a83
+
+    09948-0001-Data.sav                 -       1,725     1506    2008-10-10  7234cc79a04559ddf646c00a4c327b28
+
+    09948-0001-Data.stc                 -       1,725     1506    2008-10-10  32115e6ac594054d24ac67e50135caca
+
+    09948-0001-Data.tsv                 -       1,725     1506    2008-10-10  b36e4d956eb556f85c0996655ed7bcf2
+
+    09948-0001-Data.txt                 3105    1,725     1506    2008-10-10  6137f23c78dc4871b3937fb3ae0a194a
+
+    09948-0001-Setup.dct                -       -         -       2008-10-10  9bd09e6ceb6948a2d7452386014e1e4b
+
+    09948-0001-Setup.do                 -       -         -       2008-10-10  39239414535becbd7b571fbc708c2044
+
+    09948-0001-Setup.sas                -       -         -       2008-10-10  f489d1f850bb55f546f4a02aa63ff1db
+
+    09948-0001-Setup.sps                -       -         -       2008-10-10  de47d40ffb7d621fc8d08781af5cc905
+
+    09948-0001-Supplemental_syntax.do   -       -         -       2008-10-10  d6c0716b99484fb4dc37afba0bd673ea
+
+    09948-0001-Supplemental_syntax.sas  -       -         -       2008-10-10  29cc204b91dbe8e016aeb3d9db109fff
+
+
+Version History
+
+2008-10-10 New files were added. These files included one or more of the
+following: Stata setup, SAS transport (CPORT), SPSS system, Stata system,
+SAS supplemental syntax, and Stata supplemental syntax files, and a tab-
+delimited ASCII data file. Some other minor edits were made to improve the
+data and documentation.

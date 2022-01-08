@@ -1,0 +1,51 @@
+File Manifest for ICPSR 6542
+
+Elliott, Delbert S. National Youth Survey [United States]:  Wave VII, 1987.
+ICPSR06542-v3. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2009-04-01.
+http://doi.org/10.3886/ICPSR06542.v3
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06542-descriptioncitation.pdf       -       -         -       2018-01-18  -
+
+    06542-related_literature.txt        -       -         -       daily       -
+
+    06542-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 National Youth Survey [United States]:  Wave VII, 1987
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06542-0001-Codebook.pdf             -       -         -       2009-04-01  20c5240d15658e54234ffa34c35a616f
+
+    06542-0001-Data.dta                 -       1,725     1472    2009-04-01  9cbfb694af7e52fb6c334f256d50faf7
+
+    06542-0001-Data.sav                 -       1,725     1472    2009-04-01  785bceff9a85064c70d30b78165d4c8a
+
+    06542-0001-Data.stc                 -       1,725     1472    2009-04-01  d35939b46a6ff39d71dc52589d8c3198
+
+    06542-0001-Data.tsv                 -       1,725     1472    2009-04-01  1e903f3234a3ca5e1315c2eec6bec17c
+
+    06542-0001-Data.txt                 3187    1,725     1472    2009-04-01  e93ce02fc8a6d1c149ebdef99bb78f86
+
+    06542-0001-Questionnaire.pdf        -       -         -       2004-12-07  38b569fc98dca36be98a09731544de5f
+
+    06542-0001-Setup.dct                -       -         -       2009-04-01  ac71cf851f18ed2a0fcc39abd1c47075
+
+    06542-0001-Setup.do                 -       -         -       2009-04-01  43ee27b295a6903add79a899cfe8636f
+
+    06542-0001-Setup.sas                -       -         -       2009-04-01  d9a248b310484df63754a311bcbcef85
+
+    06542-0001-Setup.sps                -       -         -       2009-04-01  3f0db76cece9f8960425a35f2c72acc6
+
+    06542-0001-Supplemental_syntax.do   -       -         -       2009-04-01  44dac70570ecf541e9420163b08124b2
+
+    06542-0001-Supplemental_syntax.sas  -       -         -       2009-04-01  86e391d4b02f800333b32fcef4418498
+
