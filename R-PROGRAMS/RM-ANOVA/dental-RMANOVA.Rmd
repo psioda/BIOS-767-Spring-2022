@@ -1,0 +1,44 @@
+---
+title: "Repeated Measures ANOVA"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Data manipulation
+We first convert the data to "long" format
+```{r cars, message = F, error = F, warning = F}
+options(contrasts = c(factor = "contr.SAS", ordered = "contr.poly"))
+
+
+### read in the SAS dataset
+library(sas7bdat)
+setwd('C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL')
+dental.wide = read.sas7bdat('dental.sas7bdat')
+names(dental.wide) = tolower(names(dental.wide))
+
+
+
+## change to long format
+library(tidyverse)
+dental.long = dental.wide %>%
+  pivot_longer(cols = c(age8, age10, age12, age14), names_to = 'age', 
+                    names_prefix = 'age', values_to = 'distance')
+dental.long$gender = factor(dental.long$gender)
+# dental.long$age    = factor(dental.long$age)
+dental.long$age    = as.numeric(dental.long$age)
+dental.long$id     = factor(dental.long$id)
+head(dental.long)
+```
+
+### Data analysis
+We now perform the repeated measures analysis of variance
+```{r, message = F, warning = F}
+attach(dental.long)
+dental.aov <- aov(distance ~ factor(gender)*factor(age) + Error(factor(id)))
+summary(dental.aov)
+detach(dental.long)
+```
+
