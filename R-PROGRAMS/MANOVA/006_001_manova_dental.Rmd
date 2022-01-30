@@ -1,0 +1,27 @@
+---
+title: "MANOVA Example"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## MANOVA Example
+### SAS Code 1
+The following code performs a MANOVA analysis of the dental study data. 
+
+
+```{r cars}
+## Load data
+library(sas7bdat)
+setwd('C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL')
+dental.data = read.sas7bdat('dental.sas7bdat')
+head(dental.data)
+
+## Run MANOVA
+res.manova <- manova(cbind(dental.data$age8,dental.data$age10,dental.data$age12,dental.data$age14)~dental.data$GENDER)
+summary(res.manova)
+```
+
+
