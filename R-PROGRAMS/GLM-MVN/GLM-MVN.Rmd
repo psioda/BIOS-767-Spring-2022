@@ -9,12 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-This file pertains to the BIOS-767-Part-008 notes. Specifically, we will conduct
-
-1. Maximum likelihood assuming $\mathbf{\Sigma} = \sigma^2 \mathbf{I}_4$
-2. Maximum likelihood assuming $\mathbf{\Sigma}$ is unstructured
-3. REML assuming $\mathbf{\Sigma}$ is unstructured
-
+This file pertains to the BIOS-767-Part-008 notes. 
 ```{r, message=FALSE,warning=FALSE}
 ## Load dental data
 library(sas7bdat)
@@ -68,50 +63,69 @@ robust.cov <- function(u){
 
 
 
-### Analyses
+### First, we fit the regression model assuming compound symmetry.
 ```{r, message = F, warning = F}
 library(nlme)
-fmla = distance ~ 0 + gender + gender:age
-## Analysis assumes independent observations
-  fit.ind = gls(fmla, data = dental.long)
-  
-  
-## ML (unstructured covariance)
-  fit.ml = gls( 
+fmla = distance ~ 0 + gender + age + gender*age
+
+## REML (unstructured covariance)
+  fit.reml = gls( 
     fmla, 
-    correlation = corSymm(form = ~ 1 | id), 
-    weights = varIdent(form = ~ 1 | age),
+    correlation = corCompSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 ),
     data = dental.long, 
-    method = 'ML'
+    method = 'REML'
   )
-  fit.ml
-## REML ( unstructured covariance )
-    fit.reml = gls( 
-      fmla, 
-      correlation = corSymm(form = ~ 1 | id), 
-      weights = varIdent(form = ~ 1 | age),
-      data = dental.long, 
-      method = 'REML'
-  )
-  fit.reml
-  fit.ind
-  robust.cov(fit.ml)
-  robust.cov(fit.reml)
+  coef(summary(fit.reml))
+
+  ## corrected
+  beta.model <- coef(fit.reml)
+  se.model   <- robust.cov(fit.reml)$se.model
+  t.model    <- beta.model/se.model
+  p.model    <- pt(-abs(t.model),nrow(dental.data))
+
+  ## Organize results into table
+  res.reml = data.frame(
+            'Estimate' = beta.model, 
+            'StdError' = se.model, 
+            't' = t.model, 
+            'P-value' = p.model
+            )
+
+library(tidyverse)
+library(kableExtra)
+round(res.reml , 4) %>% 
+    mutate_if(is.numeric, format, digits=4) %>% 
+    kbl(caption = "Parameter Estimates Based on Maximum Likelihood" ) %>% 
+    kable_styling('hover', full_width = T)
 ```
 
+### Now we perform a test of parallelism.
+```{r, message = F}
+  Sig.model   <- robust.cov(fit.reml)$Sig.model
+  L <- c(0,0,0,1)
+  
+  L.beta     <- L%*%beta.model
+  L.beta.cov <- L%*%Sig.model%*%L
+  F.stat     <- L.beta%*%solve(L.beta.cov)%*%t(L.beta)
+  ddfm       <- nrow(dental.long)-nrow(dental.data)-2
+  prob.F <- pf(F.stat,df1=1,df2=ddfm,lower.tail=FALSE)
 
-### Testing
-Now, we conduct the hypothesis test $H_0: \beta_{1G} = \beta_{1B}$ versus $H_1: \beta_{1G} \ne \beta_{1B}$
+  parallel.reml <- data.frame(
+            'F' = F.stat, 
+            'P-value' = prob.F,
+            'DDFM'    = ddfm
+            )
 
-
-#### Contrast method
-
-The contrast method does not seem to match up with the SAS output.
-
-```{r}
-test.contrast = anova(fit.reml, L = c(0, 0, 1, -1))
-test.contrast
+library(tidyverse)
+library(kableExtra)
+round(parallel.reml , 4) %>% 
+    mutate_if(is.numeric, format, digits=4) %>% 
+    kbl(caption = "Test of Parallelism" ) %>% 
+    kable_styling('hover', full_width = T)  
+  
 ```
+
 
 #### LRT
 
@@ -119,6 +133,15 @@ The likelihood ratio test is easy to perform, and matches up precisely
 with the SAS output.
 
 ```{r}
+
+  fit.ml = gls( 
+    distance ~ 0 + gender + gender:age, 
+    correlation = corSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 | age),
+    data = dental.long, 
+    method = 'ML'
+  )
+
   fit.ml.red = gls( 
     distance ~ 0 + gender + age, 
     correlation = corSymm(form = ~ 1 | id), 
@@ -137,15 +160,5 @@ pred = predict(fit.reml, newdata = xnew)
 pred
 ```
 
-
-### Sandwich Estimator
-Below is the code to construct the sandwich estimator of the sandard errors.
-The numbers are not exact, but they are reasonably close to the SAS output.
-```{r}
-library(clubSandwich)
-sandwich.mtx = vcovCR(fit.reml, type = 'CR0')  ## CR0 is the original sandwich
-se.robust = sqrt(diag(sandwich.mtx))
-se.robust
-```
 
 
