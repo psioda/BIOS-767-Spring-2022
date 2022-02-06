@@ -1,0 +1,193 @@
+---
+title: "Simulation / Analysis of Multivariate Normal Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Data simulation
+We first set required input parameters.
+```{r cars, message = F, error = F, warning = F}
+
+set.seed(24141)
+
+# number of subjects/visits per subject
+nSub  <- 27
+nVis  <-  4
+t.vec <- c(8,10,12,14)
+
+# model parameter values;
+beta.vec <- c(21,22,0.2,0.2)
+
+sd.mat   <- diag(c(4,4,4,4))
+rho      <- 0.6
+corr.mat <- (1-rho)*diag(nVis) + matrix(rho,nrow=nVis,ncol=nVis)
+cov.mat  <- sd.mat%*%corr.mat%*%sd.mat 
+
+print(corr.mat)
+print(cov.mat)
+
+# indicator for whether REML (value=1) or ML is used (value!=1)
+reml      <- 1
+
+```
+
+
+Next, we generate the covariate matrix.
+```{r, message = F, error = F, warning = F}
+
+# generate covariates: 
+# intercept (boy),   intercept (girl)
+# linear time (boy), linear time (girl)
+gender <- rep(rbinom(nSub,1,0.5),each=nVis)
+id     <- rep(1:nSub,each=nVis)
+time   <- rep(t.vec,nSub)
+x      <- cbind((gender==0),(gender==1),(gender==0)*time,(gender==1)*time)
+head(x,n=4)
+tail(x,n=4)
+```
+
+Next, we generate the response vector by looping over subjects.
+```{r, message = F, error = F, warning = F}
+library(MASS)
+
+y <- rep(0,nSub*nVis)
+r <- 1;
+for (i in 1:nSub)
+{
+  y[r:(r+nVis-1)] <- mvrnorm(n = 1, x[r:(r+nVis-1),]%*%beta.vec, cov.mat)
+  r <- r + nVis;
+}
+
+head(cbind(y,x),n=4)
+tail(cbind(y,x),n=4)
+```
+
+
+Next, we code up a simple ML procedure assuming a common unstructured covariance
+matrix for each subject. 
+```{r, message = F, error = F, warning = F}
+
+iteration <- 0
+repeat
+{
+  # initialize to MLEs assuming independence
+  if (iteration==0)
+  {
+    beta.hat  <- solve(t(x)%*%x)%*%t(x)%*%y;
+    ImP       <- diag(nrow(x)) - x%*%solve(t(x)%*%x)%*%t(x)
+    sigma.hat <- diag(c(t(y)%*%ImP%*%y / (nSub*nVis)),nrow=nVis,ncol=nVis)
+  }
+  
+  # iterative process counter
+  iteration = iteration + 1  
+  
+  # compute inverse of current sigma.hat value
+  # to avoid repetitive computation
+  iSigma <- solve(sigma.hat)
+  
+  ############################################
+  # update beta.hat
+  beta.old <- beta.hat
+  
+  t1 <- 0
+  t2 <- 0
+	for (i in 1:nSub)
+	{	    
+	   idx <- which(id==i);
+			xi <- x[idx,];
+			yi <- y[idx];
+
+			t1 <- t1 + t(xi)%*%iSigma%*%xi;
+			t2 <- t2 + t(xi)%*%iSigma%*%yi;
+	}  
+	it1         <- solve(t1)
+	beta.hat    <- it1%*%t2
+	change.beta <- max(abs(beta.hat-beta.old))
+  ############################################
+	
+  ############################################
+  # update sigma.hat
+  sigma.old <- sigma.hat
+  
+
+  sigma.hat <- 0
+	for (i in 1:nSub)
+	{	    
+	   idx <- which(id==i);
+			xi <- x[idx,];
+			yi <- y[idx];
+
+		sigma.hat <- sigma.hat + 
+		             (yi-xi%*%beta.hat)%*%t(yi-xi%*%beta.hat) + 
+		             reml*(xi%*%it1%*%t(xi))
+	}
+  sigma.hat    <- sigma.hat/nSub
+	change.sigma <- max(abs(sigma.hat-sigma.old))
+  ############################################	
+	
+
+  if (iteration==100) break
+	if (max(c(change.beta,change.sigma))<1e-10) break
+}
+
+## compute final correlation matrix
+sigma.sd   <- sqrt(diag(sigma.hat))
+sigma.corr <- diag(1/sigma.sd)%*%sigma.hat%*%diag(1/sigma.sd)
+sigma.sd
+sigma.corr
+
+std.error <- sqrt(diag(it1))
+z         <- beta.hat / std.error
+pv        <- 2*pnorm(abs(z), lower.tail = F)
+
+## Organize results into table
+res = data.frame(
+  'Estimate' = beta.hat, 'StdError' = std.error, 'z' = z, 'P-value' = pv)
+
+if (reml==1) cap = "Parameter Estimates Based on Restricted Maximum Likelihood (REML)" else 
+             cap = "Parameter Estimates Based on Maximum Likelihood"
+
+library(tidyverse)
+library(kableExtra)
+round(res , 4) %>% 
+    mutate_if(is.numeric, format, digits=4) %>% 
+    kbl(caption = cap ) %>% 
+    kable_styling('hover', full_width = T) %>%
+  footnote(general = paste("Algorithm converged after", iteration, "iterations. "),general_title = " " )
+
+
+```
+
+Now, lets check our work compared to the $\textbf{GLS}$ function in the $\textbf{nlme}$ package.
+```{r, message = F, error = F, warning = F}
+library(nlme)
+
+dat <- data.frame(
+     "y" <- y,
+     "int.1" <- x[,1],
+     "int.2" <- x[,2],
+     "slp.1" <- x[,3],
+     "slp.2" <- x[,4],
+     "id"    <- id,
+     "time"  <- time
+     )
+
+fmla <- y ~ 0 + int.1 + int.2 + slp.1 + slp.2
+
+
+if (reml==1) method.fit = "REML" else 
+             method.fit = "ML"
+
+  fit.model = gls( 
+    fmla, 
+    correlation = corSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 | time),
+    data = dat, 
+    method = method.fit
+  )
+  coef(summary(fit.model))
+  summary(fit.model)
+```

@@ -1,0 +1,152 @@
+---
+title: "General Linear Model for Correlated Data: Dental Data"
+output: html_document
+---
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+This file pertains to the BIOS-767-Part-008 notes. Specifically, we will conduct
+
+1. Maximum likelihood assuming $\mathbf{\Sigma} = \sigma^2 \mathbf{I}_4$
+2. Maximum likelihood assuming $\mathbf{\Sigma}$ is unstructured
+3. REML assuming $\mathbf{\Sigma}$ is unstructured
+
+```{r, message=FALSE,warning=FALSE}
+## Load dental data
+library(sas7bdat)
+setwd('C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL')
+dental.data = read.sas7bdat('dental.sas7bdat')
+names(dental.data) = tolower(names(dental.data)) ## lowercase variable names
+```
+
+
+We begin by re-shaping the data from wide-to-long format, using the `tidyverse` package
+```{r, message=FALSE,warning=FALSE}
+library(tidyverse)
+dental.long = pivot_longer(
+  data = dental.data,
+  cols = age8:age14,
+  names_to = 'age',
+  names_prefix = 'age',
+  values_to = 'distance'
+)
+dental.long$age = as.numeric(dental.long$age)
+head(dental.long)
+```
+
+### Match SE with SAS
+The following function enables the computation of standard errors that match SAS (correct in all cases)
+```{r, message=FALSE,warning=FALSE}
+library(magic)
+robust.cov <- function(u){
+  form <-  formula(u)
+  mf <- model.frame(form,getData(u))
+  Xmat <- model.matrix(form,mf)
+  ids <- unique(u$groups)
+  m <- length(ids)
+  Vlist <-  as.list(ids)
+  for (i in 1:m){
+    Vlist[[i]] <- getVarCov(u,individual=ids[i],type="marginal")
+  }
+  V <- Reduce(adiag,Vlist)
+  Vinv <- solve(V)
+  Sig.model <- solve(t(Xmat)%*%Vinv%*%Xmat)
+  resid <- diag(residuals(u,type="response"))
+  ones.list <- lapply(Vlist,FUN=function(u){matrix(1,nrow(u),ncol(u))})
+  Ones <- Reduce(adiag,ones.list)
+  meat <- t(Xmat)%*%Vinv%*%resid%*%Ones%*%resid%*%Vinv%*%Xmat
+  Sig.robust <- Sig.model%*%meat%*%Sig.model
+  se.robust <- sqrt(diag(Sig.robust))
+  se.model <- sqrt(diag(Sig.model))
+  return(list(Sig.model=Sig.model,se.model=se.model,Sig.robust=Sig.robust,se.robust=se.robust))
+}
+```
+
+
+
+### Analyses
+```{r, message = F, warning = F}
+library(nlme)
+fmla = distance ~ 0 + gender + gender:age
+## Analysis assumes independent observations
+  fit.ind = gls(fmla, data = dental.long)
+  
+  
+## ML (unstructured covariance)
+  fit.ml = gls( 
+    fmla, 
+    correlation = corSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 | age),
+    data = dental.long, 
+    method = 'ML'
+  )
+  fit.ml
+## REML ( unstructured covariance )
+    fit.reml = gls( 
+      fmla, 
+      correlation = corSymm(form = ~ 1 | id), 
+      weights = varIdent(form = ~ 1 | age),
+      data = dental.long, 
+      method = 'REML'
+  )
+  fit.reml
+  
+  fit.ind
+  robust.cov(fit.ml)
+  robust.cov(fit.reml)
+```
+
+
+### Testing
+Now, we conduct the hypothesis test $H_0: \beta_{1G} = \beta_{1B}$ versus $H_1: \beta_{1G} \ne \beta_{1B}$
+
+
+#### Contrast method
+
+The contrast method does not seem to match up with the SAS output.
+
+```{r}
+test.contrast = anova(fit.reml, L = c(0, 0, 1, -1))
+test.contrast
+```
+
+#### LRT
+
+The likelihood ratio test is easy to perform, and matches up precisely
+with the SAS output.
+
+```{r}
+  fit.ml.red = gls( 
+    distance ~ 0 + gender + age, 
+    correlation = corSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 | age),
+    data = dental.long, 
+    method = 'ML'
+  )
+anova(fit.ml, fit.ml.red)
+```
+
+### Interpolations
+Now, we predict male / female at 11 years old. These numbers do not match up exactly. Moreover, there is no option for confidence limits.
+```{r}
+xnew = data.frame(gender = c('M', 'F'), age = c(11, 11))
+pred = predict(fit.reml, newdata = xnew)
+pred
+```
+
+
+### Sandwich Estimator
+Below is the code to construct the sandwich estimator of the sandard errors.
+The numbers are not exact, but they are reasonably close to the SAS output.
+```{r}
+library(clubSandwich)
+sandwich.mtx = vcovCR(fit.reml, type = 'CR0')  ## CR0 is the original sandwich
+se.robust = sqrt(diag(sandwich.mtx))
+se.robust
+```
+
+
