@@ -94,7 +94,6 @@ fmla = distance ~ 0 + gender + gender:age
       method = 'REML'
   )
   fit.reml
-  
   fit.ind
   robust.cov(fit.ml)
   robust.cov(fit.reml)
