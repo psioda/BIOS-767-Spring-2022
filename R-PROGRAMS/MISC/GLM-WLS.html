@@ -245,7 +245,7 @@ head(cbind(y,x),n=4)</code></pre>
 ## [108,] 27.38760 0 1 0 14</code></pre>
 <pre class="r"><code>dat &lt;-data.frame(&#39;id&#39; &lt;- id, &#39;y&#39; &lt;- y, &#39;gender&#39; &lt;- gender, &#39;time&#39; &lt;- time)
 write.csv(dat,file=&#39;sim.Dat&#39;,row.names=FALSE)</code></pre>
-<p>Next, we code up a simple ML procedure assuming a common unstructured covariance matrix for each subject.</p>
+<p>Next, we code up a simple WLS procedure assuming a compound symmetric covariance matrix for each subject.</p>
 <pre class="r"><code>iteration &lt;- 0
 repeat
 {

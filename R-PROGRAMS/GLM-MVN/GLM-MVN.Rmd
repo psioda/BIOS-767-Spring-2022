@@ -153,11 +153,37 @@ anova(fit.ml, fit.ml.red)
 ```
 
 ### Interpolations
-Now, we predict male / female at 11 years old. These numbers do not match up exactly. Moreover, there is no option for confidence limits.
+Now, we predict male / female at 11 years old.
 ```{r}
-xnew = data.frame(gender = c('M', 'F'), age = c(11, 11))
-pred = predict(fit.reml, newdata = xnew)
-pred
+
+fmla = distance ~ 0 + gender + gender:age
+
+## REML (unstructured covariance)
+  fit.interp = gls( 
+    fmla, 
+    correlation = corCompSymm(form = ~ 1 | id), 
+    weights = varIdent(form = ~ 1 ),
+    data = dental.long, 
+    method = 'REML'
+  )
+  coef(summary(fit.interp))
+  
+  beta.interp <- coef(fit.interp)
+  Sig.interp  <- Sig.model   <- robust.cov(fit.interp)$Sig.model
+  
+x.new            <- data.frame(female = c(rep(1,7), rep(0,7)),male = c(rep(0,7),rep(1,7)), f.age = c(8:14,rep(0,7)),m.age = c(rep(0,7),8:14))
+x.pred           <- as.matrix(x.new)%*%c(beta.interp)
+x.pred.se        <- sqrt(diag(as.matrix(x.new)%*%as.matrix(Sig.interp)%*%t(as.matrix(x.new))))
+x.pred.limits    <- data.frame(female=x.new$female, male=x.new$male,female.slope=x.new$f.age,male.slope=x.new$m.age,
+                              age=x.new$f.age+x.new$m.age,
+                              est=x.pred, se=x.pred.se, lower=x.pred-qt(0.975,ddfm)*x.pred.se,upper=x.pred+qt(0.975,ddfm)*x.pred.se)
+print(x.pred.limits)
+
+ggp <- ggplot(x.pred.limits, aes(age, est)) + xlab("Age (Years)") + ylab("Distance") +
+      ggtitle("Estimates and Point-wise 95% CIs for Gender-Specific Trajectories") + 
+       geom_line(aes(colour=factor(female))) + guides(colour="none") +
+       geom_ribbon(aes(ymin = lower, ymax = upper,fill=factor(female)),alpha=0.1) 
+update_labels(ggp, list(fill="Gender (M=0;F=1)"))      
 ```
 
 

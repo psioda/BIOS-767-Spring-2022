@@ -67,7 +67,7 @@ write.csv(dat,file='sim.Dat',row.names=FALSE)
 ```
 
 
-Next, we code up a simple ML procedure assuming a common unstructured covariance
+Next, we code up a simple WLS procedure assuming a compound symmetric covariance
 matrix for each subject. 
 ```{r, message = F, error = F, warning = F}
 
