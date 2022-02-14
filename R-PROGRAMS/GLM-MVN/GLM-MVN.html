@@ -223,8 +223,11 @@ robust.cov &lt;- function(u){
   return(list(Sig.model=Sig.model,se.model=se.model,Sig.robust=Sig.robust,se.robust=se.robust))
 }</code></pre>
 </div>
-<div id="first-we-fit-the-regression-model-assuming-compound-symmetry." class="section level3">
-<h3>First, we fit the regression model assuming compound symmetry.</h3>
+<div id="first-we-fit-the-regression-model-assuming-unstructured-covariance." class="section level3">
+<h3>First, we fit the regression model assuming unstructured covariance.</h3>
+</div>
+<div id="compare-to-notes-008-slide-18-ddfm-corrected" class="section level3">
+<h3>(compare to notes 008, Slide 18, DDFM corrected )</h3>
 <pre class="r"><code>library(nlme)
 fmla = distance ~ 0 + gender + age + gender*age
 
@@ -243,16 +246,19 @@ fmla = distance ~ 0 + gender + age + gender*age
 ## age          0.4795455 0.09346988  5.130481 1.347865e-06
 ## genderM:age  0.3048295 0.12142094  2.510519 1.359567e-02</code></pre>
 <pre class="r"><code>  ## corrected
+  nsub       &lt;- length(unique(dental.long$id))
   beta.model &lt;- coef(fit.reml)
   se.model   &lt;- robust.cov(fit.reml)$se.model
   t.model    &lt;- beta.model/se.model
-  p.model    &lt;- pt(-abs(t.model),nrow(dental.data))
+  ddfm.model &lt;- c(rep(nsub-2,2),rep(nrow(dental.long)-nsub-2,2))
+  p.model    &lt;- pt(-abs(t.model),ddfm.model)
 
   ## Organize results into table
   res.reml = data.frame(
             &#39;Estimate&#39; = beta.model, 
             &#39;StdError&#39; = se.model, 
-            &#39;t&#39; = t.model, 
+            &#39;t&#39; = t.model,
+            &#39;ddfm&#39; = ddfm.model,
             &#39;P-value&#39; = p.model
             )
 
@@ -280,6 +286,9 @@ StdError
 t
 </th>
 <th style="text-align:left;">
+ddfm
+</th>
+<th style="text-align:left;">
 P.value
 </th>
 </tr>
@@ -299,7 +308,10 @@ genderF
 14.68
 </td>
 <td style="text-align:left;">
-0.0000
+25
+</td>
+<td style="text-align:left;">
+0.000
 </td>
 </tr>
 <tr>
@@ -316,7 +328,10 @@ genderM
 16.65
 </td>
 <td style="text-align:left;">
-0.0000
+25
+</td>
+<td style="text-align:left;">
+0.000
 </td>
 </tr>
 <tr>
@@ -333,7 +348,10 @@ age
 5.13
 </td>
 <td style="text-align:left;">
-0.0000
+79
+</td>
+<td style="text-align:left;">
+0.000
 </td>
 </tr>
 <tr>
@@ -350,7 +368,10 @@ genderM:age
 2.51
 </td>
 <td style="text-align:left;">
-0.0092
+79
+</td>
+<td style="text-align:left;">
+0.007
 </td>
 </tr>
 </tbody>
@@ -358,6 +379,9 @@ genderM:age
 </div>
 <div id="now-we-perform-a-test-of-parallelism." class="section level3">
 <h3>Now we perform a test of parallelism.</h3>
+</div>
+<div id="compare-to-notes-008-slide-16-ddfm-corrected" class="section level3">
+<h3>(compare to notes 008, Slide 16, DDFM corrected )</h3>
 <pre class="r"><code>  Sig.model   &lt;- robust.cov(fit.reml)$Sig.model
   L &lt;- c(0,0,0,1)
   
@@ -412,6 +436,10 @@ DDFM
 </table>
 <div id="lrt" class="section level4">
 <h4>LRT</h4>
+</div>
+</div>
+<div id="compare-to-notes-008-slide-19-ddfm-corrected" class="section level3">
+<h3>(compare to notes 008, Slide 19, DDFM corrected )</h3>
 <p>The likelihood ratio test is easy to perform, and matches up precisely with the SAS output.</p>
 <pre class="r"><code>  fit.ml = gls( 
     distance ~ 0 + gender + gender:age, 
@@ -433,10 +461,12 @@ anova(fit.ml, fit.ml.red)</code></pre>
 ## fit.ml         1 14 447.4770 485.0269 -209.7385                        
 ## fit.ml.red     2 13 452.1527 487.0204 -213.0763 1 vs 2 6.675655  0.0098</code></pre>
 </div>
-</div>
 <div id="interpolations" class="section level3">
 <h3>Interpolations</h3>
-<p>Now, we predict male / female at 11 years old.</p>
+</div>
+<div id="compare-to-notes-008-slide-24-ddfm-corrected" class="section level3">
+<h3>(compare to notes 008, Slide 24, DDFM corrected )</h3>
+<p>Now, we predict male / female at various ages.</p>
 <pre class="r"><code>fmla = distance ~ 0 + gender + gender:age
 
 ## REML (unstructured covariance)

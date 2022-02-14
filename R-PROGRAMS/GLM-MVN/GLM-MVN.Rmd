@@ -63,7 +63,8 @@ robust.cov <- function(u){
 
 
 
-### First, we fit the regression model assuming compound symmetry.
+### First, we fit the regression model assuming unstructured covariance. 
+### (compare to notes 008, Slide 18, DDFM corrected )
 ```{r, message = F, warning = F}
 library(nlme)
 fmla = distance ~ 0 + gender + age + gender*age
@@ -79,16 +80,19 @@ fmla = distance ~ 0 + gender + age + gender*age
   coef(summary(fit.reml))
 
   ## corrected
+  nsub       <- length(unique(dental.long$id))
   beta.model <- coef(fit.reml)
   se.model   <- robust.cov(fit.reml)$se.model
   t.model    <- beta.model/se.model
-  p.model    <- pt(-abs(t.model),nrow(dental.data))
+  ddfm.model <- c(rep(nsub-2,2),rep(nrow(dental.long)-nsub-2,2))
+  p.model    <- pt(-abs(t.model),ddfm.model)
 
   ## Organize results into table
   res.reml = data.frame(
             'Estimate' = beta.model, 
             'StdError' = se.model, 
-            't' = t.model, 
+            't' = t.model,
+            'ddfm' = ddfm.model,
             'P-value' = p.model
             )
 
@@ -101,6 +105,7 @@ round(res.reml , 4) %>%
 ```
 
 ### Now we perform a test of parallelism.
+### (compare to notes 008, Slide 16, DDFM corrected )
 ```{r, message = F}
   Sig.model   <- robust.cov(fit.reml)$Sig.model
   L <- c(0,0,0,1)
@@ -128,7 +133,7 @@ round(parallel.reml , 4) %>%
 
 
 #### LRT
-
+### (compare to notes 008, Slide 19, DDFM corrected )
 The likelihood ratio test is easy to perform, and matches up precisely
 with the SAS output.
 
@@ -153,7 +158,8 @@ anova(fit.ml, fit.ml.red)
 ```
 
 ### Interpolations
-Now, we predict male / female at 11 years old.
+### (compare to notes 008, Slide 24, DDFM corrected )
+Now, we predict male / female at various ages.
 ```{r}
 
 fmla = distance ~ 0 + gender + gender:age
