@@ -1,0 +1,189 @@
+---
+title: "General Linear Model for Correlated Data: Dental Data"
+output: html_document
+---
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+This file pertains to the BIOS-767-Part-008 notes. 
+```{r, message=FALSE,warning=FALSE}
+## Load dental data
+library(sas7bdat)
+setwd('C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL')
+dental.data = read.sas7bdat('dental.sas7bdat')
+names(dental.data) = tolower(names(dental.data)) ## lowercase variable names
+```
+
+
+We begin by re-shaping the data from wide-to-long format, using the `tidyverse` package
+```{r, message=FALSE,warning=FALSE}
+library(tidyverse)
+dental.long = pivot_longer(
+  data = dental.data,
+  cols = age8:age14,
+  names_to = 'age',
+  names_prefix = 'age',
+  values_to = 'distance'
+)
+dental.long$age    <- as.numeric(dental.long$age)
+dental.long$age.sp <- pmax(dental.long$age-10,0) 
+dental.long$fage  <- as.factor(dental.long$age)
+head(dental.long)
+```
+
+### Match SE with SAS
+The following function enables the computation of standard errors that match SAS (correct in all cases)
+```{r, message=FALSE,warning=FALSE}
+library(magic)
+robust.cov <- function(u){
+  form <-  formula(u)
+  mf <- model.frame(form,getData(u))
+  Xmat <- model.matrix(form,mf)
+  ids <- unique(u$groups)
+  m <- length(ids)
+  Vlist <-  as.list(ids)
+  for (i in 1:m){
+    Vlist[[i]] <- getVarCov(u,individual=ids[i],type="marginal")
+  }
+  V <- Reduce(adiag,Vlist)
+  Vinv <- solve(V)
+  Sig.model <- solve(t(Xmat)%*%Vinv%*%Xmat)
+  resid <- diag(residuals(u,type="response"))
+  ones.list <- lapply(Vlist,FUN=function(u){matrix(1,nrow(u),ncol(u))})
+  Ones <- Reduce(adiag,ones.list)
+  meat <- t(Xmat)%*%Vinv%*%resid%*%Ones%*%resid%*%Vinv%*%Xmat
+  Sig.robust <- Sig.model%*%meat%*%Sig.model
+  se.robust <- sqrt(diag(Sig.robust))
+  se.model <- sqrt(diag(Sig.model))
+  return(list(Sig.model=Sig.model,se.model=se.model,Sig.robust=Sig.robust,se.robust=se.robust))
+}
+```
+### Step 1:
+We compare several covariance structures using a saturated means model and using REML.
+```{r, message = F, warning = F}
+library(nlme)
+
+## define formulas
+fmla.cov  = distance ~ gender*fage
+
+## fit models
+
+## CS
+fit.model.cs <- gls( 
+  fmla.cov, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'REML'
+)
+## AR1
+fit.model.ar1 <- gls( 
+  fmla.cov, 
+  correlation = corAR1(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'REML'
+)
+## UN
+fit.model.un <- gls( 
+  fmla.cov, 
+  correlation = corSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 | age),
+  data = dental.long, 
+  method = 'REML'
+)
+
+## print results
+summary(fit.model.cs)
+summary(fit.model.ar1)
+summary(fit.model.un)
+```
+
+### Step 2:
+The above analysis suggests compound symmetry is appropriate.
+Next, we compare several mean models assuming a CS covariance structure. 
+(compare to notes 009, Slide 93)
+```{r, message = F, warning = F}
+library(nlme)
+
+## define formulas
+fmla.line = distance ~ 1 + gender + age + gender*age
+fmla.quad = distance ~ 1 + gender + age + I(age^2)  + gender*age + gender*I(age^2)
+fmla.lspn = distance ~ 1 + gender + age + age.sp + gender*age + gender*age.sp
+
+## fit models with ML
+fit.model.line <- gls( 
+  fmla.line, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'ML'
+)
+fit.model.quad  <- gls( 
+  fmla.quad, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'ML'
+)
+fit.model.lspn  <- gls( 
+  fmla.lspn, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'ML'
+)
+
+## print results
+summary(fit.model.line)
+summary(fit.model.quad)
+summary(fit.model.lspn)
+```
+
+### Step 3:
+It appears a linear trajectory model is appropriate.
+Finally, we re-evaluate the covariance model to be safe that nothing has changed.
+```{r, message = F, warning = F}
+library(nlme)
+
+## define formula
+fmla.line = distance ~ 1 + gender + age + gender*age
+
+## fit models
+
+## CS
+final.model.cs <- gls( 
+  fmla.line, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'REML'
+)
+
+## AR1
+final.model.ar1 <- gls( 
+  fmla.line, 
+  correlation = corAR1(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'REML'
+)
+
+## UN
+final.model.un <- gls( 
+  fmla.line, 
+  correlation = corSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 | age),
+  data = dental.long, 
+  method = 'REML'
+)
+
+
+summary(final.model.cs)
+summary(final.model.ar1)
+summary(final.model.un)
+```

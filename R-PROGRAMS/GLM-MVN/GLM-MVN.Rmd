@@ -63,7 +63,7 @@ robust.cov <- function(u){
 
 
 
-### First, we fit the regression model assuming unstructured covariance. 
+### First, we fit the regression model assuming CS covariance. 
 ### (compare to notes 008, Slide 18, DDFM corrected )
 ```{r, message = F, warning = F}
 library(nlme)
