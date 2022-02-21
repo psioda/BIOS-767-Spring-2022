@@ -168,7 +168,7 @@ pre code {
 </div>
 
 
-<p>This file pertains to the BIOS-767-Part-008 notes.</p>
+<p>This file pertains to the BIOS-767-Part-009 notes.</p>
 <pre class="r"><code>## Load dental data
 library(sas7bdat)
 setwd(&#39;C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL&#39;)
@@ -398,6 +398,7 @@ summary(fit.model.cs)</code></pre>
 fmla.line = distance ~ 1 + gender + age + gender*age
 fmla.quad = distance ~ 1 + gender + age + I(age^2)  + gender*age + gender*I(age^2)
 fmla.lspn = distance ~ 1 + gender + age + age.sp + gender*age + gender*age.sp
+fmla.satu = distance ~ gender*fage
 
 ## fit models with ML
 fit.model.line &lt;- gls( 
@@ -416,6 +417,13 @@ fit.model.quad  &lt;- gls(
 )
 fit.model.lspn  &lt;- gls( 
   fmla.lspn, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = &#39;ML&#39;
+)
+fit.model.satu  &lt;- gls( 
+  fmla.satu, 
   correlation = corCompSymm(form = ~ 1 | id), 
   weights = varIdent(form = ~ 1 ),
   data = dental.long, 
@@ -527,6 +535,46 @@ summary(fit.model.line)</code></pre>
 ## 
 ## Residual standard error: 2.207188 
 ## Degrees of freedom: 108 total; 102 residual</code></pre>
+<pre class="r"><code>summary(fit.model.satu)</code></pre>
+<pre><code>## Generalized least squares fit by maximum likelihood
+##   Model: fmla.satu 
+##   Data: dental.long 
+##        AIC      BIC    logLik
+##   446.6329 473.4542 -213.3165
+## 
+## Correlation Structure: Compound symmetry
+##  Formula: ~1 | id 
+##  Parameter estimate(s):
+##       Rho 
+## 0.6245473 
+## 
+## Coefficients:
+##                    Value Std.Error   t-value p-value
+## (Intercept)    21.181818 0.6915345 30.630167  0.0000
+## genderM         1.693182 0.8983297  1.884811  0.0624
+## fage10          1.045455 0.5992479  1.744611  0.0841
+## fage12          1.909091 0.5992479  3.185812  0.0019
+## fage14          2.909091 0.5992479  4.854570  0.0000
+## genderM:fage10 -0.107955 0.7784458 -0.138680  0.8900
+## genderM:fage12  0.934659 0.7784458  1.200673  0.2327
+## genderM:fage14  1.684659 0.7784458  2.164131  0.0328
+## 
+##  Correlation: 
+##                (Intr) gendrM fage10 fage12 fage14 gnM:10 gnM:12
+## genderM        -0.770                                          
+## fage10         -0.433  0.334                                   
+## fage12         -0.433  0.334  0.500                            
+## fage14         -0.433  0.334  0.500  0.500                     
+## genderM:fage10  0.334 -0.433 -0.770 -0.385 -0.385              
+## genderM:fage12  0.334 -0.433 -0.385 -0.770 -0.385  0.500       
+## genderM:fage14  0.334 -0.433 -0.385 -0.385 -0.770  0.500  0.500
+## 
+## Standardized residuals:
+##         Min          Q1         Med          Q3         Max 
+## -2.66200913 -0.63364313 -0.08238326  0.63847028  2.39297630 
+## 
+## Residual standard error: 2.20698 
+## Degrees of freedom: 108 total; 100 residual</code></pre>
 </div>
 <div id="step-3" class="section level3">
 <h3>Step 3:</h3>

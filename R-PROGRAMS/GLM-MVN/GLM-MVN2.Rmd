@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-This file pertains to the BIOS-767-Part-008 notes. 
+This file pertains to the BIOS-767-Part-009 notes. 
 ```{r, message=FALSE,warning=FALSE}
 ## Load dental data
 library(sas7bdat)
@@ -114,6 +114,7 @@ library(nlme)
 fmla.line = distance ~ 1 + gender + age + gender*age
 fmla.quad = distance ~ 1 + gender + age + I(age^2)  + gender*age + gender*I(age^2)
 fmla.lspn = distance ~ 1 + gender + age + age.sp + gender*age + gender*age.sp
+fmla.satu = distance ~ gender*fage
 
 ## fit models with ML
 fit.model.line <- gls( 
@@ -137,11 +138,19 @@ fit.model.lspn  <- gls(
   data = dental.long, 
   method = 'ML'
 )
+fit.model.satu  <- gls( 
+  fmla.satu, 
+  correlation = corCompSymm(form = ~ 1 | id), 
+  weights = varIdent(form = ~ 1 ),
+  data = dental.long, 
+  method = 'ML'
+)
 
 ## print results
 summary(fit.model.line)
 summary(fit.model.quad)
 summary(fit.model.lspn)
+summary(fit.model.satu)
 ```
 
 ### Step 3:
