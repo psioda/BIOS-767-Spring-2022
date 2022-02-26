@@ -1,0 +1,165 @@
+---
+title: "Dental Data Mixed Model"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Dental data mixed model
+This notebook pertains to the file BIOS-767-Part-011.pdf.
+
+### Data manipulation
+We first convert the data to "long" format
+```{r cars, message = F, error = F, warning = F}
+options(contrasts = c(factor = "contr.SAS", ordered = "contr.poly"))
+library(sas7bdat)
+setwd('C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/DENTAL')
+dental.wide = read.sas7bdat('dental.sas7bdat')
+names(dental.wide) = tolower(names(dental.wide))
+
+## change to long format
+library(tidyverse)
+dental.long = dental.wide %>%
+  pivot_longer(cols = c(age8, age10, age12, age14),
+               names_to = 'age', names_prefix = 'age', values_to = 'distance')
+dental.long$gender = factor(dental.long$gender)
+dental.long$age    = as.numeric(dental.long$age)
+dental.long$id     = factor(dental.long$id)
+head(dental.long)
+```
+
+
+
+
+### Random intercept / slope model
+
+The following code repeats the analysis conducted in
+BIOS-767-Part-011.
+
+There are several packages to conduct mixed effects models in R. One of the
+more flexible ones is `nlme`, the same package that uses the `gls` function.
+Another popular package with simple syntax (but less flexibility) is `lme4`.
+
+We will proceed with the `nlme` package.
+
+```{r, message = F, warning = F}
+library(nlme)
+## Fit random intercept model
+nlme.randint = nlme::lme(
+  fixed       = distance ~ 0 + gender + age:gender,
+  random      = ~ 1 | id,   ## random intercept
+  method      = 'REML',
+  control     = lmeControl(msMaxIter = 200, msMaxEval = 500, sing.tol=1e-20, opt = 'optim'),
+  data        = dental.long,
+  weights     = varIdent(form = ~ 1 | gender )   ## says variances differ by gender
+)
+
+## Fit random slope model
+nlme.randslope = nlme::lme(
+  fixed       = distance ~ 0 + gender + age:gender,
+  random      = ~ 1 + age | id,
+  method      = 'REML',
+  control     = lmeControl(msMaxIter = 200, msMaxEval = 500, sing.tol=1e-20, opt = 'optim'),
+  data        = dental.long,
+  weights     = varIdent(form = ~ 1 | gender )     ## says variances differ by gender
+)
+
+## Construct LRT test statistic
+logLik0 = 2 * as.numeric( logLik(nlme.randint, REML = T) )
+logLik1 = 2 * as.numeric( logLik(nlme.randslope, REML = T) )
+c('randint' = logLik0, 'randslope' = logLik1)
+LRT.nlme = -(logLik0 - logLik1)
+LRT.nlme
+```
+
+
+We can obtain the covariance matrices as follows
+```{r}
+getVarCov(nlme.randslope, type = 'random.effects', individual = 1)
+getVarCov(nlme.randslope, type = 'conditional', individual = 1)
+getVarCov(nlme.randslope, type = 'marginal', individual = 1)
+getVarCov(nlme.randslope, type = 'marginal', individual = 20)
+dental.long %>% filter(id %in% c(1, 20))
+```
+Note that the gender is different between subjects 1 and 20, and also the
+variance is different.
+
+
+
+
+### Residuals
+A (standardized) residuals vs. fitted values plot may be obtained by simply
+calling the `plot` method on a `lme` object.
+```{r}
+plot(nlme.randslope)
+```
+Alternatively, we can use the `residplot` function in the `predictmeans` package for other diagnostics
+```{r, message = F, warning = F, cache = T}
+library(predictmeans)
+residplot(nlme.randslope)
+```
+Unfortunately, this plot will not render when knitted, but it includes a normal plot for the
+random intercept, normal plot for residuals, residuals vs. fitted, and fitted 
+vs. observed.
+
+
+
+
+
+
+### Scaled residuals
+Now, we compute the scaled residuals using the Cholesky decomposition
+```{r, warning = F, message = F}
+n           = nrow(dental.wide)
+N           = nrow(dental.long)
+resid       = resid(nlme.randslope)
+scaledResid = numeric(n)
+for ( i in 1:n ) {
+  ## Get covariance matrix for subject i; take cholesky decomposition
+  Sigma_i  = getVarCov(nlme.randslope, individual = i, type = 'conditional')
+  L_i      = t( chol(Sigma_i[[1]]) )
+  
+  ## Obtain residual for ith individual
+  resid_i  = resid[dental.long$id == i]
+  
+  ## Compute scaled residual
+  scaledResid[dental.long$id == i] = solve(L_i) %*% resid_i
+}
+```
+
+
+We can now compute the Mahalanobis distances
+```{r, message = F, warning = F}
+library(kableExtra)
+md   = numeric(n)
+pval = numeric(n)
+for ( i in 1:n ) {
+  md[i]   = sum( scaledResid[dental.long$id == i]^2 )
+  rm_i    = sum(dental.long$id == i)  ## number of repeated measures for subject i
+  pval[i] = pchisq(md[i], df = rm_i, lower.tail = F)
+}
+res = data.frame('ID' = dental.wide$id, 'Mahalanobis' = md, 'pval' = pval)
+res = res %>% arrange(desc(Mahalanobis))
+res %>% mutate(Significant = ifelse(pval < .05, '*', ''))
+```
+
+
+### Influence Measures
+The package `HLMdiag` provides residual diagnostics for `lme` objects. A nice
+vignette of the package is available here:
+https://cran.r-project.org/web/packages/HLMdiag/vignettes/influence_diagnostics.html
+
+
+```{r, warning = F, message = F}
+library(HLMdiag)
+infl = hlm_influence(nlme.randslope, level = 'id')
+infl
+```
+
+
+We can create plots
+```{r, warning = F, message = F}
+plot(infl$cooksd)
+```

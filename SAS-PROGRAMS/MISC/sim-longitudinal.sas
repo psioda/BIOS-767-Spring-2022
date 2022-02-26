@@ -64,6 +64,7 @@ wid   = repeat(shapecol(repeat(do(1,nSub,1),nRep),0,1),nSim);
 
 /* create treatment indicator (50% = treated, 50% = control)*/
 z     = (wid<=nSub/2);
+** print(z);
 
 ** create time variable, quadratic variable, interactions;
 t1    = shapecol(repeat(times,nSim*nSub),0,1);
@@ -94,7 +95,7 @@ proc mixed data = dat method=reml plots=none;
  by study;
  class time id;
  model y = t t*t z*t z*t*t / solution;
- repeated time / subject=id type=un r rcorr;
+ repeated time / subject=id type=ar(1) r rcorr;
  contrast "treatment effect (quadratic)"  z*t 1,  z*t*t 1;
 run;
 ods html exclude none;
@@ -106,7 +107,7 @@ proc mixed data = dat method=reml plots=none;
  by study;
  class time id;
  model y = t z*t / solution;
- repeated time / subject=id type=un r rcorr;
+ repeated time / subject=id type=ar(1) r rcorr;
  contrast "treatment effect (linear)"  z*t 1;
 run;
 ods html exclude none;
