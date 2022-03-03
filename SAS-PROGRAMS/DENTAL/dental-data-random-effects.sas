@@ -165,3 +165,99 @@ proc print data = blupsAll(obs=4) noobs;
 run;
 
 ods html close;
+
+
+
+/*** making plots by using the OUTPM and OUTPRED options ***/
+
+** create dataset with extra observations to compute estimated means;
+data dental_mean;
+ set dental end=last;
+ 
+ output;
+
+ if last=1 then do;
+	distance = .;
+	do gender = 'M', 'F';
+	do time = 8 to 12 by 0.1;
+		output;
+	end;
+	end;
+
+ end;
+run;
+
+proc mixed data = dental_mean method=reml noclprint;
+	class gender(ref='F') cTime id;
+	model distance = gender time*gender / noint solution outpm=means_all;
+	random intercept time / subject=id type=un;
+	repeated cTime   / subject=id type=vc group=gender;
+run;
+quit;
+
+** remove duplicates;
+proc sort data = means_all out = means_all2(keep=gender time pred lower upper) nodupkey;
+ by gender time;
+run;
+
+proc format;
+ value $ gend
+  'M' = 'Male'
+  'F' = 'Female';
+run;
+
+** make simple plot;
+proc sgplot data = means_all2;
+ format gender $gend.;
+ label gender = 'Gender';
+ series x=time y=pred / group=gender markerattrs=(symbol=circleFilled);
+ band   x=time lower=lower upper=upper / group=gender transparency=0.3;
+ xaxis label='Time (years)';
+ yaxis label='Estimated Mean';
+run;
+
+** create dataset with extra observations to compute predicted means;
+data dental_pred;
+ set dental(rename=(time=t));
+ by id;
+
+ time=t;
+ output;
+
+    ctime='999';
+	distance = .;
+	do time = t+0.1 to t+1.9 by 0.1;
+		output;
+	end;
+
+ drop t;
+run;
+proc mixed data = dental_pred method=reml noclprint;
+	class gender(ref='F') cTime id;
+	model distance = gender time*gender / noint solution outpred=pred_all;
+	random intercept time / subject=id type=un;
+	repeated cTime   / subject=id type=vc group=gender;
+run;
+quit;
+
+
+** remove duplicates;
+proc sort data = pred_all out = pred_all2(keep=id gender time pred lower upper) nodupkey;
+ by id gender time;
+run;
+
+proc format;
+ value $ gend
+  'M' = 'Male'
+  'F' = 'Female';
+run;
+
+** make simple plot;
+proc sgpanel data = pred_all2 noautolegend;
+ format gender $gend.;
+ label gender = 'Gender';
+ panelby gender;
+ series x=time y=pred / group=id lineattrs=(pattern=1) markerattrs=(symbol=circleFilled);
+ colaxis label='Time (years)';
+ rowaxis label='Estimated Mean';
+run;
