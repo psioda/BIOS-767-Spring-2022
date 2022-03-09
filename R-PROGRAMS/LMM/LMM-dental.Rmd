@@ -87,6 +87,11 @@ Note that the gender is different between subjects 1 and 20, and also the
 variance is different.
 
 
+## summary
+```{r}
+summary(nlme.randslope)
+```
+
 
 
 ### Residuals
@@ -95,11 +100,13 @@ calling the `plot` method on a `lme` object.
 ```{r}
 plot(nlme.randslope)
 ```
+
 Alternatively, we can use the `residplot` function in the `predictmeans` package for other diagnostics
 ```{r, message = F, warning = F, cache = T}
 library(predictmeans)
 residplot(nlme.randslope)
 ```
+
 Unfortunately, this plot will not render when knitted, but it includes a normal plot for the
 random intercept, normal plot for residuals, residuals vs. fitted, and fitted 
 vs. observed.
@@ -112,21 +119,35 @@ vs. observed.
 ### Scaled residuals
 Now, we compute the scaled residuals using the Cholesky decomposition
 ```{r, warning = F, message = F}
-n           = nrow(dental.wide)
-N           = nrow(dental.long)
-resid       = resid(nlme.randslope)
-scaledResid = numeric(n)
-for ( i in 1:n ) {
+N           = nrow(dental.wide)
+n           = nrow(dental.long)
+resid       = residuals(nlme.randslope,type="response")
+scaledResid = numeric(n);
+scaledDep   = numeric(n)
+for ( i in 1:N ) {
   ## Get covariance matrix for subject i; take cholesky decomposition
-  Sigma_i  = getVarCov(nlme.randslope, individual = i, type = 'conditional')
+  Sigma_i  = getVarCov(nlme.randslope, individual = i, type = 'marginal')
   L_i      = t( chol(Sigma_i[[1]]) )
-  
+
   ## Obtain residual for ith individual
-  resid_i  = resid[dental.long$id == i]
-  
+  di  <- dental.long[which(dental.long$id==i),]
+  x   <- cbind((di$gender=="F")*1.0,(di$gender=="M")*1.0,(di$gender=="F")*di$age,(di$gender=="M")*di$age)    
+  resid_i  = di$distance - x%*%c(unlist(coef(nlme.randslope)[i,1:4]))
+
+
+  if (i==1) print(Sigma_i[[1]])
+  if (i==1) print(L_i)  
+  if (i==1) print(resid_i)
+    
   ## Compute scaled residual
   scaledResid[dental.long$id == i] = solve(L_i) %*% resid_i
+  
+  if (i==1) print(scaledResid[dental.long$id == i])
+  
+  scaledDep[dental.long$id == i]   = solve(L_i) %*% dental.long[dental.long$id == i,]$distance
 }
+#print(cbind(dental.long$id,dental.long$age,scaledDep,scaledResid))
+plot(scaledDep,scaledResid)
 ```
 
 
@@ -151,6 +172,7 @@ The package `HLMdiag` provides residual diagnostics for `lme` objects. A nice
 vignette of the package is available here:
 https://cran.r-project.org/web/packages/HLMdiag/vignettes/influence_diagnostics.html
 
+Note that the implementation performs one-step influence diagnostics
 
 ```{r, warning = F, message = F}
 library(HLMdiag)
@@ -163,3 +185,33 @@ We can create plots
 ```{r, warning = F, message = F}
 plot(infl$cooksd)
 ```
+
+
+
+### Analysis Code using LME4 package
+```{r, warning = F, message = F}
+library(lme4)
+library(lmerTest)
+
+lmm <- lmerTest::lmer(distance ~ 0 + gender + age:gender + (1 + age | id), data = dental.long, REML = TRUE)
+summary(lmm)
+```
+
+### Test a contrast of the parameters using KR method
+```{r, warning = F, message = F}
+lmerTest::contest(lmm,c(0,0,1,-1),ddf=c("Kenward-Roger"))
+```
+
+
+### Compute summaries for beta using KR method
+```{r, warning = F, message = F}
+drop1(lmm,ddf=c("Kenward-Roger"))
+```
+
+
+### Compute predictions accounting for uncertainty
+```{r, warning = F, message = F}
+eBlup <- predict(lmm, newdata = dental.long)
+eBlup
+```
+
