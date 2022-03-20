@@ -1,0 +1,69 @@
+---
+title: "GLM"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GLM
+
+### Data entry
+
+We begin by inputting the data as done on page 51 of BIOS-767-Part-013
+
+```{r cars}
+cell = read.table(text = 
+  '
+  11   0  0
+  18   0  4
+  20   0  20
+  39   0  100
+  22   1  0
+  38   1  4
+  52   1  20
+  69   1  100
+  31   10 0
+  68   10 4
+  69   10 20
+  128  10 100
+  102 100 0
+  171 100 4
+  180 100 20
+  193 100 100
+  '
+)
+names(cell)= c('nDiff', 'tnf', 'ifn')
+```
+
+### Poisson regression
+The following code conducts Poisson regression as done on page 52 of BIOS-767-Part-013
+
+```{r, message = F, warning = F}
+fit = glm(nDiff ~ tnf * ifn, data = cell, family = poisson('log'))
+summary(fit)
+```
+
+
+
+### Analysis of deviance
+```{r, message = F, warning = F}
+fit0 = glm(nDiff ~ tnf + ifn, data = cell, family = poisson('log'))
+anova(fit0, fit, test = 'Chisq')
+```
+
+
+### Quasi Poisson model
+The following code conducts quasi-Poisson regression
+
+```{r, warning = F, message = F}
+fit.quasi = glm(
+  nDiff ~ tnf * ifn, data = cell, family = quasipoisson('log')
+)
+summary(fit.quasi)
+```
+
+
+
+
