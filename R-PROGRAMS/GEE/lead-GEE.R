@@ -1,5 +1,7 @@
 require(tidyverse);
 require(geepack);
+require(stats);
+require(knitr);
 
 setwd("C:/Users/psioda/Documents/GitHub/bios-courses/BIOS-767/DATA/LEAD");
 
@@ -15,30 +17,63 @@ lead_vert <- as_tibble(lead) %>%
     values_to = "bloodLead", 
     names_prefix = "week")
 
-
+## add new columns as numeric variables
 lead_vert$week     <- as.numeric(lead_vert$week)
 lead_vert$lowLead  <- ifelse(lead_vert$bloodLead<20,1,0)
 lead_vert$succimer <- ifelse(lead_vert$trt=="A",1,0)
 lead_vert          <- lead_vert %>% filter(week>0)
 
+## print the first few rows of the data frame
 head(lead_vert)
 
 
-### GEE Analysis
+### GEE Analysis - empirical standard errors
 gee.fit=geeglm( lowLead~succimer+week+week:succimer, 
                 data=lead_vert, id=id, family=binomial(logit),
                 corstr="exchangeable",waves=week)
 
+
+## summary method output
 summary(gee.fit)
 
 
+### GEE Analysis - fully iterated jack-knife standard errors
 gee.fit2 =geeglm( lowLead~succimer+week+week:succimer, 
                   data=lead_vert, id=id, family=binomial(logit),
                   corstr="exchangeable",waves=week,std.err="fij")
 
-summary(gee.fit2)
 
+## some functions to extract GEE output;
+summary(gee.fit2)
 coef(gee.fit2)
 vcov(gee.fit2)
-summary(gee.fit2)
 coef(summary(gee.fit2))
+
+
+# Compute estimates of probabilities at various covariate values
+logistic <- function(x) { exp(x)/(1+exp(x)) }
+
+## note that quantities are estimated on the linear predictor scale and
+## transformed to the probability scale.
+L       <- unique(cbind(1,lead_vert$succimer,lead_vert$week,lead_vert$succimer*lead_vert$week))
+Beta    <- coef(gee.fit)
+L.Beta  <- L %*% Beta
+SE.Beta <- sqrt(diag(L %*% vcov(gee.fit) %*% t(L)))
+
+## compute transformed results on probability scale
+L.Prob.Lower <- logistic(L.Beta - qnorm(0.975)*SE.Beta)
+L.Prob.Upper <- logistic(L.Beta + qnorm(0.975)*SE.Beta)
+L.Prob       <- logistic(L.Beta)
+
+## create and print data frame of results
+Results      <- data.frame(L = L, 'Estimate' = L.Prob, "Lower.CI" = L.Prob.Lower, 'Upper.CI' = L.Prob.Upper)
+kable(Results)
+
+## Wald test of interaction
+L2       <- rbind(c(0,0,0,1))
+L2.Beta  <- L2 %*% Beta
+L2.Cov   <- L2 %*% vcov(gee.fit) %*% t(L2)
+Wald.csq <- L2.Beta %*% solve(L2.Cov) %*% L2.Beta 
+Wald.pv  <- pchisq(Wald.csq,1,lower.tail=FALSE)
+
+anova(gee.fit)

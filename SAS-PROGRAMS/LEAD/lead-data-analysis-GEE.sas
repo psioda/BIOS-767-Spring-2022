@@ -105,7 +105,41 @@ proc genmod data=lead plots=(all) ;
 	class id trt(ref='P') cWeek;
 	model lowlead(event='1') = trt week trt*week 
 		/ dist=binomial link=logit scale=pearson aggregate;
+	output out = estimates pred=est lower=lower upper=upper reschi=rcsq resraw=r;
 	repeated subject=id / within=cWeek type=exch corrw modelse;
+run;
+
+data check;
+ set estimates end=last;
+ rcsq2 = rcsq**2;
+run;
+
+proc means data = check noprint nway;
+ var rcsq2;
+ output out=phi_est(drop=_:) n=m sum=rcsq2;
+run;
+
+data phi_est;
+	set phi_est;
+	phi = sqrt(rcsq2/(m-4));
+run;
+
+proc means data = check noprint nway;
+ class trt week;
+ var lowlead est r;
+ output out=check2(drop=_:) n=n sum(lowlead est r)=y nmu r mean(est)=mu;
+run;
+
+data check3;
+ set check2 end=last;
+
+ phi + (y-nmu)**2/(n*mu*(1-mu));
+ m+1;
+
+ if last;
+ phi = sqrt(phi/(m-4));
+
+ drop y nmu r mu trt week n;
 run;
 
 
