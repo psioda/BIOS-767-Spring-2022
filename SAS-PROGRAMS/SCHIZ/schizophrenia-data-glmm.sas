@@ -31,7 +31,7 @@ run;
 proc glimmix data = schiz method=quad(qpoints=5) noclprint ;
 	class id;
 	model modWorse(event='1') = trt sqrtWeek trt*sqrtWeek  
-     / solution dist=binary link=logit;
+     / solution dist=binary link=logit ;
 	random intercept / subject=id;
 run; 
 
