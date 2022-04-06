@@ -16,9 +16,8 @@
 *  DATE COMPLETE:                << YYYY-MM-DD >>   
 *  DESCRIPTION OF MODIFICATION:  << Please insert 2-3 sentences >>                                                               
 ********************************************************************;
-%include "C:\USERS\PSIODA\DOCUMENTS\GITHUB\BIOS-767-PROGRAMMING\MACROS\SETUP.SAS";
-%setup(MELANOMA-DATA,C:\USERS\PSIODA\DOCUMENTS\GITHUB\BIOS-767-PROGRAMMING);
-
+%include "C:\USERS\PSIODA\DOCUMENTS\GITHUB\BIOS-COURSES\BIOS-767\SAS-MACROS\SETUP.SAS";
+%setup(MELANOMA-DATA,C:\USERS\PSIODA\DOCUMENTS\GITHUB\BIOS-COURSES\BIOS-767);
 /*
 Region, County, Observed number of deaths due to malignant melanoma, 
 expected number of deaths due to malignant melanoma, UVB exposure.
