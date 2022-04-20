@@ -31,3 +31,8 @@ data dat2.schiz;
  modWorse = (y>=3);
 run;
 
+ods html newfile=proc;
+proc freq data = dat2.schiz;
+ where week in (0,1,3,6);
+ table y;
+run;

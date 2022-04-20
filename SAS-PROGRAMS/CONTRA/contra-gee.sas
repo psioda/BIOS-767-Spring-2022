@@ -27,6 +27,10 @@ data contra;
 	set dat2.contra;
 run; proc sort; by ID Occasion; run;
 
+proc print data = contra noobs;
+	where ID in (1 396 808);
+run;
+
 data contra2;
  set contra;
  by ID;
