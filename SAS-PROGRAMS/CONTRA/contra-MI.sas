@@ -55,7 +55,17 @@ proc mi data = contra2 out=ImputedDatasets  seed=13951639 nimpute=50;
    var dose as1 as2 as3 as4;
 run;
 
-
+** this imputation model includes all possible predictors 
+    (up to first order interactions);
+/*
+proc mi data = contra2 out=ImputedDatasets  seed=13951639 nimpute=50;
+   class as1 as2 as3 as4;
+	fcs logistic(as2 = as1 as3 as4 dose as1*dose as3*dose as4*dose / details);
+   	fcs logistic(as3 = as1 as2 as4 dose as1*dose as2*dose as4*dose / details);
+	fcs logistic(as4 = as1 as2 as3 dose as1*dose as2*dose as3*dose / details);
+   var dose as1 as2 as3 as4;
+run;
+*/
 proc print data = contra2 noobs; 
 	where ID in ( 396);
 run;
