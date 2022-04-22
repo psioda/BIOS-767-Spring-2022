@@ -74,7 +74,7 @@ md.pattern(contra)
     ## extract imputed data and transform to long format
     ind.imputed.long  <- tibble(complete(contra.wide.imputed, c(data.id)))
     ind.imputed.long  <- subset(ind.imputed.long,select=-c(int.y1dose,int.y2dose,int.y3dose,int.y4dose))
-    ind.imputed.wide  <- ind.imputed.long %>%  
+    ind.imputed.long  <- ind.imputed.long %>%  
       pivot_longer(
         cols = starts_with("y"),
         names_to = "time",
@@ -84,11 +84,11 @@ md.pattern(contra)
       )
     
     ## create (by choice) time variable as (0,1,2,3)
-    ind.imputed.wide$time <- as.numeric(ind.imputed.wide$time)-1
+    ind.imputed.long$time <- as.numeric(ind.imputed.long$time)-1
     
     ### GEE Analysis - empirical standard errors
     gee.fit[[data.id]] <- geeglm( y~dose + time +dose*time + I(time^2) +I(time^2)*dose, 
-                                  data=ind.imputed.wide, id=id, family=binomial(logit),
+                                  data=ind.imputed.long, id=id, family=binomial(logit),
                                   corstr="exchangeable",waves=time
                                  ) 
   }
