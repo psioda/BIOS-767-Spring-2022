@@ -55,7 +55,7 @@ run;
 
 ** impute outcomes using their continuous nature even though we will
    analyze the data using a dichotomous value;
-proc mi data = dat2.leadmiss out=ImputedDatasets  seed=73474 nimpute=50;
+proc mi data = dat2.leadmiss out=ImputedDatasets  seed=73474 nimpute=500;
    class trt;
 	fcs reg(y1  = y0 y4 y6 trt y0*trt y4*trt y6*trt / details);
    	fcs reg(y4  = y0 y1 y6 trt y0*trt y1*trt y6*trt / details);

@@ -53,7 +53,7 @@ run;
 proc gee data=contra2 plots=histogram;
    class ID ctime(ref='3');
    missmodel ctime prevY Dose Dose*prevY / type=obslevel;
-   model y(event='1') = time dose time*time dose*time dose*time*time / dist=bin;
+   model y(event='1') = time time*time dose dose*time dose*time*time / dist=bin;
    repeated subject=ID / within=cTime corr=cs;
 run;
 
