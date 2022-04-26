@@ -3,7 +3,7 @@
 *  PROGRAM DESCRIPTION: Analyze data from the Schizophrenia Study;
 *                                                                   
 *-------------------------------------------------------------------
-*  JOB NAME:       schizophrenia-data-prop-odds.sas                                   
+*  JOB NAME:       schizophrenia-data-prop-odds-mi.sas                                   
 *  LANGUAGE:       SAS, VERSION 9.4                                  
 *                                                                   
 *  NAME:           Matthew Psioda                               
@@ -30,11 +30,13 @@ ods html newfile=proc;
 
 ods html newfile=proc;
 
+** remove data for unscheduled visits;
 data schiz;
  set dat2.schiz;
  where week not in (2,4,5);
 run;
 
+** transpose data to wide format;
 proc transpose data = schiz out = schiz_vert prefix=outcome;
  by id trt;
  id week;
@@ -52,6 +54,7 @@ proc mi data = schiz_vert out=ImputedDatasets  seed=13951639 nimpute=100;
    var trt outcome0 outcome1 outcome3 outcome6 ;
 run;	
 
+** transform imputed datasets to long format;
 data schiz_vert2;
 	set ImputedDatasets;
 		array out[3] outcome1 outcome3 outcome6;
@@ -64,21 +67,23 @@ data schiz_vert2;
 	drop outcome1 outcome3 outcome6 x;
 run;
 
-/***** GENMOD -- GEE *****/
+** analyze imputed datasets with GEE;
 ods html select none;
 ods output GEEEmpPEst  = PE GEERCov=CV;
 proc genmod data = schiz_vert2 ;
    by _imputation_;
-	class id week(ref='1') outcome0(ref='1');
+	class id week(ref='1') outcome0(ref='1') cweek;
 	model y = trt week trt*week outcome0 /  dist=mult link=clogit;
-	repeated subject=id / ecovb;
+	repeated subject=id / within=cweek ecovb;
 run; 
 
+** remove refernce level parameter estimates and map
+   parm values to match work.CV;
 data PE2;
  set PE;
- where estimate ^= 0;
-  parm = compress(cats(parm,level1),'*');
+ where z ^= .;
 
+  parm = compress(cats(parm,level1),'*');
   select(parm);
   	when("trt")       parm="Prm1";
   	when("week3")     parm="Prm2";
@@ -95,6 +100,9 @@ run;
 ods html close;
 ods html newfile=none;
 
+** transpose non-imputed data to long format
+   to perform available data analysis that
+   uses baseline as a covariate;
 data schiz_vert3;
 	set schiz_vert;
 		array out[3] outcome1 outcome3 outcome6;
@@ -107,14 +115,14 @@ data schiz_vert3;
 	drop outcome1 outcome3 outcome6 x;
 run;
 
-ods html select ParameterEstimates TestMultStat  ;
+** combined results from multiple imputation analysis;
+ods html select ParameterEstimates TestMultStat;
 proc mianalyze parms = PE2 covb=CV;
  modeleffects Intercept1 Intercept2 Intercept3 Prm1 Prm2 Prm3 Prm5 Prm6 Prm8 Prm9 Prm10;
-
  Treatment: TEST Prm1=0,Prm5=0,Prm6=0 / mult; 
 run;
 
-/***** GENMOD -- GEE *****/
+** perform standard GEE (valid under MCAR);
 ods html select GEEEmpPEst Contrasts;
 proc genmod data = schiz_vert3;
 	class id week(ref='1') outcome0(ref='1');
