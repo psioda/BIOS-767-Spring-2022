@@ -19,7 +19,8 @@ md.pattern(contra)
   ### need to transpose data to wide format first
   contra.wide <- contra %>%  pivot_wider(names_from = time, values_from = y, names_prefix = "y")
   head(contra.wide)
-
+  md.pattern(contra.wide)
+  
   ## add in interaction variables
   ## these are needed for the imputation
   contra.wide <- contra.wide %>% add_column(int.y1dose=contra.wide$y1*contra.wide$dose)
@@ -49,7 +50,7 @@ md.pattern(contra)
   imp.pred["y2", "int.y2dose"]          <- 0
   imp.pred["y3", "int.y3dose"]          <- 0
   imp.pred["y4", "int.y4dose"]          <- 0
-  
+  imp.pred[,     "id"]          <- 0
   ## observe the predictors included in the imputation model
   ## these are all possible variables in first order interactions
   ## this can be modified as needed
@@ -61,7 +62,8 @@ md.pattern(contra)
   ## some warning messages are printed but these 
   ## do not appear problematic
   num.IMP <- 100
-  contra.wide.imputed <- mice(contra.wide, pred = imp.pred, meth = imp.method,  m = num.IMP, max.int = num.IMP, print = FALSE)
+  contra.wide.imputed <- mice(contra.wide, pred = imp.pred, meth = imp.method,  
+                              m = num.IMP, max.int = num.IMP, print = FALSE)
 
   
   ## for longitudinal data, as best I can tell, one needs to 
